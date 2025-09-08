@@ -474,7 +474,7 @@ $spacers: (
   // 3: $spacer,
   // 4: $spacer * 1.5,
   // 5: $spacer * 3,
-  0: 0, // customer
+  0: 0, // custome
   1: $spacer * .25,   // 4px
   2: $spacer * .5,    // 8px
   3: $spacer * .75,   // 12px
@@ -544,7 +544,7 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 // Style p element.
 
 // $paragraph-margin-bottom:   1rem !default;
-$paragraph-margin-bottom:   0 !default; // customer
+$paragraph-margin-bottom:   0 !default; // custome
 
 // Grid breakpoints
 //
@@ -698,7 +698,8 @@ $font-weight-bolder:          bolder !default;
 $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
-$line-height-sm:              1.25 !default;
+// $line-height-sm:              1.25 !default;
+$line-height-sm:              1.2 !default; // custome
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 4 ;    //64px custom //$font-size-base * 2.5 !default;
