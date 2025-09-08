@@ -1,0 +1,14 @@
+body{
+    letter-spacing: calc($font-size-base * 0.02);
+}
+
+a{
+    display: inline-block;
+    color: inherit;
+}
+
+img{
+    vertical-align: middle;
+	max-width: 100%;
+	height: auto;
+}
