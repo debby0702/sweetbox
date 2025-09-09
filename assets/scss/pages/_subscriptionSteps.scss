@@ -1,0 +1,17 @@
+.cakeroll-img{
+  right: calc(50% - 1401px);
+  bottom: -17px;
+}
+
+@media (max-width: 960px) {
+    .subscribe-img {
+        width: 152px;
+        height: 40px;
+      }
+      .cakeroll-img{
+        width: 388px;
+        height: 260px;
+        top: -60px;
+        left: calc(50% - 23.5px);
+      }
+}
