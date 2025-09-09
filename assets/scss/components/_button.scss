@@ -1,0 +1,18 @@
+.btn-primary-icon-lg {
+    padding: 16px 32px;
+    background-color: $CTA-500;
+    border-radius: 100px;
+    border: none;
+
+    svg {
+        transition: transform 0.3s ease; // 平滑動畫
+    }
+
+    &:hover {
+        background-color: $CTA-300;
+
+        svg {
+            transform: translateX(12px);
+        }
+    }
+}
