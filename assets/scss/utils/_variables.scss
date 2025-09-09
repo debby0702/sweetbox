@@ -4,15 +4,15 @@
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
 // Color system
-$Neutral-100: #FFFFFF; //custom
-$Neutral-200: #FAF6F0; //custom
-$Neutral-300: #EFEAE2; //custom
-$Neutral-400: #DEDAD1; //custom
-$Neutral-500: #C1B9AC; //custom
-$Neutral-600: #A39E93; //custom
-$Neutral-700: #6E675F; //custom
-$Neutral-800: #4A443D; //custom
-$Neutral-900: #2E2922; //custom
+$neutral-100: #FFFFFF;  //custom
+$neutral-200: #FAF6F0;  //custom
+$neutral-300: #EFEAE2;  //custom
+$neutral-400: #DEDAD1;  //custom
+$neutral-500: #C1B9AC;  //custom
+$neutral-600: #A39E93;  //custom
+$neutral-700: #6E675F;  //custom
+$neutral-800: #4A443D;  //custom
+$neutral-900: #2E2922;  //custom
 
 // scss-docs-start gray-color-variables
 $white:    #fff !default;
@@ -307,27 +307,27 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary-100: #FFF0E8;//custom
-$primary-200: #FFD9C2;//custom
-$primary-300: #FFC0A3;//custom
-$primary-400: #FF8C5E;//custom
-$primary-500: #FF7A42;//custom
-$primary-600: #FF5F1F;//custom
-$primary-700: #D94600;//custom
-$primary-800: #B33A00;//custom
-$primary: $primary-600;//custom
+$primary-100: #FFF0E8; //custom
+$primary-200: #FFD9C2; //custom
+$primary-300: #FFC0A3; //custom
+$primary-400: #FF8C5E; //custom
+$primary-500: #FF7A42; //custom
+$primary-600: #FF5F1F; //custom
+$primary-700: #D94600; //custom
+$primary-800: #B33A00; //custom
+$primary: $primary-600; //custom
 
-$CTA-300: #00806C;//custom
-$CTA-500: #004D40;//custom
-$CTA-700: #002E26;//custom
-$CTA: $CTA-500;//custom
+$CTA-300: #00806C; //custom
+$CTA-500: #004D40; //custom
+$CTA-700: #002E26; //custom
+$CTA: $CTA-500; //custom
 
-$Semantic-Rating: #FFC107;//custom
-$Semantic-Link: #5F7C9C;//custom
-$Semantic-Verified: #28A745;//custom
-$Semantic-Error: #DE1135;//custom
+$semantic-rating: #FFC107; //custom
+$semantic-link: #5F7C9C; //custom
+$semantic-verified: #28A745; //custom
+$semantic-error: #DE1135; //custom
 
-$primary:       $blue !default;
+// $primary:       $blue !default;
 $secondary:     $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
@@ -339,34 +339,34 @@ $dark:          $gray-900 !default;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "Neutral-100": $Neutral-100, //custom
-  "Neutral-200": $Neutral-200, //custom
-  "Neutral-300": $Neutral-300, //custom
-  "Neutral-400": $Neutral-400, //custom
-  "Neutral-500": $Neutral-500, //custom
-  "Neutral-600": $Neutral-600, //custom
-  "Neutral-700": $Neutral-700, //custom
-  "Neutral-800": $Neutral-800, //custom
-  "Neutral-900": $Neutral-900, //custom
+  "neutral-100": $neutral-100,  //custom
+  "neutral-200": $neutral-200,  //custom
+  "neutral-300": $neutral-300,  //custom
+  "neutral-400": $neutral-400,  //custom
+  "neutral-500": $neutral-500,  //custom
+  "neutral-600": $neutral-600,  //custom
+  "neutral-700": $neutral-700,  //custom
+  "neutral-800": $neutral-800,  //custom
+  "neutral-900": $neutral-900,  //custom
 
-  "primary-100": $primary-100, //custom
-  "primary-200": $primary-200, //custom
-  "primary-300": $primary-300, //custom
-  "primary-400": $primary-400, //custom
-  "primary-500": $primary-500, //custom
-  "primary-600": $primary-600, //custom
-  "primary-700": $primary-700, //custom
-  "primary-800": $primary-800, //custom
+  "primary-100": $primary-100,  //custom
+  "primary-200": $primary-200,  //custom
+  "primary-300": $primary-300,  //custom
+  "primary-400": $primary-400,  //custom
+  "primary-500": $primary-500,  //custom
+  "primary-600": $primary-600,  //custom
+  "primary-700": $primary-700,  //custom
+  "primary-800": $primary-800,  //custom
 
-  "CTA-300": $CTA-300, //custom
-  "CTA-500": $CTA-500, //custom
-  "CTA-700": $CTA-700, //custom
-  "CTA": $CTA, //custom
+  "cta-300": $CTA-300,  //custom
+  "cta-500": $CTA-500,  //custom
+  "cta-700": $CTA-700,  //custom
+  "cta": $CTA,  //custom
 
-  "Semantic-Rating ":$Semantic-Rating , //custom
-  "Semantic-Link":$Semantic-Link,//custom
-  "Semantic-Verified":$Semantic-Verified,//custom
-  "Semantic-Error":$Semantic-Error,//custom
+  "semantic-rating": $semantic-rating,  //custom
+  "semantic-link": $semantic-link,  //custom
+  "semantic-verified": $semantic-verified,  //custom
+  "semantic-error": $semantic-error,  //custom
 
   "primary":    $primary,
   "secondary":  $secondary,
@@ -517,7 +517,7 @@ $body-tertiary-bg:          $gray-100 !default;
 
 $body-emphasis-color:       $black !default;
 
-// Links
+// links
 //
 // Style anchor elements.
 
