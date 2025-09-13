@@ -4,11 +4,18 @@
 @import "./utils/utilities";
 @import "bootstrap/scss/utilities/api";
 
+// Base
 @import "./base/base";
-@import "./components/button";
 
+// Components
+@import "./components/button";
+@import "./components/dropdown";
+
+// Layout
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
+// Page
 @import './pages/brandFeatures';
 @import './pages/subscriptionSteps';
+@import './pages/heroBanner';
