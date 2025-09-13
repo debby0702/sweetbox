@@ -1,0 +1,50 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  &-toggler-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.nav {
+  &-link {
+    padding: 16px 20px;
+    &:hover {
+      color: $primary-600;
+    }
+  }
+  &-icon {
+    padding: 12px;
+    &:hover .service-icon {
+      content: url('/assets/images/icon/customer_service_hover.svg');
+    }
+    &:hover .cart-icon {
+      content: url('/assets/images/icon/cart_hover.svg');
+    }
+  }
+}
+
+.header {
+  background-color: rgba($neutral-100, 0.4);
+  border: 1px solid $neutral-100;
+  border-radius: 100px;
+  backdrop-filter: blur(16px);
+}
+
+.avatar {
+  width: 24px;
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .logo-icon {
+    content: url('/assets/images/Home_Page/sweetBox_logo.svg');
+  }
+}
