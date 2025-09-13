@@ -6,6 +6,7 @@
 // Color system
 $neutral-100: #FDFCF9;  //custom
 $neutral-200: #FAF6F0;  //custom
+$neutral-250: #F5F1EB;  //custom
 $neutral-300: #EFEAE2;  //custom
 $neutral-400: #DEDAD1;  //custom
 $neutral-500: #C1B9AC;  //custom
@@ -342,6 +343,7 @@ $dark:          $gray-900 !default;
 $theme-colors: (
   "neutral-100": $neutral-100,  //custom
   "neutral-200": $neutral-200,  //custom
+  "neutral-250": $neutral-250,  //custom
   "neutral-300": $neutral-300,  //custom
   "neutral-400": $neutral-400,  //custom
   "neutral-500": $neutral-500,  //custom
