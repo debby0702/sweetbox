@@ -12,6 +12,13 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    .swiper {
+      width: 100%;
+      height: 672px;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,6 +29,69 @@
       <%- include('./layout/index/heroBanner'); -%>
         <%- include('./layout/index/brandFeatures'); -%>
           <%- include('./layout/index/themeOption'); -%>
+            <section class="themeOpts bg-neutral-200">
+              <div class="container py-md-11 py-10">
+                <!-- Slider main container -->
+                <div class="swiper">
+                  <!-- Additional required wrapper -->
+                  <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+                        <img src="../assets/images/Home_Page/pic_feature.png" alt="精選甜點" class="h-100" width="748" height="auto">
+                        <div class="text py-lg-10 px-lg-9">
+                          <p class="text-primary-600 ls-1 fw-bold fs-7 fs-lg-6 mb-lg-6 mb-3">Featured</p>
+                          <img class="mb-lg-9" src="/assets/images/Home_Page/feature.svg" alt="精選甜點標題">
+                          <h4 class="fs-6 fs-lg-4 fw-bold ls-1">我們幫你挑<span class="text-primary">最值得期待</span>的那一盒</h4>
+                          <p class=""></p>
+                          <div class="mb-lg-10 mb-9 text-center text-lg-start">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                    <div class="swiper-slide ">
+                      <div class="d-flex">
+
+                      </div>
+                    </div>
+                  </div>
+                  <!-- If we need pagination -->
+                  <div class="swiper-pagination"></div>
+
+                  <!-- If we need navigation buttons -->
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+
+                  <!-- If we need scrollbar -->
+                  <div class="swiper-scrollbar"></div>
+                </div>
+              </div>
+            </section>
             <%- include('./layout/index/subscriptionSteps'); -%>
               <%- include('./layout/index/w100Banner'); -%>
                 <%- include('./layout/index/feedback&Brands'); -%>
@@ -31,7 +101,65 @@
     <%- include('./layout/footer'); -%>
       <script type="module" src="../main.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
 
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      </script>
+      <!-- <script>
+        var swiper = new Swiper('.swiper', {
+          slidesPerView: getSlidesPerView(),
+          direction: getDirection(),
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          on: {
+            resize: function () {
+              swiper.changeDirection(getDirection());
+              swiper.params.slidesPerView = getSlidesPerView();
+              swiper.update();
+              toggleNavButtons();
+            },
+          },
+        });
+
+        function getDirection() {
+          return window.innerWidth <= 992 ? 'vertical' : 'horizontal';
+        }
+
+        function getSlidesPerView() {
+          return window.innerWidth <= 992 ? 3 : 1;
+        }
+
+        function toggleNavButtons() {
+          const show = window.innerWidth > 992;
+          document.querySelector('.swiper-button-next').style.display = show ? 'block' : 'none';
+          document.querySelector('.swiper-button-prev').style.display = show ? 'block' : 'none';
+        }
+
+        // 頁面載入時執行一次
+        toggleNavButtons();
+      </script> -->
 </body>
 
 </html>
