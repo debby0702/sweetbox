@@ -1,0 +1,38 @@
+//SECTION:themeOpts swiper
+.swiper-themeOpts {
+    width: 100%;
+    height: 672px;
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        display: none;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        z-index: 10;
+    }
+
+    .swiper-button-next svg,
+    .swiper-button-prev svg {
+        width: unset;
+        height: unset;
+    }
+
+    .swiper-button-prev {
+        left: -40px
+    }
+
+    .swiper-button-next {
+        right: -40px
+    }
+}
+
+//SECTION:  w100Banner
+.w100Banner {
+    height: 100vh;
+    background-image: url('/assets/images/Home_Page/section05.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
