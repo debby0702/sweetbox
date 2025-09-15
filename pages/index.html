@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
 
     <main class="main">
       <!-- 各區塊用<section>包 -->
-      <%- include('./layout/index/heroBanner'); -%>
-        <%- include('./layout/index/brandFeatures'); -%>
-          <%- include('./layout/index/themeOption'); -%>
-            <%- include('./layout/index/subscriptionSteps'); -%>
-              <%- include('./layout/index/w100Banner'); -%>
-                <%- include('./layout/index/feedback&Brands'); -%>
-                  <%- include('./layout/index/FAQ'); -%>
+      <%- include('./layout/index/heroBanner'); -%> <%-
+      include('./layout/index/brandFeatures'); -%> <%-
+      include('./layout/index/themeOption'); -%> <%-
+      include('./layout/index/subscriptionSteps'); -%> <%-
+      include('./layout/index/w100Banner'); -%> <%-
+      include('./layout/index/feedback&Brands'); -%> <%-
+      include('./layout/index/FAQ'); -%>
     </main>
 
     <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-</body>
-
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </body>
 </html>
