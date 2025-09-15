@@ -441,7 +441,7 @@ $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
 // $enable-rfs:                  true !default;
-$enable-rfs:                  false !default; // customer
+$enable-rfs:                  false !default; // custom
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -551,7 +551,7 @@ $icon-link-icon-transform:    translate3d(.25em, 0, 0) !default;
 // Style p element.
 
 // $paragraph-margin-bottom:   1rem !default;
-$paragraph-margin-bottom:   0 !default; // custome
+$paragraph-margin-bottom:   0 !default; // custom
 
 // Grid breakpoints
 //
@@ -706,7 +706,7 @@ $font-weight-base:            $font-weight-normal !default;
 
 $line-height-base:            1.5 !default;
 // $line-height-sm:              1.25 !default;
-$line-height-sm:              1.2 !default; // custome
+$line-height-sm:              1.2 !default; // custom
 $line-height-lg:              2 !default;
 
 $h1-font-size:                $font-size-base * 4 ;    //64px custom //$font-size-base * 2.5 !default;
