@@ -319,10 +319,10 @@ $primary-800: #B33A00; //custom
 $primary-900: #6B2100; //custom
 $primary: $primary-600; //custom
 
-$CTA-300: #00806C; //custom
-$CTA-500: #004D40; //custom
-$CTA-700: #002E26; //custom
-$CTA: $CTA-500; //custom
+$CTA-100: #00806C; //custom
+$CTA-200: #004D40; //custom
+$CTA-300: #002E26; //custom
+$CTA: $CTA-200; //custom
 
 $semantic-rating: #FFC107; //custom
 $semantic-link: #5F7C9C; //custom
@@ -362,9 +362,9 @@ $theme-colors: (
   "primary-800": $primary-800,  //custom
   "primary-900": $primary-900,  //custom
 
+  "cta-100": $CTA-100,  //custom
+  "cta-200": $CTA-200,  //custom
   "cta-300": $CTA-300,  //custom
-  "cta-500": $CTA-500,  //custom
-  "cta-700": $CTA-700,  //custom
   "cta": $CTA,  //custom
 
   "semantic-rating": $semantic-rating,  //custom
