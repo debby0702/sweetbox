@@ -1,37 +1,172 @@
-.btn-primary-icon-lg {
-    padding: 16px 32px;
-    background-color: $CTA-500;
+.btn-primary-icon {
+    background-color: $CTA-200;
     border-radius: 100px;
     border: none;
+    padding: 16px 32px;
+    color: $neutral-100;
 
     svg {
         transition: transform 0.3s ease; // 平滑動畫
     }
 
     &:hover {
-        background-color: $CTA-300;
+        background-color: $CTA-100;
 
         svg {
             transform: translateX(12px);
         }
+    }
+
+    &:active {
+        background-color: $CTA-300;
+    }
+
+    &:focus {
+        background-color: $CTA-300;
+    }
+
+    &:disabled  {
+        background-color: $neutral-300;
+        color: $neutral-500;
+    }
+    // 960px 以下使用小尺寸
+    @media (max-width: 960px) {
+        padding: 12px 28px;
     }
 }
 
-.btn-primary-icon-md {
-    padding: 12px 28px;
-    background-color: $CTA-500;
+.btn-primary-text {
+    background-color: $CTA-200;
     border-radius: 100px;
     border: none;
-
-    svg {
-        transition: transform 0.3s ease; // 平滑動畫
-    }
+    padding: 16px 32px; 
+    color: $neutral-100;
 
     &:hover {
+        background-color: $CTA-100;
+    }
+    &:active {
         background-color: $CTA-300;
+    }
+    &:focus {
+        background-color: $CTA-300;
+    }
+    &:disabled  {
+        background-color: $neutral-300;
+        color: $neutral-500
+    }
+    // 960px 以下使用小尺寸
+    @media (max-width: 960px) {
+        padding: 12px 28px;
+    }
 
-        svg {
-            transform: translateX(12px);
-        }
+}
+
+.btn-secondary {
+    background-color: $neutral-200;
+    border-radius: 100px;
+    border: 1.5px;
+    border-color: $neutral-400;
+    padding: 12px 32px;
+    color: $neutral-800;
+
+    &:hover {
+        background-color: $neutral-300;
+        color: $neutral-900;
+    }
+
+    &:active {
+        background-color: $neutral-400;
+        color: $neutral-900;
+    }
+    &:focus {
+        background-color: $neutral-400;
+        color: $neutral-900;
+    }
+    &:disabled  {
+        background-color: transparent;
+        color: $neutral-500
+    }
+    // 960px 以下使用小尺寸
+    @media (max-width: 960px) {
+        padding: 12px 24px;
+    }
+}
+
+.btn-text{
+    background-color: transparent;
+    color: $neutral-800;
+    padding: 12px 32px;
+    border: 0;
+    &:hover {
+        color: $neutral-900
+    }
+    &:active {
+        color: $primary-600;
+    }
+    &:focus {
+        color: $primary-600;
+    }
+    &:disabled  {
+        color: $neutral-500
+    }
+    @media (max-width: 960px) {
+        padding: 12px 16px;
+    }
+    @media (max-width: 768px) {
+        padding: 12px 12px;
+    }
+}
+
+.btn-icon-leading{
+    background-color: transparent;
+    color: $neutral-800;
+    padding: 12px 12px;
+    border: 0;
+    &:hover {
+        color: $neutral-900
+    }
+    &:active {
+        color: $primary-600;
+    }
+    &:focus {
+        color: $primary-600;
+    }
+    &:disabled  {
+        color: $neutral-500
+    }
+}
+
+.btn-icon-tailing{
+    background-color: transparent;
+    color: $semantic-link;
+    padding: 12px 12px;
+    border: 0;
+    &:disabled  {
+        color: $neutral-500
+    }
+}
+
+.btn-icon{
+    border: 1px;
+    border-color: $neutral-400;
+    border-radius: 100px;
+    padding: 12px;
+    background-color: $neutral-300;
+    color: $neutral-800;
+    &:hover{
+        color: $primary-600;
+    }
+    &:active {
+        background-color: $neutral-400;
+        color: $primary-600;
+    }
+    &:focus {
+        background-color: $neutral-400;
+        color: $primary-600;
+    }
+    &:disabled  {
+        background-color: $neutral-300;
+        color: $neutral-500
     }
 }
