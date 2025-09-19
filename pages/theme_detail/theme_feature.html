@@ -17,9 +17,11 @@
 
 <body>
     <%- include('./layout/header'); -%>
-    <%- include('./layout/subscribe'); -%>
-    <%- include('./layout/boxContent'); -%>
-    <%- include('./layout/feedback'); -%>
+    <main>
+        <%- include('./layout/theme_detail/subscribe'); -%>
+        <%- include('./layout/theme_detail/boxContent'); -%>
+        <%- include('./layout/theme_detail/feedback'); -%>
+    </main>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
+    <script type="module" src="../../main.js"></script>
 </body>
