@@ -29,10 +29,21 @@
 }
 
 .header {
-  background-color: rgba($neutral-100, 0.4);
   border: 1px solid $neutral-100;
   border-radius: 100px;
-  backdrop-filter: blur(16px);
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($neutral-100, 0.4);
+    backdrop-filter: blur(16px);
+    border-radius: 100px;
+    z-index: -1;
+  }
 }
 
 .avatar {

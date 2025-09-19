@@ -1,56 +1,55 @@
-<nav class="navbar bg-transparent pt-3 px-3 pt-sm-5 px-sm-0">
-  <div class="container header bg-transparent py-1 px-4 py-sm-2 px-sm-9">
+<nav class="navbar pt-3 px-3 pt-sm-5 px-sm-0">
+  <div class="container header py-1 px-4 py-sm-2 px-sm-9">
     <a href="#">
       <img class="logo-icon" src="/assets/images/Home_Page/sweetBox_logo_3.svg" alt="一盒甜logo">
     </a>
     <ul class="d-none d-sm-flex flex-grow-1">
-      <li class="nav-item ms-auto me-auto">
+      <li class="nav-item mx-auto">
         <a class="nav-link" href="#">主題一覽</a>
       </li>
       <li class="nav-item">
-        <div class="d-flex align-items-center">
-          <a href="#" class="nav-icon">
-            <img class="service-icon" src="/assets/images/icon/customer_service_outline.svg" alt="客服圖示">
-          </a>
-          <a href="#" class="nav-icon">
-            <img class="cart-icon" src="/assets/images/icon/cart_outline.svg" alt="購物車圖示">
-          </a>
-          <div class="dropdown">
-            <a class="dropdown-toggle d-flex align-items-center py-3 px-6" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="body">
-              <div class="avatar me-2">
-                <img src="/assets/images/Home_Page/avatar.jpg" alt="使用者頭像">
-              </div>
-              <span class="user-name">歐拉</span>
-            </a>
-            <div class="avatar-dropdown">
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item d-block" href="#">會員中心</a></li>
-                <li><a class="dropdown-item d-block" href="#">登出</a></li>
-              </ul>
+        <a href="#" class="nav-icon">
+          <img class="service-icon" src="/assets/images/icon/customer_service_outline.svg" alt="客服圖示">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-icon">
+          <img class="cart-icon" src="/assets/images/icon/cart_outline.svg" alt="購物車圖示">
+        </a>
+      </li>
+      <li class="nav-item">
+        <div class="dropdown">
+          <button type="button" class="btn dropdown-toggle d-flex align-items-center py-3 px-6 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="avatar me-2">
+              <img src="/assets/images/Home_Page/avatar.jpg" alt="使用者頭像">
             </div>
-          </div>
+            <span class="user-name">歐拉</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-avatar">
+            <li><a class="dropdown-item d-block" href="#">會員中心</a></li>
+            <li><a class="dropdown-item d-block" href="#">登出</a></li>
+          </ul>
         </div>
       </li>
     </ul>
-    <div class="dropdown">
-      <button type="button" class="btn dropdown-toggle p-3 border-0 d-inline-block d-sm-none" data-bs-toggle="dropdown" aria-expanded="false" data-bs-reference="parent">
+    
+    <div class="dropdown position-static">
+      <button type="button" class="btn dropdown-toggle p-3 border-0 d-inline-block d-sm-none" data-bs-toggle="dropdown" aria-expanded="false">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="burger-dropdown d-block d-sm-none">
-        <ul class="dropdown-menu fs-6">
-          <li><a class="dropdown-item active" href="#">首頁</a></li>
-          <li><a class="dropdown-item" href="#">主題一覽</a></li>
-          <li><a class="dropdown-item" href="#">客服諮詢</a></li>
-          <li><a class="dropdown-item" href="#">購物車</a></li>
-          <li><a class="dropdown-item" href="#">會員中心</a></li>
-          <li><a class="dropdown-item" href="#">登出</a></li>
-          <li>
-            <button type="button" class="btn border-0 p-1 dropdown-item py-8" data-bs-toggle="dropdown" aria-expanded="true">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
-            </button>
-          </li>
-        </ul>
-      </div>
+      <ul class="dropdown-menu fs-6 dropdown-menu-burger d-sm-none">
+        <li class="dropdown-item-wrapper"><a class="dropdown-item active" href="#">首頁</a></li>
+        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">主題一覽</a></li>
+        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">客服諮詢</a></li>
+        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">購物車</a></li>
+        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">會員中心</a></li>
+        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">登出</a></li>
+        <li class="dropdown-item-wrapper">
+          <button type="button" class="btn border-0 dropdown-item" data-bs-toggle="dropdown" aria-expanded="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
+          </button>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
