@@ -17,8 +17,35 @@
 
 <body>
     <%- include('./layout/header'); -%>
-    <main>
+    <main class="main overflow-hidden">
         <%- include('./layout/theme_detail/subscribe'); -%>
+        <!-- sidebar + 訂閱 -->
+        <section class="my-lg-11 container">
+            <div class="d-flex">
+                <nav class="row">
+                    <ul class="nav nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <div>
+
+                    </div>
+                    <div class="">
+                        
+                    </div>
+                </nav>
+            </div>
+        </section>
         <%- include('./layout/theme_detail/boxContent'); -%>
         <%- include('./layout/theme_detail/feedback'); -%>
     </main>
