@@ -1,6 +1,6 @@
 .footer {
   padding: 40px 0;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     padding-top: 48px;
     padding-bottom: 60px;
   }
@@ -13,10 +13,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: -17px;
-    @media (min-width: 768px) {
+    top: -20px;
+    @media (min-width: 375px) {
       height: 29px;
-      top: -20px;
+      top: -17px;
       background-image: url('/assets/images/Home_Page/wave.svg');
     }
   }
@@ -24,10 +24,21 @@
     padding: 8px 12px;
     font-size: 12px;
     line-height: 18px;
+    color: $neutral-700;
     &:hover {
-      color: $primary-600;
+      background: linear-gradient(#FF5F1F, #FF8C5E);
+      -webkit-background-clip: text; // Chrome/Safari
+      background-clip: text; // 其他瀏覽器支援度不同 
+      color: transparent; 
     }
-    @media (min-width: 768px) {
+    &:active,
+    &.active {
+      background: none;
+      -webkit-background-clip: unset;
+      background-clip: unset;
+      color: $neutral-800;
+    }
+    @media (min-width: 992px) {
       padding: 12px 16px;
       font-size: 14px;
       line-height: 21px;
@@ -36,7 +47,7 @@
   &-logo {
     width: 150px;
     margin-right: 0;
-    @media (min-width: 768px) {
+    @media (min-width: 992px) {
       margin-right: 42px;
     }
   }
@@ -54,7 +65,7 @@
   font-size: 12px;
   line-height: 18px;
   color: $neutral-600;
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     font-size: 14px;
     line-height: 21px;
   }
