@@ -17,33 +17,68 @@
 
 <body>
     <%- include('./layout/header'); -%>
-    <main class="main overflow-hidden">
+    <main class="main">
         <%- include('./layout/theme_detail/subscribe'); -%>
-        <!-- sidebar + 訂閱 -->
-        <section class="my-lg-11 container">
-            <div class="d-flex">
-                <nav class="row">
-                    <ul class="nav nav-underline">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
+        <!--SECTION1: 主題menu + 訂閱方案 -->
+        <section class="my-lg-11 container d-flex ">
+            <div class="row gx-lg-6 flex-column flex-lg-row">
+                <!-- 主題menu -->
+                <nav class="py-8 py-lg-0 col-1 theme-menu z-10 mt-10 mt-lg-0 text-neutral-700">
+                    <h5 class="d-none d-lg-block fw-bold fs-lg-7 text-nowrap ls-1 py-lg-5 ps-1">主題一覽</h5>
+                    <ul class="theme-menu-ls d-flex flex-row flex-lg-column">
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap active" aria-current="page" href="#">精選甜點</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">季節限定</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">在地甜點</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">異國風味</a>
+                        </li>
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">無負擔甜點</a>
+                        </li>
+                        <li class="">
+                            <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">素食甜點</a>
                         </li>
                     </ul>
-                    <div>
-
-                    </div>
-                    <div class="">
-                        
-                    </div>
                 </nav>
+                <!-- 主題展示圖 -->
+                <div class="col">
+                    <picture>
+                        <source srcset="/assets/images/Theme_Detail/Feature/pic_card_mobile(1).jpg" media="(max-width:960px)">
+                        <img src="/assets/images/Theme_Detail/Feature/pic_card_large(1).jpg" class="w-100 h-auto rounded-8" alt="精選甜點展示圖1">
+                    </picture>
+                </div>
+                <!-- 訂閱方案 -->
+                <div class="price-opts pt-4 px-5 overflow-auto">
+                    <div class="theme-topic">
+                        <h1 class="mb-lg-5 fs-3 fs-lg-2 fw-bold ls-1">精選甜點盒</h1>
+                        <h2 class="mb-3 fs-7 ls-1 fw-bold">我們幫你挑最值得期待的那一盒</h2>
+                        <p>不論是人氣爆款還是話題聯名, 通通不錯過。喜歡嚐鮮的你一定會愛上。</p>
+                    </div>
+                    <div class="opts-area">
+                        <ul class="my-6">
+                            <li >
+                                <button type="button w-100">
+                                    <div class="d-flex justify-content-between w-100 ">
+                                        <p class="fs-9">初嚐首選</p>
+                                        <p class="fs-9 text-cta-200">節省 $111</p>
+                                    </div>
+                                    <div class="d-flex justify-content-between w-100">
+                                        <p class="fs-6 fw-bold ls-1">3個月方案</p>
+                                        <p class="fs-6 fw-bold ls-1 align-bottom">$675<span class="ms-1 fw-normal fs-9">/月</span></p>
+                                    </div>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus expedita temporibus nostrum corporis perspiciatis, repellendus, reiciendis fugit nam libero ut facilis quas quaerat cumque id iure sapiente itaque nihil ex ipsum quis commodi nesciunt dolore ad. Nemo sit vero facere explicabo debitis numquam quisquam aliquid repudiandae reiciendis facilis alias libero rem illum, tempore, sunt culpa minima voluptas corrupti accusantium praesentium voluptatem, sequi ducimus cumque. Odit facilis voluptatum nisi et minima, pariatur libero quisquam autem fuga? A nihil quidem rem quaerat harum odio fuga quam nam eligendi sed ullam sequi nobis quasi, perferendis illo optio rerum alias dignissimos deserunt sapiente laborum aperiam. Quia eaque voluptates ducimus nulla quis quos corporis nam! Alias, et ipsam. Ducimus autem minima veritatis obcaecati, provident asperiores at corporis facere sint adipisci vero! Commodi dignissimos voluptates sapiente, aliquid quaerat enim! Laborum unde asperiores ea. Culpa, quae quas? Harum incidunt inventore dolorem labore voluptates minus deleniti ad magni velit, iste, rerum natus ullam. Quaerat aut sint at quam. Animi repellendus sint eos voluptate, fugit ipsa eveniet reiciendis incidunt veritatis natus odit quasi, esse, pariatur temporibus! Sunt reprehenderit eveniet aliquam nobis beatae pariatur, fugit facilis qui unde! Quisquam modi voluptatum deleniti earum odit, excepturi officiis facilis hic dignissimos voluptatibus reprehenderit ipsam asperiores non alias animi repellendus consequatur, quia blanditiis saepe temporibus eius cumque. Architecto aperiam distinctio optio soluta laudantium dolore iste corrupti ipsam inventore sit quis ex libero, impedit at dolorem nesciunt! Quidem, iusto a illo veritatis sit architecto sunt corrupti minus! Temporibus recusandae aliquam reprehenderit modi sapiente a ea, nihil voluptas incidunt delectus fugiat quo odio sunt aliquid nemo. Fuga animi ipsum repellat tenetur mollitia ea dolorem rerum, sit, doloremque eius perspiciatis cumque, molestias repudiandae aspernatur labore vel nesciunt corrupti minus temporibus magnam quia? Atque est voluptas fuga modi? Excepturi et cupiditate ab nisi obcaecati ipsum reiciendis, officia quod repudiandae ex necessitatibus eos modi itaque eum ipsa iure animi magni eligendi. Dolores nemo suscipit cum eum tempore veniam ad facilis quos iusto odit ullam, dicta voluptatum maxime expedita sapiente, aut iste sunt optio molestias unde. Necessitatibus asperiores ullam at nam ducimus eum molestias eligendi beatae, corporis velit optio adipisci impedit rem consequatur possimus officiis dolorum. Vero beatae dolorem nihil veniam voluptatem dolorum eum ut, molestias velit maiores illum vel molestiae recusandae quas architecto! Veniam tempore autem ducimus culpa magnam perferendis iusto cum neque sint quisquam? Ea, tenetur id dolore sunt, magnam cum dolorem nulla nesciunt, architecto officiis autem est nihil itaque voluptatem nobis alias atque. Dolor, quisquam autem! Voluptate quisquam quos debitis velit. Vel delectus voluptate placeat deserunt molestias, corporis quae commodi rerum debitis reprehenderit quas animi possimus velit, iure vitae cumque, itaque quia! Fugiat vero nisi corporis, debitis quasi itaque quam explicabo libero quis qui in, velit reprehenderit. Dolor temporibus beatae necessitatibus magni laborum deleniti qui iste nam, excepturi dicta, omnis aliquam quam et! Exercitationem quia nobis at, eius dolore minus ratione accusamus suscipit mollitia totam officiis enim temporibus repellat assumenda fuga nulla porro ipsam! Consequuntur repellat ea explicabo libero culpa vel impedit nulla odio quis aliquam?
+                    </div>
+                </div>
             </div>
         </section>
         <%- include('./layout/theme_detail/boxContent'); -%>

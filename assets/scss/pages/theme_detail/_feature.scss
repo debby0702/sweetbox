@@ -1,0 +1,75 @@
+// SECTION-1: theme-menu
+.theme-menu {
+    width: 120px;
+
+    a {
+        width: 120px;
+
+        &::before {
+            content: '';
+            border-radius: 50px;
+            border-left: solid 2px transparent;
+            margin-right: 12px;
+        }
+    }
+
+    .active,
+    a:hover {
+        color: $primary-600;
+    }
+
+    .active::before {
+        border-left: solid 2px $primary-600;
+    }
+
+
+    // 960px 以下
+    @media (max-width: 959px) {
+        position: relative;
+
+        .theme-menu-ls {
+            position: sticky;
+            z-index: 10;
+            top: 72px;
+            overflow-x: auto;
+        }
+
+        a {
+            width: unset;
+
+            &::before {
+                border-left: unset;
+                margin-right: unset;
+            }
+
+            &::after {
+                content: '';
+                border-radius: 50px;
+                display: block;
+                border-bottom: solid 1.5px transparent;
+                margin-bottom: 8px;
+            }
+        }
+        .active::before{
+            border-left: unset;
+        }
+        .active::after {
+            border-bottom: solid 1.5px $primary-600;
+        }
+
+    }
+
+}
+
+//  SECTION-1: price-opts
+.price-opts {
+    max-height: 648px;
+    width: 416px;
+
+    // 960px 以下
+    @media (max-width: 959px) {
+
+        max-height: unset;
+        width: unset;
+    }
+}
