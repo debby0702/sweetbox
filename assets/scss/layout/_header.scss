@@ -1,3 +1,14 @@
+@mixin icon-underline {
+  content: '';
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  bottom: -6px;
+  left: 4px;
+  border-radius: 100px;
+  background-color: $neutral-800;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -11,19 +22,63 @@
 }
 
 .nav {
-  &-link {
-    padding: 16px 20px;
-    &:hover {
-      color: $primary-600;
+  &-icon {
+    width: 24px;
+    height: 24px;
+    margin: 12px;
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.service-icon {
+  background-image: url('/assets/images/icon/customer_service_outline.svg');
+  
+  &:hover {
+    background-image: url('/assets/images/icon/customer_service_hover.svg');
+  }
+  &:active,
+  &.active {
+    background-image: url('/assets/images/icon/customer_service_selected.svg');
+    &::after {
+      @include icon-underline;
     }
   }
-  &-icon {
-    padding: 12px;
-    &:hover .service-icon {
-      content: url('/assets/images/icon/customer_service_hover.svg');
+}
+
+.cart-icon {
+  background-image: url('/assets/images/icon/cart_outline.svg');
+
+  &:hover {
+    background-image: url('/assets/images/icon/cart_hover.svg');
+  }
+  &:active,
+  &.active {
+    background-image: url('/assets/images/icon/cart_selected.svg');
+    &::after {
+      @include icon-underline;
     }
-    &:hover .cart-icon {
-      content: url('/assets/images/icon/cart_hover.svg');
+  }
+  &.has-items {
+    &.active {
+      background-image: url('/assets/images/icon/cart_hover.svg');
+      &::after {
+        content: none;
+      }
+    }
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      background-image: url('/assets/images/icon/cart_badge.svg');
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
     }
   }
 }
@@ -54,8 +109,9 @@
   }
 }
 
-@media (min-width: 576px) {
-  .logo-icon {
-    content: url('/assets/images/Home_Page/sweetBox_logo.svg');
+.logo-icon {
+  width: 44px;
+  @media (min-width: 992px) {
+    width: 120px;
   }
 }

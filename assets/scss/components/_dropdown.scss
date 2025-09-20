@@ -1,11 +1,30 @@
 .dropdown-toggle {
+  position: relative;
   &:hover {
-    .user-name {
-      color: $primary-600;
-    }
+    color: $primary-600;
   }
   &::after {
     display: none;
+  }
+  &-burger {
+    &:active,
+    &.selected {
+      color: $primary-600;
+    }
+  }
+  &-login {
+    &:active,
+    &.selected {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 64px;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $neutral-800;
+      }
+    }
   }
 }
 

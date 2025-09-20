@@ -1,25 +1,24 @@
-<nav class="navbar pt-3 px-3 pt-sm-5 px-sm-0">
-  <div class="container header py-1 px-4 py-sm-2 px-sm-9">
+<nav class="navbar pt-3 px-3 pt-lg-5 px-lg-0">
+  <div class="container header py-1 px-4 py-lg-2 px-lg-9">
     <a href="#">
-      <img class="logo-icon" src="/assets/images/Home_Page/sweetBox_logo_3.svg" alt="一盒甜logo">
+      <picture>
+        <source srcset="/assets/images/Home_Page/sweetBox_logo.svg" media="(min-width: 992px)">
+        <img class="logo-icon" src="/assets/images/Home_Page/sweetBox_logo_3.svg" alt="一盒甜logo">
+      </picture>
     </a>
-    <ul class="d-none d-sm-flex flex-grow-1">
+    <ul class="d-none d-lg-flex flex-grow-1">
       <li class="nav-item mx-auto">
-        <a class="nav-link" href="#">主題一覽</a>
+        <a class="nav-link" href="#"><span class="underline">主題一覽</span></a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-icon">
-          <img class="service-icon" src="/assets/images/icon/customer_service_outline.svg" alt="客服圖示">
-        </a>
+        <a href="#" class="nav-icon service-icon" aria-label="客服圖示"></a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-icon">
-          <img class="cart-icon" src="/assets/images/icon/cart_outline.svg" alt="購物車圖示">
-        </a>
+        <a href="#" class="nav-icon cart-icon" aria-label="購物車圖示"></a>
       </li>
       <li class="nav-item">
         <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle d-flex align-items-center py-3 px-6 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-login d-flex align-items-center py-3 px-6 border-0" data-bs-toggle="dropdown" aria-expanded="false">
             <div class="avatar me-2">
               <img src="/assets/images/Home_Page/avatar.jpg" alt="使用者頭像">
             </div>
@@ -34,10 +33,12 @@
     </ul>
     
     <div class="dropdown position-static">
-      <button type="button" class="btn dropdown-toggle p-3 border-0 d-inline-block d-sm-none" data-bs-toggle="dropdown" aria-expanded="false">
-        <span class="navbar-toggler-icon"></span>
+      <button type="button" class="btn dropdown-toggle p-3 border-0 d-inline-block d-lg-none" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg class="dropdown-toggle-burger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3.97461 5.97461H19.9746M3.97461 11.9746H19.9746M3.97461 17.9746H19.9746" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
       </button>
-      <ul class="dropdown-menu fs-6 dropdown-menu-burger d-sm-none">
+      <ul class="dropdown-menu fs-6 dropdown-menu-burger d-lg-none">
         <li class="dropdown-item-wrapper"><a class="dropdown-item active" href="#">首頁</a></li>
         <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">主題一覽</a></li>
         <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">客服諮詢</a></li>
