@@ -10,6 +10,7 @@
 // Components
 @import "./components/button";
 @import "./components/dropdown";
+@import "./components/font";
 @import "./components/nav-tab";
 
 // Layout
@@ -20,4 +21,5 @@
 @import './pages/brandFeatures';
 @import './pages/subscriptionSteps';
 @import './pages/heroBanner';
-@import './pages/index'
+@import './pages/index';
+@import './pages/feedback';

@@ -7,8 +7,8 @@
 $neutral-100: #FDFCF9;  //custom
 $neutral-200: #FAF6F0;  //custom
 $neutral-250: #F5F1EB;  //custom
-$neutral-300: #EFEAE2;  //custom
-$neutral-400: #DEDAD1;  //custom
+$neutral-300: #F0EBE4;  //custom
+$neutral-400: #E3DDD7;  //custom
 $neutral-500: #C1B9AC;  //custom
 $neutral-600: #A39E93;  //custom
 $neutral-700: #6E675F;  //custom
@@ -491,7 +491,11 @@ $spacers: (
   10: $spacer * 3.75, // 60px
   11: $spacer * 7.5,  // 120px
   12: $spacer * 15,  // 240px
-  13: $spacer * 5.5 // 88px
+  13: $spacer * 5.5, // 88px
+  14: $spacer * 4, // 64px
+  15: $spacer * 2.25, // 36px
+  16: $spacer * 5.375, // 86px
+  17: $spacer * 3 // 48px
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -916,7 +920,7 @@ $btn-padding-y-lg:            $input-btn-padding-y-lg !default;
 $btn-padding-x-lg:            $input-btn-padding-x-lg !default;
 $btn-font-size-lg:            $input-btn-font-size-lg !default;
 
-$btn-border-width:            $input-btn-border-width !default;
+// $btn-border-width:            $input-btn-border-width !default;
 
 $btn-font-weight:             $font-weight-normal !default;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
@@ -1658,11 +1662,14 @@ $alert-color-scale:             40% !default; // Deprecated in v5.2.0, to be rem
 // scss-docs-start progress-variables
 $progress-height:                   1rem !default;
 $progress-font-size:                $font-size-base * .75 !default;
-$progress-bg:                       var(--#{$prefix}secondary-bg) !default;
-$progress-border-radius:            var(--#{$prefix}border-radius) !default;
+// $progress-bg:                       var(--#{$prefix}secondary-bg) !default;
+$progress-bg:                       $neutral-400 !default; // custom
+// $progress-border-radius:            var(--#{$prefix}border-radius) !default;
+$progress-border-radius:            var(--#{$prefix}border-radius-pill) !default; // custom
 $progress-box-shadow:               var(--#{$prefix}box-shadow-inset) !default;
 $progress-bar-color:                $white !default;
-$progress-bar-bg:                   $primary !default;
+// $progress-bar-bg:                   $primary !default;
+$progress-bar-bg:                   $yellow !default; // custom
 $progress-bar-animation-timing:     1s linear infinite !default;
 $progress-bar-transition:           width .6s ease !default;
 // scss-docs-end progress-variables

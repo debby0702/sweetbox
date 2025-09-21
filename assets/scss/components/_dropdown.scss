@@ -3,6 +3,7 @@
   &:hover {
     color: $primary-600;
   }
+
   &::after {
     display: none;
   }
@@ -78,16 +79,73 @@
   &[data-bs-popper] {
     margin-top: 0;
   }
+
   .dropdown-item {
+    padding: 12px 0;
+
     &:hover {
       background-color: transparent;
       color: $primary-600;
     }
+
     &.active {
       color: $primary-600;
     }
+
+    button {
+      padding-top: 33px;
+      padding-bottom: 33px;
+    }
   }
+
   li:not(:last-child) {
     border-bottom: 1px solid $neutral-100;
   }
+}
+
+.avatar-dropdown {
+  .dropdown-menu {
+    width: 192px;
+
+    &[data-bs-popper] {
+      top: 72px;
+      left: -40px;
+    }
+  }
+}
+
+.burger-dropdown {
+  .dropdown-menu {
+    width: 351px;
+
+    &[data-bs-popper] {
+      top: 72px;
+      left: auto;
+      right: -16px;
+    }
+  }
+
+  .dropdown-item {
+    padding: 36px 0;
+  }
+}
+
+/* 下拉選單 */
+.custom-dropdown {
+  background-color: $neutral-250;
+  backdrop-filter: none;
+  border-radius: 8px;
+  min-width: 104px;
+  border: 0;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  background-color: transparent;
+}
+
+.custom-dropdown .dropdown-item.active {
+  background-color: $primary-200;
+  color: $neutral-800;
+  border-radius: 8px;
 }
