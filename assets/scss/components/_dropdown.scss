@@ -1,11 +1,31 @@
 .dropdown-toggle {
+  position: relative;
   &:hover {
-    .user-name {
+    color: $primary-600;
+  }
+
+  &::after {
+    display: none;
+  }
+  &-burger {
+    &:active,
+    &.selected {
       color: $primary-600;
     }
   }
-  &::after {
-    display: none;
+  &-login {
+    &:active,
+    &.selected {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 64px;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $neutral-800;
+      }
+    }
   }
 }
 
@@ -19,23 +39,65 @@
   line-height: 27px;
   letter-spacing: 0.1rem;
 
+  &-avatar {
+    width: 192px;
+    background-color: rgba($neutral-100, 0.4);
+    
+    &[data-bs-popper] {
+      top: 72px;
+      left: -40px;
+    }
+
+    .dropdown-item {
+      padding: 12px 0;
+    }
+  }
+
+  &-burger {    
+    &[data-bs-popper] {
+      top: 72px;
+      left: 0;
+      right: 0;
+    }
+    &.show {
+      display: flex;
+      flex-direction: column;
+      height: 85vh;
+    }
+    .dropdown-item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-wrapper {
+        flex: 1;
+        display: flex;
+      }
+    }
+  }
+
   &[data-bs-popper] {
     margin-top: 0;
   }
+
   .dropdown-item {
     padding: 12px 0;
+
     &:hover {
       background-color: transparent;
       color: $primary-600;
     }
+
     &.active {
       color: $primary-600;
     }
+
     button {
       padding-top: 33px;
       padding-bottom: 33px;
     }
   }
+
   li:not(:last-child) {
     border-bottom: 1px solid $neutral-100;
   }
@@ -44,7 +106,7 @@
 .avatar-dropdown {
   .dropdown-menu {
     width: 192px;
-    
+
     &[data-bs-popper] {
       top: 72px;
       left: -40px;
@@ -55,14 +117,35 @@
 .burger-dropdown {
   .dropdown-menu {
     width: 351px;
-    
+
     &[data-bs-popper] {
       top: 72px;
       left: auto;
       right: -16px;
     }
   }
+
   .dropdown-item {
     padding: 36px 0;
   }
+}
+
+/* 下拉選單 */
+.custom-dropdown {
+  background-color: $neutral-250;
+  backdrop-filter: none;
+  border-radius: 8px;
+  min-width: 104px;
+  border: 0;
+}
+
+.custom-dropdown .dropdown-item {
+  padding: 12px 24px;
+  background-color: transparent;
+}
+
+.custom-dropdown .dropdown-item.active {
+  background-color: $primary-200;
+  color: $neutral-800;
+  border-radius: 8px;
 }

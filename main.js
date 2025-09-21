@@ -1,5 +1,5 @@
 import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 // 首頁//主題介紹swiper
 const swiperThemeOpts = new Swiper('.swiper-themeOpts', {

@@ -122,7 +122,13 @@
     &:disabled {
         color: $neutral-500
     }
+<<<<<<< HEAD
 
+=======
+    &.active {
+        color: $primary-600;
+    }
+>>>>>>> fc362e44c7dc19f2b3b1aa01eff9c2040f30d08f
     @media (max-width: 960px) {
         padding: 12px 16px;
     }
@@ -132,7 +138,33 @@
     }
 }
 
+<<<<<<< HEAD
 .btn-icon-leading {
+=======
+.btn-text-sm{
+    background-color: transparent;
+    color: $neutral-800;
+    padding: 12px 12px;
+    border: 0;
+    &:hover {
+        color: $neutral-900
+    }
+    &:active {
+        color: $primary-600;
+    }
+    &:focus {
+        color: $primary-600;
+    }
+    &:disabled  {
+        color: $neutral-500
+    }
+    &.active {
+        color: $primary-600;
+    }
+}
+
+.btn-icon-leading{
+>>>>>>> fc362e44c7dc19f2b3b1aa01eff9c2040f30d08f
     background-color: transparent;
     color: $neutral-800;
     padding: 12px 12px;

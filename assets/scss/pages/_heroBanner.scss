@@ -1,16 +1,22 @@
 .hero-banner {
-  height: 100vh;
+  height: 820px;
   background-image: url('/assets/images/Home_Page/bg_375_v2.png');
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-  @media (min-width: 376px) {
-    height: 1100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 576px) {
+    height: 1110px;
+    display: block;
     background-image: url('/assets/images/Home_Page/bg_1920_v2.png');
+    background-position: center;
   }
 
   .container {
-    padding-top: 283px;
+    padding-top: 0;
     text-align: center;
     @media (min-width: 576px) {
       padding-top: 415px;
@@ -20,9 +26,6 @@
 }
 
 .slogan {
-  position: absolute;
-  top: 50%;
-  left: 312px;
   &-title {
     font-size: 18px;
     line-height: 21.6px;
@@ -40,5 +43,11 @@
       font-size: 18px;
       line-height: 27px;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .title-hero {
+    content: url('/assets/images/Home_Page/title_hero.svg');
   }
 }
