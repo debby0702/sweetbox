@@ -1,12 +1,31 @@
 .dropdown-toggle {
+  position: relative;
   &:hover {
-    .user-name {
-      color: $primary-600;
-    }
+    color: $primary-600;
   }
 
   &::after {
     display: none;
+  }
+  &-burger {
+    &:active,
+    &.selected {
+      color: $primary-600;
+    }
+  }
+  &-login {
+    &:active,
+    &.selected {
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 4px;
+        width: 64px;
+        height: 2px;
+        border-radius: 100px;
+        background-color: $neutral-800;
+      }
+    }
   }
 }
 
@@ -19,6 +38,43 @@
   border-radius: 20px;
   line-height: 27px;
   letter-spacing: 0.1rem;
+
+  &-avatar {
+    width: 192px;
+    background-color: rgba($neutral-100, 0.4);
+    
+    &[data-bs-popper] {
+      top: 72px;
+      left: -40px;
+    }
+
+    .dropdown-item {
+      padding: 12px 0;
+    }
+  }
+
+  &-burger {    
+    &[data-bs-popper] {
+      top: 72px;
+      left: 0;
+      right: 0;
+    }
+    &.show {
+      display: flex;
+      flex-direction: column;
+      height: 85vh;
+    }
+    .dropdown-item {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-wrapper {
+        flex: 1;
+        display: flex;
+      }
+    }
+  }
 
   &[data-bs-popper] {
     margin-top: 0;

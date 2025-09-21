@@ -1,0 +1,20 @@
+.nav-link {
+  padding: 16px 20px;
+  &:hover {
+    color: $primary-600;
+  }
+  &:active,
+  &.active {
+    color: $primary-600;
+    .underline {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $primary-600;
+      border-radius: 1px;
+    }
+    .side-bar {
+      padding-left: 12px;
+      border-left: 2px solid $primary-600;
+      border-radius: 1px;
+    }
+  }
+}

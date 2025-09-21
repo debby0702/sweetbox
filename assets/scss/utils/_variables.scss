@@ -1306,8 +1306,7 @@ $navbar-light-hover-color:          rgba(var(--#{$prefix}emphasis-color-rgb), .8
 $navbar-light-active-color:         rgba(var(--#{$prefix}emphasis-color-rgb), 1) !default;
 $navbar-light-disabled-color:       rgba(var(--#{$prefix}emphasis-color-rgb), .3) !default;
 $navbar-light-icon-color:           rgba($body-color, .75) !default;
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'><path fill='none' stroke='#{$neutral-800}' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m2.75 12.25h10.5m-10.5-4h10.5m-10.5-4h10.5'/></svg>") !default;
-// $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-icon-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
 $navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15) !default;
 $navbar-light-brand-color:          $navbar-light-active-color !default;
 $navbar-light-brand-hover-color:    $navbar-light-active-color !default;
