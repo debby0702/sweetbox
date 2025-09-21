@@ -17,38 +17,53 @@
 
 <body>
     <%- include('./layout/header'); -%>
-    <main class="main overflow-hidden">
-        <%- include('./layout/theme_detail/subscribe'); -%>
-        <!-- sidebar + 訂閱 -->
-        <section class="my-lg-11 container">
-            <div class="d-flex">
-                <nav class="row">
-                    <ul class="nav nav-underline">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Active</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <div>
+        <main class="main overflow-hidden">
+            <%- include('./layout/theme_detail/subscribe'); -%>
+                <!-- sidebar + 訂閱 -->
+                <section class="my-lg-11 container">
+                    <div class="d-flex">
+                        <nav class="row">
+                            <ul class="nav nav-underline">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                            <div>
 
+                            </div>
+                            <div class="">
+
+                            </div>
+                        </nav>
                     </div>
-                    <div class="">
-                        
-                    </div>
-                </nav>
-            </div>
-        </section>
-        <%- include('./layout/theme_detail/boxContent'); -%>
-        <%- include('./layout/theme_detail/feedback'); -%>
-    </main>
-    <%- include('./layout/footer'); -%>
-    <script type="module" src="../../main.js"></script>
+                </section>
+                <%- include('./layout/theme_detail/boxContent'); -%>
+                    <%- include('./layout/theme_detail/feedback'); -%>
+        </main>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../../main.js"></script>
+            <script>
+                const textBox = document.getElementById("textBox");
+                const toggleBtn = document.getElementById("toggleBtn");
+                const toggleIcon = document.getElementById("toggleIcon");
+
+                toggleBtn.addEventListener("click", () => {
+                    const expanded = textBox.classList.toggle("text-expanded");
+
+                    toggleBtn.childNodes[0].textContent = expanded ? "收合全文" : "查看全文";
+
+                    // 切換 icon 方向（例：箭頭上下翻轉）
+                    toggleIcon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
+                    toggleIcon.style.transition = "transform 0.3s ease";
+                });
+            </script>
 </body>
