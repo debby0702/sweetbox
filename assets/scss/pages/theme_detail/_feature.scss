@@ -1,4 +1,12 @@
 // SECTION-1: theme-menu
+.pie-img {
+    width: 576px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+}
+
 .theme-menu {
     width: 120px;
 
@@ -30,7 +38,7 @@
         .theme-menu-ls {
             position: sticky;
             z-index: 10;
-            top: 72px;
+            top: 68px;
             overflow-x: auto;
         }
 
@@ -50,9 +58,11 @@
                 margin-bottom: 8px;
             }
         }
-        .active::before{
+
+        .active::before {
             border-left: unset;
         }
+
         .active::after {
             border-bottom: solid 1.5px $primary-600;
         }
@@ -61,8 +71,8 @@
 
 }
 
-//  SECTION-1: price-opts
-.price-opts {
+//  SECTION-1: plan-opts
+.plan-opts {
     max-height: 648px;
     width: 416px;
 
@@ -71,5 +81,13 @@
 
         max-height: unset;
         width: unset;
+    }
+}
+
+.quantity {
+    padding: 2px;
+    .spinner {
+        width: 2ch;
+        text-align: center;
     }
 }

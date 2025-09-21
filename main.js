@@ -1,7 +1,35 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-const swiper = new Swiper(".swiper", {
+// 首頁//主題介紹swiper
+const swiperThemeOpts = new Swiper('.swiper-themeOpts', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 2500,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+// 首頁//好評分享swiper
+const swiper = new Swiper(".feedback-swiper", {
   slidesPerView: "auto",
   spaceBetween: 40,
   slidesOffsetBefore: 0, // 不要預留空白
@@ -9,3 +37,5 @@ const swiper = new Swiper(".swiper", {
   autoHeight: true,
   autoplay: true,
 });
+
+
