@@ -1,0 +1,16 @@
+# 最上層的 Editorconfig
+root = true
+
+
+# 預設規則 (所有檔案)
+[*]
+charset = utf-8                    # 檔案編碼
+end_of_line = lf                   # 換行符號
+insert_final_newline = true        # 每個檔案結尾自動補一行
+trim_trailing_whitespace = true    # 移除每行多於空白
+indent_style = space               # 縮排用空格
+indent_size = 2                    # 縮排大小
+
+# 針對 markdown 檔案設定的格式
+[*.md]
+trim_trailing_whitespace = false   
