@@ -13,39 +13,253 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
     <%- include('./layout/header'); -%>
         <main class="main overflow-hidden">
             <%- include('./layout/theme_detail/subscribe'); -%>
-                <!-- sidebar + 訂閱 -->
-                <section class="my-lg-11 container">
-                    <div class="d-flex">
-                        <nav class="row">
-                            <ul class="nav nav-underline">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <div>
-
+                <!-- sidebar + 訂閱 tab版本架構-->
+                <div class="position-related">
+                    <nav class="side-menu-area">
+                        <h5 class="d-none d-lg-block fw-bold fs-lg-7 text-nowrap ls-1 py-lg-5 ps-1">主題一覽</h5>
+                        <ul class="nav flex-lg-column side-menu gap-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">精選甜點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">季節限定</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">在地甜點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">異國風味</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">無負擔甜點</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">素食甜點</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!--SECTION1: 主題menu + 訂閱方案 -->
+                <section class="position-relative">
+                    <img class="pie-img d-none d-lg-block z-n1" src="/assets/images/Theme_Detail/Feature/Pattern01.svg"
+                        alt="背景插圖">
+                    <!-- 主題展示swiper//mobile -->
+                    <div class="theme-plan-swiper d-lg-none">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img
+                                        src="/assets/images/Theme_Detail/Feature/pic_card_mobile(1).jpg" alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="/assets/images/Theme_Detail/Feature/pic_card_mobile(2).jpg" alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="/assets/images/Theme_Detail/Feature/pic_card_mobile(3).jpg" alt="">
+                                </div>
+                                <div class="swiper-slide"><img
+                                        src="/assets/images/Theme_Detail/Feature/pic_card_mobile(4).jpg" alt="">
+                                </div>
                             </div>
-                            <div class="">
-
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <!-- 桌機 -->
+                    <div class="my-lg-11 container d-flex ">
+                        <div class="row flex-column flex-lg-row">
+                            <!-- 主題menu -->
+                            <nav
+                                class="col-1 me-xxl-6 me-lg-4 py-8 py-lg-0 theme-menu z-10 mt-10 mt-lg-0 text-neutral-700">
+                                <h5 class="d-none d-lg-block fw-bold fs-lg-7 text-nowrap ls-1 py-lg-5 ps-1">主題一覽</h5>
+                                <ul class="theme-menu-ls d-flex flex-row flex-lg-column">
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap active"
+                                            aria-current="page" href="#">精選甜點</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">季節限定</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">在地甜點</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">異國風味</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">無負擔甜點</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="pb-1 pt-3 px-4 ps-lg-2 py-lg-4 fs-lg-7 text-nowrap" href="#">素食甜點</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- 主題展示圖//desktop -->
+                            <div class="theme-detail-pics d-lg-block d-none me-lg-6">
+                                <div class="swiper swiper-theme-detail"
+                                    style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_large(1).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_large(2).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_large(3).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_large(4).jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div thumbsSlider="" class="swiper swiper-theme-detail2">
+                                    <ul class="swiper-wrapper">
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_small(1).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_small(2).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_small(3).jpg" />
+                                        </li>
+                                        <li class="swiper-slide">
+                                            <img src="/assets/images/Theme_Detail/Feature/pic_card_small(4).jpg" />
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </nav>
+                            <!-- 訂閱方案 Plan -->
+                            <div class="plan-opts col me-xxl-6 me-lg-4 mb-17 mb-lg-11 pt-4 px-5">
+                                <div class="mb-9 mb-lg-5">
+                                    <div class="theme-topic">
+                                        <h1 class="mb-lg-5 fs-3 fs-lg-2 fw-bold ls-1">精選甜點盒</h1>
+                                        <h2 class="mb-3 fs-7 ls-1 fw-bold">我們幫你挑最值得期待的那一盒</h2>
+                                        <p>不論是人氣爆款還是話題聯名, 通通不錯過。喜歡嚐鮮的你一定會愛上。</p>
+                                    </div>
+                                    <div class="plan-area">
+                                        <!-- plan選項 -->
+                                        <ul class="my-6">
+                                            <li class="mb-3">
+                                                <button class="card-plan" type="button">
+                                                    <div class="subtitle">
+                                                        <p>初嚐首選</p>
+                                                        <p class="text-cta-200">節省 $111</p>
+                                                    </div>
+                                                    <div class="title">
+                                                        <p>3個月方案</p>
+                                                        <p class="align-bottom">$720<span>/月</span></p>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li class="mb-3">
+                                                <button class="card-plan active" type="button">
+                                                    <div class="subtitle">
+                                                        <p>人氣推薦</p>
+                                                        <p class="text-cta-200">節省 $211</p>
+                                                    </div>
+                                                    <div class="title">
+                                                        <p>6個月方案</p>
+                                                        <p class="align-bottom">$700<span>/月</span></p>
+                                                    </div>
+                                                </button>
+                                            </li>
+                                            <li>
+                                                <button class="card-plan" type="button">
+                                                    <div class="subtitle">
+                                                        <p>鑑賞家專屬</p>
+                                                        <p class="text-cta-200">節省 $311</p>
+                                                    </div>
+                                                    <div class="title">
+                                                        <p>12個月方案</p>
+                                                        <p class="align-bottom">$675<span>/月</span></p>
+                                                    </div>
+                                                </button>
+                                            </li>
+
+                                        </ul>
+                                        <!-- 數量 -->
+                                        <div class="quantity mb-lg-6">
+                                            <button class="btn-icon-lg" type="button" aria-label="Decrease" disabled="">
+                                                <div class="">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                            <!-- spinner -->
+                                            <input class="spinner mx-3 fs-7 fw-bold ls-1 border-0 bg-transparent "
+                                                type="text" role="spinbutton" aria-live="assertive" aria-valuenow="1"
+                                                value="1">
+                                            <button class="btn-icon-lg" type="button" aria-label="Increase">
+                                                <div class="">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                        viewBox="0 0 24 24">
+                                                        <path fill="currentColor"
+                                                            d="M18 12.998h-5v5a1 1 0 0 1-2 0v-5H6a1 1 0 0 1 0-2h5v-5a1 1 0 0 1 2 0v5h5a1 1 0 0 1 0 2" />
+                                                    </svg>
+                                                </div>
+                                            </button>
+                                        </div>
+                                        <!-- 訂閱按鈕 -->
+                                        <div class="d-flex justify-content-between py-3">
+                                            <div>
+                                                <p class="mb-1 fs-9 text-cta-200">節省$211</p>
+                                                <p class="fw-bold ls-1">NT$ 700</p>
+                                            </div>
+                                            <button type="button"
+                                                class="btn-primary-icon ls-1 lh-sm fs-6 fw-bold d-flex align-items-center">立刻訂閱
+                                                <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                    height="24" viewBox="0 0 24 24">
+                                                    <path fill="currentColor"
+                                                        d="M15 7.586L22.414 15H2v-2h15.586l-4-4z" />
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 食用建議advice -->
+                                <div class="advice">
+                                    <h6 class="ls-1 fw-bold fs-7 mb-5">食用建議</h6>
+                                    <ul>
+                                        <li class="fs-8 mb-2 d-flex align-items-center">
+                                            <img class="me-3"
+                                                src="/assets/images/Theme_Detail/Feature/Icon_openbook.svg"
+                                                alt="openbook icon">
+                                            <p>開箱後，請先確認甜點品項與保存方式</p>
+                                        </li>
+                                        <li class="fs-8 mb-2 d-flex align-items-center">
+                                            <img class="me-3" src="/assets/images/Theme_Detail/Feature/Icon_tea-cup.svg"
+                                                alt="tea-cup icon">
+                                            <p>搭配一杯茶或咖啡，更能襯托出甜點的風味</p>
+                                        </li>
+                                        <li class="fs-8 mb-2 d-flex align-items-center">
+                                            <img class="me-3" src="/assets/images/Theme_Detail/Feature/Icon_curtain.svg"
+                                                alt="curtain icon">
+                                            <p>常溫甜點請置於陰涼乾燥處保存</p>
+                                        </li>
+                                        <li class="fs-8 mb-2 d-flex align-items-center">
+                                            <img class="me-3" src="/assets/images/Theme_Detail/Feature/Icon_eat.svg"
+                                                alt="eat icon">
+                                            <p>開封後建議盡快食用，以確保最佳風味</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
+
                 <%- include('./layout/theme_detail/boxContent'); -%>
                     <%- include('./layout/theme_detail/feedback'); -%>
         </main>
@@ -66,6 +280,40 @@
                     toggleIcon.style.transition = "transform 0.3s ease";
                 });
             </script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="../../main.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <!-- Initialize Swiper:桌機 -->
+            <script>
+                var swiper = new Swiper(".swiper-theme-detail2", {
+                    loop: true,
+                    spaceBetween: 10,
+                    slidesPerView: 4,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                });
+                var swiperDetail = new Swiper(".swiper-theme-detail", {
+                    loop: true,
+                    spaceBetween: 10,
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    thumbs: {
+                        swiper: swiper,
+                    },
+                });
+            </script>
+            <!-- 手機swiper -->
+            <script>
+                const swiper = new Swiper('.mySwiper', {
+                    // Optional parameters
+                    direction: 'horizontal',
+                    loop: true,
+                    speed: 800,
+                    autoplay: {
+                        delay: 2500,
+                    },
+                });
+            </script>
+            <script type="module" src="../../main.js"></script>
+
 </body>

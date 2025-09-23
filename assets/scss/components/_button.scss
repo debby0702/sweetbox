@@ -218,3 +218,71 @@
     }
 }
 
+// 主題詳細 plan數量按鈕較大顆
+.btn-icon-lg {
+    border: 1px;
+    border-color: $neutral-400;
+    border-radius: 100px;
+    padding: 6px;
+    background-color: $neutral-300;
+    color: $neutral-800;
+
+    &:hover {
+        color: $primary-600;
+    }
+
+    &:active {
+        background-color: $neutral-400;
+        color: $primary-600;
+    }
+
+    &:focus {
+        background-color: $neutral-400;
+        color: $primary-600;
+    }
+
+    &:disabled {
+        background-color: $neutral-300;
+        color: $neutral-500
+    }
+}
+
+.card-plan {
+    width: 100%;
+    color: $neutral-800;
+    padding: 16px 20px;
+    border-radius: 24px;
+    border: 1px solid $neutral-400;
+    background: transparent;
+
+    &:hover {
+        background-color: $neutral-300;
+    }
+
+    &:focus,
+    &.active {
+        background: transparent;
+        border: 2px solid $CTA-200;
+    }
+    .subtitle, .title{
+        display: flex;
+        justify-content: space-between;
+    }
+    .subtitle{
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+    .title{
+        font-size: 18px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        
+        span{
+            margin-left: 4px;
+            font-weight:normal;
+            font-size: 12px;
+            letter-spacing: 0;
+            
+        }
+    }
+}
