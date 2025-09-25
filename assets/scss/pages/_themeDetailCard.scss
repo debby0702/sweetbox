@@ -1,0 +1,39 @@
+.theme-feature {
+  &::before {
+    content: '';
+    width: 100%;
+    height: 20px;
+    background-image: url('/assets/images/Home_Page/wave_mobile.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+
+    @media (min-width: 375px) {
+      height: 80px;
+      top: -80px;
+      background-image: url('/assets/images/Theme_Detail/Feature/Clip\ path\ group.png');
+    }
+  }
+}
+
+
+.detail-card-feature {
+  // padding: 44px 49px;
+  height: 312px;
+  text-align: center;
+  background-image: url("/assets/images/Theme_Detail/Feature/FeatureCard_Background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* 垂直置中 */
+}
+
+.first-sweet-box-title {
+  margin-bottom: 100px;
+}
