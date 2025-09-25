@@ -51,6 +51,7 @@
         </main>
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
+            <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
             <script>
                 const textBox = document.getElementById("textBox");
                 const toggleBtn = document.getElementById("toggleBtn");
@@ -64,6 +65,31 @@
                     // 切換 icon 方向（例：箭頭上下翻轉）
                     toggleIcon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
                     toggleIcon.style.transition = "transform 0.3s ease";
+                });
+                document.querySelectorAll('.vote-box').forEach(box => {
+                    const icon = box.querySelector('.icon-swap');
+                    const outline = icon.getAttribute('icon');
+                    const solid = icon.getAttribute('data-solid');
+
+                    const p = box.querySelector('p');
+                    const baseCount = parseInt(p.getAttribute('data-count'));
+                    let toggled = false;
+
+                    box.addEventListener('click', () => {
+                        toggled = !toggled;
+                        box.classList.toggle('active', toggled);
+
+                        // icon 切換
+                        icon.setAttribute('icon', toggled ? solid : outline);
+
+                        // 文字切換
+                        if (baseCount === 0) {
+                            p.textContent = toggled ? '1 人認為此評論有幫助' : '此評論有幫助';
+                        } else {
+                            const newCount = toggled ? baseCount + 1 : baseCount;
+                            p.textContent = newCount + ' 人認為此評論有幫助';
+                        }
+                    });
                 });
             </script>
 </body>
