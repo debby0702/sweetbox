@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>一盒甜｜甜食控選擇障礙的救星</title>
+    <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>一盒甜｜甜食控選擇障礙的救星</title>
-  <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
     <!-- 隱藏超出的背景圖 -->
     <main class="main overflow-hidden">
       <!-- 各區塊用<section>包 -->
-      <%- include('./layout/index/heroBanner'); -%>
-      <%- include('./layout/index/brandFeatures'); -%>
-      <%- include('./layout/index/themeOption'); -%>
-      <%- include('./layout/index/subscriptionSteps'); -%>
-      <%- include('./layout/index/w100Banner'); -%>
-      <%- include('./layout/index/feedback&Brands'); -%>
-      <%- include('./layout/index/FAQ'); -%>
+      <%- include('./layout/index/heroBanner'); -%> <%-
+      include('./layout/index/brandFeatures'); -%> <%-
+      include('./layout/index/themeOption'); -%> <%-
+      include('./layout/index/subscriptionSteps'); -%> <%-
+      include('./layout/index/w100Banner'); -%> <%-
+      include('./layout/index/feedback&Brands'); -%> <%-
+      include('./layout/index/FAQ'); -%>
     </main>
-
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    Link with href
+  </a>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Button with data-bs-target
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+  </div>
+</div>
     <%- include('./layout/footer'); -%>
-      <script type="module" src="../main.js"></script>
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      <script>
-        const swiper = new Swiper('.swiper-themeOpts', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-          speed: 800,
-          autoplay: {
-            delay: 2500,
-          },
+    <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper-themeOpts", {
+        // Optional parameters
+        direction: "horizontal",
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 2500,
+        },
 
-          // If we need pagination
-          pagination: {
-            el: '.swiper-pagination',
-          },
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-          // Navigation arrows
-          navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-          // And if we need scrollbar
-          scrollbar: {
-            el: '.swiper-scrollbar',
-          },
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const feedbackSwiper = new Swiper(".feedback-swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 40,
+          slidesOffsetBefore: 0, // 不要預留空白
+          slidesOffsetAfter: 0,
+          autoHeight: false, //swiper-wrapper 高度才不會隨著第一個 swiper-slide 變化
+          autoplay: true,
         });
-      </script>
-</body>
-
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const brandsSwiper = new Swiper(".brands-swiper", {
+          slidesPerView: "auto",
+          spaceBetween: 20,
+          slidesOffsetBefore: 0, // 不要預留空白
+          slidesOffsetAfter: 0,
+          autoHeight: true,
+          autoplay: true,
+        });
+      });
+    </script>
+  </body>
 </html>

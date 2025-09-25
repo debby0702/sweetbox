@@ -1,0 +1,56 @@
+.theme-banner {
+  display: flex;
+  height: 322px;
+  background-image: url('/assets/images/Theme_Page/Banner_mobile.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-width: 376px) {
+    display: block;
+    height: 588px;
+    background-image: url('/assets/images/Theme_Page/Banner.svg');
+    background-position: center;
+  }
+}
+.title-mobile {
+  padding-top: 104px;
+}
+.theme-card {
+  .card-body {
+    padding-top: 0px;
+    padding-bottom: 0;
+  }
+}
+.btn-theme-card {
+  background-color: $neutral-200;
+  border-radius: 100px;
+  border: 1.5px;
+  border-color: $neutral-400;
+  padding: 12px 24px;
+  color: $neutral-800;
+
+  &:hover {
+    background-color: $neutral-300;
+    color: $neutral-900;
+  }
+
+  &:active {
+    background-color: $neutral-400;
+    color: $neutral-900;
+  }
+
+  &:focus {
+    background-color: $neutral-400;
+    color: $neutral-900;
+  }
+
+  &:disabled {
+    background-color: transparent;
+    color: $neutral-500
+  }
+}
+.theme-title::after, 
+.theme-title::before{
+  content: "．";
+}
