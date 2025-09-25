@@ -1,37 +1,42 @@
-.rate-left{
+.rate-left {
     width: 354px;
 }
 
-.progress{
+.progress {
     width: 455px;
     height: 12px;
 }
-.star{
+
+.star {
     width: 20px;
     height: 20px;
 }
 
-.btn-tag{
+.btn-tag {
     padding: 12px 16px;
     color: $neutral-800;
     font-size: 14px;
     border-color: #E3DDD7;
     border-radius: 100px;
     background-color: transparent;
-    &:hover{
+
+    &:hover {
         background-color: $neutral-300;
     }
-    &:focus{
+
+    &:focus {
         color: $neutral-100;
         background-color: $neutral-800;
         border-color: $neutral-800;
     }
-    &:active{
+
+    &:active {
         color: $neutral-100;
         background-color: $neutral-800;
         border-color: $neutral-800;
     }
-    &.active{
+
+    &.active {
         color: $neutral-100;
         background-color: $neutral-800;
         border-color: $neutral-800;
@@ -41,18 +46,21 @@
 .text-truncate-box {
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5; /* 限制顯示行數 */
+    -webkit-line-clamp: 5;
+    /* 限制顯示行數 */
     overflow: hidden;
     text-overflow: ellipsis;
     transition: 0.3s ease;
 }
 
 .text-expanded {
-    -webkit-line-clamp: unset; /* 取消行數限制 */
-    max-height: none;          /* 高度不限 */
+    -webkit-line-clamp: unset;
+    /* 取消行數限制 */
+    max-height: none;
+    /* 高度不限 */
 }
 
-.custom-page-item{
+.custom-page-item {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -62,16 +70,17 @@
     width: 36px;
     height: 36px;
     color: $neutral-900;
-    &.active{
+
+    &.active {
         background-color: $neutral-800;
     }
 }
 
 .custom-page-item.active .custom-page-link {
-    color: $neutral-100;      // active 狀態文字顏色
+    color: $neutral-100; // active 狀態文字顏色
 }
 
-.custom-page-link{
+.custom-page-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,7 +91,7 @@
     height: 100%;
 }
 
-.custom-page-dropmenu{
+.custom-page-dropmenu {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -93,12 +102,17 @@
     height: 36px;
     border: 1px solid $neutral-400;
     color: $neutral-900;
-    &:hover{
+
+    &:hover {
         background-color: $neutral-800;
+    }
+
+    &:hover .custom-page-dropmenu-btn {
+        color: $neutral-100;
     }
 }
 
-.custom-page-dropmenu-btn{
+.custom-page-dropmenu-btn {
     background-color: transparent;
     display: flex;
     justify-content: center;
@@ -111,21 +125,71 @@
     height: 100%;
 }
 
+/* 下拉面板 */
+.custom-page-dropmenu-panel {
+    width: 320px;
+    border-radius: 24px;
+    background-color: $neutral-100;
+    opacity: 0.7;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+    border: none;
+    padding: 0; // 移除多餘 padding
+    margin: 0;
 
-.custom-page-dropmenu:hover .custom-page-dropmenu-btn {
-    color: $neutral-100;      // active 狀態文字顏色
+    li {
+        margin: 0;
+
+        .dropdown-item {
+            font-size: 16px;
+            color: $neutral-800;
+            padding: 12px;
+            border-radius: 6px;
+            line-height: 1.5;
+            border-bottom: 1px solid $neutral-400;
+
+            &:hover {
+                color: $primary-600;
+            }
+        }
+
+        &:first-child {
+            .dropdown-item {
+                padding-top: 24px;
+                padding-bottom: 16px;
+                border: 1px solid $neutral-400;
+                border-radius: 8px;
+                pointer-events: none;
+
+                &:hover {
+                    background-color: transparent !important;
+                    color: inherit !important;
+                    cursor: default;
+                }
+            }
+        }
+    }
+}
+
+.brand{
+    top:1240px;
+}
+
+.cake{
+    top:768px;
 }
 
 @media (max-width: 960px) {
     .rate svg {
-      width: 20px;
-      height: 20px;
+        width: 20px;
+        height: 20px;
     }
-    .progress{
+
+    .progress {
         width: 182px;
         height: 6px;
     }
-    .star{
+
+    .star {
         width: 12px;
         height: 12px;
     }
