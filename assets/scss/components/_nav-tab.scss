@@ -25,7 +25,6 @@
   top: 10px;
   margin-top: 88px;
   z-index: 10;
-  background-color: $neutral-200;
 }
 .side-menu {
   overflow-x: auto;
@@ -58,7 +57,11 @@
   //960px 以上
   @media (min-width: 960px) {
     font-size: 16px;
-    
+    position: static;
+    top: unset;
+    margin-top: unset;
+    z-index: unset;
+
     .nav-link {
       padding: 16px unset 16px 12px;
       width: 120px;
