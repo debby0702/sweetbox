@@ -1,0 +1,514 @@
+<section class="bg-neutral-300">
+  <div class="container py-9 py-lg-11">
+    <div class="bg-neutral-200 rounded-panel">
+      <div class="px-9 py-10">
+        <div class="text-center mb-9">
+          <p class="fs-7 fs-lg-5 fw-bold ls-1 mb-3 mb-lg-6 text-primary-600">
+            FAQ
+          </p>
+          <img
+            src="/assets/images/Home_Page/title_section08.svg"
+            alt="FAQ-img"
+          />
+        </div>
+        <!-- Tab -->
+        <!-- <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+          </div>
+        </div> -->
+        <ul
+          class="nav nav-pills justify-content-center faq-nav"
+          id="pills-tab"
+          role="tablist"
+        >
+          <!-- tab-熱門 -->
+          <li class="nav-item me-3" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-home-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#hot"
+              type="button"
+              role="tab"
+              aria-controls="hot"
+              aria-selected="true"
+            >
+              熱門問題
+            </button>
+          </li>
+          <!-- tab-會員帳號 -->
+          <li class="nav-item me-3" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-profile-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#Member&Account"
+              type="button"
+              role="tab"
+              aria-controls="Member&Account"
+              aria-selected="false"
+            >
+              會員與帳號
+            </button>
+          </li>
+          <!-- tab-費用 -->
+          <li class="nav-item me-3" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#Money"
+              type="button"
+              role="tab"
+              aria-controls="Money"
+              aria-selected="false"
+            >
+              費用與訂閱
+            </button>
+          </li>
+          <!-- tab-其他 -->
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-contact-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#other"
+              type="button"
+              role="tab"
+              aria-controls="other"
+              aria-selected="false"
+            >
+              其他
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content p-6" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="hot"
+            role="tabpanel"
+            aria-labelledby="pills-home-tab"
+          >
+            <!-- 熱門問題 -->
+            <div class="accordion accordion-flush" id="accordionExample">
+              <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hot1"
+                    aria-expanded="false"
+                    aria-controls="hot1"
+                  >
+                    我要訂購甜點盒, 需要加入會員嗎？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div id="hot1" class="accordion-collapse collapse">
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hot2"
+                    aria-expanded="false"
+                    aria-controls="hot2"
+                  >
+                    有哪些付款方式呢？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="hot2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hot3"
+                    aria-expanded="false"
+                    aria-controls="hot3"
+                  >
+                    我的甜點盒什麼時候能到？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="hot3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
+      ※ 若遇旺季或天候影響，配送時間可能略有延遲。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#hot4"
+                    aria-expanded="false"
+                    aria-controls="hot4"
+                  >
+                    一盒甜提供哪些類型的盒子？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="hot4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一 
+      位甜點愛好者的味蕾</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Member&Account"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <!-- 會員與帳號 -->
+            <div class="accordion accordion-flush" id="accordionExample">
+              <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#account1"
+                    aria-expanded="false"
+                    aria-controls="account1"
+                  >
+                    我要訂購甜點盒, 需要加入會員嗎？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div id="account1" class="accordion-collapse collapse">
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#account2"
+                    aria-expanded="false"
+                    aria-controls="account2"
+                  >
+                    如何加入會員？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="account2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#account3"
+                    aria-expanded="false"
+                    aria-controls="account3"
+                  >
+                    成為會員有哪些好處？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="account3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
+      ※ 若遇旺季或天候影響，配送時間可能略有延遲。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#account4"
+                    aria-expanded="false"
+                    aria-controls="account4"
+                  >
+                    我要怎麼查看我的訂單或訂閱狀態？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="account4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一 
+      位甜點愛好者的味蕾</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="Money"
+            role="tabpanel"
+            aria-labelledby="pills-contact-tab"
+          >
+            <!-- 費用 -->
+             <div class="accordion accordion-flush" id="accordionExample">
+              <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#money1"
+                    aria-expanded="false"
+                    aria-controls="money1"
+                  >
+                    一盒甜提供哪些類型的盒子？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div id="money1" class="accordion-collapse collapse">
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#money2"
+                    aria-expanded="false"
+                    aria-controls="money2"
+                  >
+                    我是否需要支付運費呢？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="money2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#money3"
+                    aria-expanded="false"
+                    aria-controls="money3"
+                  >
+                    我可以取消或暫停我的訂閱嗎？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="money3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
+      ※ 若遇旺季或天候影響，配送時間可能略有延遲。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q4 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#money4"
+                    aria-expanded="false"
+                    aria-controls="money4"
+                  >
+                    有哪些付款方式呢？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="money4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一 
+      位甜點愛好者的味蕾</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="other"
+            role="tabpanel"
+            aria-labelledby="pills-profile-tab"
+          >
+            <!-- 其他 -->
+            <div class="accordion accordion-flush" id="accordionExample">
+              <!-- Q1 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#other1"
+                    aria-expanded="false"
+                    aria-controls="other1"
+                  >
+                    我的甜點盒什麼時候能到？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div id="other1" class="accordion-collapse collapse">
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q2 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#other2"
+                    aria-expanded="false"
+                    aria-controls="other2"
+                  >
+                    我拿到破損的產品, 怎麼辦？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="other2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Q3 -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed justify-content-between bg-neutral-200 fw-bold fs-lg-6 text-neutral-800"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#other3"
+                    aria-expanded="false"
+                    aria-controls="other3"
+                  >
+                    我可以客製化甜點盒中的內容嗎？
+                    <span class="material-symbols-outlined add"> add </span>
+                    <span class="material-symbols-outlined sub"> remove </span>
+                  </button>
+                </h2>
+                <div
+                  id="other3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body bg-neutral-200 px-6 fs-lg-6">
+                    <p>下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
+      ※ 若遇旺季或天候影響，配送時間可能略有延遲。</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

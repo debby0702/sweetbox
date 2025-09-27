@@ -74,6 +74,21 @@
     &.active {
         background-color: $neutral-800;
     }
+
+    &:hover {
+        // hover 時套用跟 active 一樣
+        background-color: $neutral-800;
+
+        .custom-page-link {
+            color: $neutral-100; // 文字也變白
+        }
+    }
+
+    &.disabled {
+        cursor: default;
+        pointer-events: none;
+        background-color: transparent !important;
+    }
 }
 
 .custom-page-item.active .custom-page-link {
@@ -170,12 +185,24 @@
     }
 }
 
-.brand{
-    top:1240px;
+.brand {
+    top: 1240px;
 }
 
-.cake{
-    top:768px;
+.cake {
+    top: 768px;
+}
+
+.vote-box {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease;
+}
+
+.vote-box.active {
+    color: $primary-600;
+    /* 點擊後顏色 */
 }
 
 @media (max-width: 992px) {

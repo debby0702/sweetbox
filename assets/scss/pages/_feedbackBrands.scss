@@ -1,0 +1,20 @@
+.feedback-swiper {
+  .swiper-wrapper {
+    display: flex;
+    align-items: stretch;  /* 讓每個 slide 高度一致 */
+    .swiper-slide {
+      height: 100% !important;  /* 避免 Swiper 預設高度干擾 */
+      .card {
+        height: 100%;  /* 卡片填滿 slide */
+      }
+    }
+  }
+}
+
+.brands-swiper {
+  display: flex;
+
+  .swiper-slide {
+    width: auto;
+  }
+}

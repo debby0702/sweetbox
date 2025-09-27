@@ -1,10 +1,10 @@
-import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import "./assets/scss/all.scss";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 // 首頁//主題介紹swiper
-const swiperThemeOpts = new Swiper('.swiper-themeOpts', {
+const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
   // Optional parameters
-  direction: 'horizontal',
+  direction: "horizontal",
   loop: true,
   speed: 800,
   autoplay: {
@@ -13,18 +13,18 @@ const swiperThemeOpts = new Swiper('.swiper-themeOpts', {
 
   // If we need pagination
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 
   // And if we need scrollbar
   scrollbar: {
-    el: '.swiper-scrollbar',
+    el: ".swiper-scrollbar",
   },
 });
 
@@ -37,5 +37,3 @@ const swiper = new Swiper(".feedback-swiper", {
   autoHeight: true,
   autoplay: true,
 });
-
-
