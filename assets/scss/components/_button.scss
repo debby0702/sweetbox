@@ -4,9 +4,13 @@
     border: none;
     padding: 16px 32px;
     color: $neutral-100;
+    font-size: 18px;
+    font-weight: bold;
 
     svg {
         transition: transform 0.3s ease; // 平滑動畫
+        width: 24px;
+        height: 24px;
     }
 
     &:hover {
@@ -30,9 +34,15 @@
         color: $neutral-500;
     }
 
-    // 960px 以下使用小尺寸
-    @media (max-width: 960px) {
+    // 992px 以下使用小尺寸
+    @media (max-width: 992px) {
         padding: 12px 28px;
+        font-size: 16px;
+
+        svg{
+            width: 20px;
+            height: 20px;
+        }
     }
 }
 
@@ -42,6 +52,8 @@
     border: none;
     padding: 16px 32px;
     color: $neutral-100;
+    font-size: 18px;
+    font-weight: bold;
 
     &:hover {
         background-color: $CTA-100;
@@ -60,9 +72,10 @@
         color: $neutral-500
     }
 
-    // 960px 以下使用小尺寸
-    @media (max-width: 960px) {
-        padding: 12px 28px;
+    // 992px 以下使用小尺寸
+    @media (max-width: 992px) {
+        padding: 12px 24px;
+        font-size: 16px;
     }
 
 }
@@ -74,6 +87,7 @@
     border-color: $neutral-400;
     padding: 12px 32px;
     color: $neutral-800;
+    font-size: 18px;
 
     &:hover {
         background-color: $neutral-300;
@@ -95,9 +109,10 @@
         color: $neutral-500
     }
 
-    // 960px 以下使用小尺寸
-    @media (max-width: 960px) {
+    // 992px 以下使用小尺寸
+    @media (max-width: 992px) {
         padding: 12px 24px;
+        font-size: 16px;
     }
 }
 
@@ -106,6 +121,8 @@
     color: $neutral-800;
     padding: 12px 32px;
     border: 0;
+    font-size: 18px;
+
 
     &:hover {
         color: $neutral-900
@@ -125,34 +142,14 @@
     &.active {
         color: $primary-600;
     }
-    @media (max-width: 960px) {
+    @media (max-width: 992px) {
         padding: 12px 16px;
+        font-size: 16px;
     }
 
     @media (max-width: 768px) {
         padding: 12px 12px;
-    }
-}
-
-.btn-text-sm{
-    background-color: transparent;
-    color: $neutral-800;
-    padding: 12px 12px;
-    border: 0;
-    &:hover {
-        color: $neutral-900
-    }
-    &:active {
-        color: $primary-600;
-    }
-    &:focus {
-        color: $primary-600;
-    }
-    &:disabled  {
-        color: $neutral-500
-    }
-    &.active {
-        color: $primary-600;
+        font-size: 14px;
     }
 }
 
@@ -161,6 +158,7 @@
     color: $neutral-800;
     padding: 12px 12px;
     border: 0;
+    font-size: 14px;
 
     &:hover {
         color: $neutral-900
@@ -184,6 +182,7 @@
     color: $semantic-link;
     padding: 12px 12px;
     border: 0;
+    font-size: 14px;
 
     &:disabled {
         color: $neutral-500
@@ -247,6 +246,7 @@
     }
 }
 
+// 主題詳細 plan選項
 .card-plan {
     width: 100%;
     color: $neutral-800;

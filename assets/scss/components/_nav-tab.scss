@@ -21,127 +21,73 @@
 
 // 主題清單
 .side-menu-area {
+  //mibile:menu固定上方
   position: fixed;
-  top: 10px;
-  margin-top: 88px;
+  margin-top: 68px;
   z-index: 10;
-}
-.side-menu {
-  overflow-x: auto;
-  scrollbar-width: none;
-  font-size: 14px;
+  top: 0;
 
-  &.nav {
-    flex-wrap: nowrap;
+  //desktop:左側固定寬度
+  @media (min-width: 992px) {
+      width: 120px;
+      font-size: 16px;
+      position: static;
+      margin-top: 0;
+      top: unset;
+      z-index: unset;
   }
 
-  .nav-link {
-    padding: 12px 16px;
-    color: $neutral-700;
-    text-wrap: nowrap;
+  .side-menu {
+    overflow-x: auto;
+    scrollbar-width: none;
+    font-size: 14px;
+    
 
-    &.active,
-    &:hover {
-      color: $primary-600;
+    &.side-menu {
+      flex-wrap: nowrap;
     }
-
-    &.active::after {
-      content: "";
-      border-radius: 50px;
-      border-bottom: solid 2px $primary-600;
-      margin-top: 8px;
-      display: block;
-    }
-  }
-
-  //960px 以上
-  @media (min-width: 960px) {
-    font-size: 16px;
-    position: static;
-    top: unset;
-    margin-top: unset;
-    z-index: unset;
 
     .nav-link {
-      padding: 16px unset 16px 12px;
-      width: 120px;
+      padding: 12px 16px 4px 16px;
+      color: $neutral-700;
+      text-wrap: nowrap;
+
+      &.active,
+      &:hover {
+        color: $primary-600;
+      }
 
       &.active::after {
-        border-bottom: unset;
-        margin-top: unset;
-      }
-
-      &::before {
         content: "";
         border-radius: 50px;
-        border-left: solid 2px transparent;
-        margin-right: 12px;
-      }
-      &.active::before {
-        border-left: solid 2px $primary-600;
+        border-bottom: solid 2px $primary-600;
+        margin-top: 8px;
+        display: block;
       }
     }
-    // .side-menu {
-    //     width: 120px;
 
-    //     a {
-    //         width: 120px;
+    //992px 以上
+    @media (min-width: 992px) {
 
-    //         &::before {
-    //             content: '';
-    //             border-radius: 50px;
-    //             border-left: solid 2px transparent;
-    //             margin-right: 12px;
-    //         }
-    //     }
+      .nav-link {
+        padding: 16px unset 16px 12px;
+        width: 120px;
 
-    //     .active,
-    //     a:hover {
-    //         color: $primary-600;
-    //     }
+        &.active::after {
+          border-bottom: unset;
+          margin-top: unset;
+        }
 
-    //     .active::before {
-    //         border-left: solid 2px $primary-600;
-    //     }
+        &::before {
+          content: "";
+          border-radius: 50px;
+          border-left: solid 2px transparent;
+          margin-right: 12px;
+        }
+        &.active::before {
+          border-left: solid 2px $primary-600;
+        }
+      }
+    }
   }
 }
-
-//     // 960px 以下
-//     @media (max-width: 959px) {
-//         position: relative;
-
-//         .theme-menu-ls {
-//             position: sticky;
-//             z-index: 10;
-//             top: 68px;
-//             overflow-x: auto;
-//         }
-
-//         a {
-//             width: unset;
-
-//             &::before {
-//                 border-left: unset;
-//                 margin-right: unset;
-//             }
-
-//             &::after {
-//                 content: '';
-//                 border-radius: 50px;
-//                 display: block;
-//                 border-bottom: solid 1.5px transparent;
-//                 margin-bottom: 8px;
-//             }
-//         }
-
-//         .active::before {
-//             border-left: unset;
-//         }
-
-//         .active::after {
-//             border-bottom: solid 1.5px $primary-600;
-//         }
-
-//     }
-
-// }
