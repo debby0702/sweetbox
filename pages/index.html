@@ -17,6 +17,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
   </head>
 
   <body>
@@ -32,23 +34,37 @@
       include('./layout/index/feedback&Brands'); -%> <%-
       include('./layout/index/FAQ'); -%>
     </main>
-<p>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-    Button with data-bs-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-  </div>
-</div>
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const feedbackSwiper = new Swiper(".feedback-swiper", {
+          loop: true,
+          speed: 800,
+          slidesPerView: "auto",
+          spaceBetween: 40,
+          slidesOffsetBefore: 0, // 不要預留空白
+          slidesOffsetAfter: 0,
+          autoHeight: true, //swiper-wrapper 高度才不會隨著第一個 swiper-slide 變化
+          autoplay: true,
+        });
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        const brandsSwiper = new Swiper(".brands-swiper", {
+          loop: true,
+          speed: 800,
+          slidesPerView: "auto",
+          spaceBetween: 20,
+          slidesOffsetBefore: 0, // 不要預留空白
+          slidesOffsetAfter: 0,
+          autoHeight: true,
+          autoplay: true,
+        });
+      });
+    </script>
     <script>
       const swiper = new Swiper(".swiper-themeOpts", {
         // Optional parameters
@@ -75,26 +91,7 @@
           el: ".swiper-scrollbar",
         },
       });
-      document.addEventListener("DOMContentLoaded", () => {
-        const feedbackSwiper = new Swiper(".feedback-swiper", {
-          slidesPerView: "auto",
-          spaceBetween: 40,
-          slidesOffsetBefore: 0, // 不要預留空白
-          slidesOffsetAfter: 0,
-          autoHeight: false, //swiper-wrapper 高度才不會隨著第一個 swiper-slide 變化
-          autoplay: true,
-        });
-      });
-      document.addEventListener("DOMContentLoaded", () => {
-        const brandsSwiper = new Swiper(".brands-swiper", {
-          slidesPerView: "auto",
-          spaceBetween: 20,
-          slidesOffsetBefore: 0, // 不要預留空白
-          slidesOffsetAfter: 0,
-          autoHeight: true,
-          autoplay: true,
-        });
-      });
+      
     </script>
   </body>
 </html>

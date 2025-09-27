@@ -1,0 +1,41 @@
+.rounded-panel {
+  border-radius: 80px;
+}
+
+.faq-nav {
+  .nav-item {
+    .nav-link {
+      padding: 12px 24px;
+      border: 1.5px solid $neutral-400;
+      border-radius: 100px;
+      color: $neutral-800;
+      &:hover, &:active, &.active {
+        background-color: $neutral-400;
+        color: $neutral-900;
+      }
+    }
+  }
+}
+
+.accordion-button::after {
+  display: none;
+  /* 隱藏預設箭頭 */
+}
+
+/* 預設顯示向下箭頭 */
+.accordion-button[aria-expanded="false"] .add {
+  display: inline-block;
+}
+
+.accordion-button[aria-expanded="false"] .sub {
+  display: none;
+}
+
+/* 展開時顯示向上箭頭 */
+.accordion-button[aria-expanded="true"] .add {
+  display: none;
+}
+
+.accordion-button[aria-expanded="true"] .sub {
+  display: inline-block;
+}
