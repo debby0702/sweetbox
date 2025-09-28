@@ -33,6 +33,18 @@ $utilities: map-merge(
         pill: var(--#{$prefix}border-radius-pill),
       ),
     ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: 0.25,
+        50: 0.5,
+        70: 0.7,
+        //custom
+        75: 0.75,
+        100: 1,
+      ),
+    ),
   )
 );
 

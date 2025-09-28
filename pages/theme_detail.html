@@ -20,8 +20,6 @@
   <%- include('./layout/header'); -%>
     <main class="main overflow-hidden">
       <%- include('./layout/theme_detail/subscribe'); -%>
-
-
         <%- include('./layout/theme_detail/boxContent'); -%>
           <%- include('./layout/theme_detail/feedback'); -%>
     </main>
@@ -61,7 +59,64 @@
           },
         });
       </script>
+      <!-- float menu -->
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const floatMenu = document.querySelector('.side-menu-float');
+          let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+          let hideTimeout;
+          let isHovering = false;
+          let isFirstSection = true; // 進入第二段以後才可以觸發
 
+          const showMenu = () => {
+            if (!isHovering) {
+              floatMenu.classList.add('show');
+            }
+            clearTimeout(hideTimeout);
+            hideTimeout = setTimeout(() => {
+              if (!isHovering) {
+                floatMenu.classList.remove('show');
+              }
+            }, 2500);
+          };
+
+          const hideMenu = () => {
+            floatMenu.classList.remove('show');
+          };
+
+          const scrollTriggerY = document.querySelector('.side-menu-area')?.offsetTop || 600;
+
+          window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollTop > scrollTriggerY) {
+              if (scrollTop < lastScrollTop) {
+                showMenu(); // scroll up
+              } else {
+                hideMenu(); // scroll down
+              }
+            } else {
+              hideMenu(); // 還在第一個區塊，直接隱藏
+            }
+
+            lastScrollTop = scrollTop;
+          });
+
+          // 使用者 hover 時不會自動消失
+          floatMenu.addEventListener('mouseenter', () => {
+            isHovering = true;
+            floatMenu.classList.add('show');
+            clearTimeout(hideTimeout);
+          });
+
+          floatMenu.addEventListener('mouseleave', () => {
+            isHovering = false;
+            hideTimeout = setTimeout(() => {
+              floatMenu.classList.remove('show');
+            }, 2500);
+          });
+        });
+      </script>
       <!-- feedback -->
       <script>
         const textBox = document.getElementById("textBox");
