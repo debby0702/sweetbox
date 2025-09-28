@@ -1,0 +1,124 @@
+// SECTION-1: theme-menu
+.pie-img {
+  width: 576px;
+  height: auto;
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+}
+
+//  SECTION-1: plan-opts
+.plan-opts {
+  // 992px 以上 //桌機
+  @media (min-width: 992px) {
+    overflow: auto;
+    scrollbar-width: none;
+    max-height: 648px;
+  }
+}
+
+.quantity {
+  padding: 2px;
+
+  .spinner {
+    width: 2ch;
+    text-align: center;
+  }
+}
+
+//swiper：desktop
+.theme-detail-pics.d-lg-block {
+  max-width: 712px;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // 大圖尺寸
+  .swiperThemeDetail {
+    width: 100%; //100%;
+    height: 480px; //80%;
+
+    img {
+      border-radius: 40px;
+    }
+  }
+
+  .swiperThemeDetail2 {
+    //height: 20%;
+    padding: 12px 0; //10px 0;
+
+    .swiper-slide {
+      width: 100%;
+      height: 100%;
+      opacity: 0.6;
+
+      &-thumb-active {
+        opacity: 1;
+      }
+    }
+  }
+
+  // 小圖尺寸
+  .swiperThemeDetail2 {
+    width: 100%; //100%;
+    height: 116px; //300px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      border-radius: 24px;
+    }
+  }
+}
+
+//mobile 滿版swiper
+.theme-detail-pics-sm {
+  width: 100%;
+  height: 55vh;
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+//訂閱按鈕 //fixed
+.subscribe-fixed-bar {
+  //992px 以下 //手機
+  @media (max-width: 992px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 12px 12px 8px 12px;
+    background-color: $neutral-200;
+    box-shadow: 0 -0.125rem 0.24rem rgba($black, 0.06);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+    .btn-primary-icon {
+      padding: 12px 24px;
+    }
+  }
+}
