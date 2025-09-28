@@ -1,30 +1,41 @@
 $utilities: map-merge(
-  $utilities, (
-    "font-size": map-merge(
-      map-get($utilities, "font-size"),
-      ( responsive: true ),
-    ),
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
     "rounded": (
       property: border-radius,
       class: rounded,
       values: (
         null: var(--#{$prefix}border-radius),
         0: 0,
-        1: var(--#{$prefix}border-radius-sm), // 4px
-        2: var(--#{$prefix}border-radius), // 6px
-        3: var(--#{$prefix}border-radius-lg), // 8px
-        4: 10px,
-        5: var(--#{$prefix}border-radius-xl), // 16px
+        1: var(--#{$prefix}border-radius-sm),
+        // 4px
+        2: var(--#{$prefix}border-radius),
+        // 6px
+        3: var(--#{$prefix}border-radius-lg),
+        // 8px
+        4: 12px,
+        //custion
+        5: var(--#{$prefix}border-radius-xl),
+        // 16px
         6: 24px,
-        7: var(--#{$prefix}border-radius-xxl), // 32px
+        7: var(--#{$prefix}border-radius-xxl),
+        // 32px
         8: 40px,
+        //custom
         circle: 50%,
-        pill: var(--#{$prefix}border-radius-pill)
-      )
+        pill: var(--#{$prefix}border-radius-pill),
+      ),
     ),
   )
 );
 
-.ls-1 { 
-  letter-spacing: .1em; 
+.ls-1 {
+  letter-spacing: 0.1em;
 }

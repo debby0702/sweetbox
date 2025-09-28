@@ -16,7 +16,7 @@
   top: -60px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   .subscribe-img {
     width: 152px;
     height: 40px;
@@ -31,12 +31,12 @@
 
 }
 
-@media (min-width:960px) {
+@media (min-width:992px) {
   .cake-img {
     top: unset;
     left: -36px;
     bottom: -173px;
     width: 568px;
-      height: 636px;
+    height: 636px;
   }
 }

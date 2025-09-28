@@ -18,3 +18,76 @@
     }
   }
 }
+
+// 主題清單
+.side-menu-area {
+  //mibile:menu固定上方
+  position: fixed;
+  margin-top: 68px;
+  z-index: 10;
+  top: 0;
+
+  //desktop:左側固定寬度
+  @media (min-width: 992px) {
+      width: 120px;
+      font-size: 16px;
+      position: static;
+      margin-top: 0;
+      top: unset;
+      z-index: unset;
+  }
+
+  .side-menu {
+    overflow-x: auto;
+    scrollbar-width: none;
+    font-size: 14px;
+    
+
+    &.side-menu {
+      flex-wrap: nowrap;
+    }
+
+    .nav-link {
+      padding: 12px 16px 4px 16px;
+      color: $neutral-700;
+      text-wrap: nowrap;
+
+      &.active,
+      &:hover {
+        color: $primary-600;
+      }
+
+      &.active::after {
+        content: "";
+        border-radius: 50px;
+        border-bottom: solid 2px $primary-600;
+        margin-top: 8px;
+        display: block;
+      }
+    }
+
+    //992px 以上
+    @media (min-width: 992px) {
+
+      .nav-link {
+        padding: 16px unset 16px 12px;
+        width: 120px;
+
+        &.active::after {
+          border-bottom: unset;
+          margin-top: unset;
+        }
+
+        &::before {
+          content: "";
+          border-radius: 50px;
+          border-left: solid 2px transparent;
+          margin-right: 12px;
+        }
+        &.active::before {
+          border-left: solid 2px $primary-600;
+        }
+      }
+    }
+  }
+}

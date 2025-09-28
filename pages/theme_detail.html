@@ -2,94 +2,109 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>精選甜點｜訂閱主題介紹｜一盒甜</title>
-    <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>精選甜點｜訂閱主題介紹｜一盒甜</title>
+  <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <%- include('./layout/header'); -%>
-        <main class="main overflow-hidden">
-            <%- include('./layout/theme_detail/subscribe'); -%>
-                <!-- sidebar + 訂閱 -->
-                <section class="my-lg-11 container">
-                    <div class="d-flex">
-                        <nav class="row">
-                            <ul class="nav nav-underline">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">Active</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Link</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                                </li>
-                            </ul>
-                            <div>
+  <%- include('./layout/header'); -%>
+    <main class="main overflow-hidden">
+      <%- include('./layout/theme_detail/subscribe'); -%>
 
-                            </div>
-                            <div class="">
 
-                            </div>
-                        </nav>
-                    </div>
-                </section>
-                <%- include('./layout/theme_detail/boxContent'); -%>
-                    <%- include('./layout/theme_detail/feedback'); -%>
-        </main>
-        <%- include('./layout/footer'); -%>
-            <script type="module" src="../main.js"></script>
-            <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
-            <script>
-                const textBox = document.getElementById("textBox");
-                const toggleBtn = document.getElementById("toggleBtn");
-                const toggleIcon = document.getElementById("toggleIcon");
+        <%- include('./layout/theme_detail/boxContent'); -%>
+          <%- include('./layout/theme_detail/feedback'); -%>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+      <!-- 桌機 Swiper -->
+      <script>
+        const swiperThemeDetail2 = new Swiper(".swiperThemeDetail2", {
+          loop: true,
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        const swiperThemeDetail = new Swiper(".swiperThemeDetail", {
+          loop: true,
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiperThemeDetail2,
+          },
+        });
+      </script>
+      <!-- 手機 Swiper -->
+      <script>
+        const swiper = new Swiper('.theme-detail-pics-sm', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+          speed: 800,
+          autoplay: {
+            delay: 2500,
+          },
+        });
+      </script>
 
-                toggleBtn.addEventListener("click", () => {
-                    const expanded = textBox.classList.toggle("text-expanded");
+      <!-- feedback -->
+      <script>
+        const textBox = document.getElementById("textBox");
+        const toggleBtn = document.getElementById("toggleBtn");
+        const toggleIcon = document.getElementById("toggleIcon");
 
-                    toggleBtn.childNodes[0].textContent = expanded ? "收合全文" : "查看全文";
+        toggleBtn.addEventListener("click", () => {
+          const expanded = textBox.classList.toggle("text-expanded");
 
-                    // 切換 icon 方向（例：箭頭上下翻轉）
-                    toggleIcon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
-                    toggleIcon.style.transition = "transform 0.3s ease";
-                });
-                document.querySelectorAll('.vote-box').forEach(box => {
-                    const icon = box.querySelector('.icon-swap');
-                    const outline = icon.getAttribute('icon');
-                    const solid = icon.getAttribute('data-solid');
+          toggleBtn.childNodes[0].textContent = expanded ? "收合全文" : "查看全文";
 
-                    const p = box.querySelector('p');
-                    const baseCount = parseInt(p.getAttribute('data-count'));
-                    let toggled = false;
+          // 切換 icon 方向（例：箭頭上下翻轉）
+          toggleIcon.style.transform = expanded ? "rotate(180deg)" : "rotate(0deg)";
+          toggleIcon.style.transition = "transform 0.3s ease";
+        });
+        document.querySelectorAll('.vote-box').forEach(box => {
+          const icon = box.querySelector('.icon-swap');
+          const outline = icon.getAttribute('icon');
+          const solid = icon.getAttribute('data-solid');
 
-                    box.addEventListener('click', () => {
-                        toggled = !toggled;
-                        box.classList.toggle('active', toggled);
+          const p = box.querySelector('p');
+          const baseCount = parseInt(p.getAttribute('data-count'));
+          let toggled = false;
 
-                        // icon 切換
-                        icon.setAttribute('icon', toggled ? solid : outline);
+          box.addEventListener('click', () => {
+            toggled = !toggled;
+            box.classList.toggle('active', toggled);
 
-                        // 文字切換
-                        if (baseCount === 0) {
-                            p.textContent = toggled ? '1 人認為此評論有幫助' : '此評論有幫助';
-                        } else {
-                            const newCount = toggled ? baseCount + 1 : baseCount;
-                            p.textContent = newCount + ' 人認為此評論有幫助';
-                        }
-                    });
-                });
-            </script>
+            // icon 切換
+            icon.setAttribute('icon', toggled ? solid : outline);
+
+            // 文字切換
+            if (baseCount === 0) {
+              p.textContent = toggled ? '1 人認為此評論有幫助' : '此評論有幫助';
+            } else {
+              const newCount = toggled ? baseCount + 1 : baseCount;
+              p.textContent = newCount + ' 人認為此評論有幫助';
+            }
+          });
+        });
+      </script>
+
+
+      <script type="module" src="../main.js"></script>
+
 </body>
