@@ -28,7 +28,11 @@
 
 //swiper：desktop
 .theme-detail-pics.d-lg-block {
-  max-width: 712px;
+  width: calc(66.666% - 120px - 24px);
+
+  @media (max-width: 992px) {
+    width: calc(58.333% - 120px - 24px);
+  }
 
   .swiper-slide {
     display: flex;
