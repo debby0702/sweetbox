@@ -145,6 +145,13 @@
       line-height: 21px;
     }
   }
+  &-empty {
+    display: none;
+    @media (min-width: 576px) {
+      display: block;
+      margin-bottom: 28px;
+    }
+  }
 }
 
 // Remove button
@@ -285,4 +292,58 @@
   display: none;
   font-size: 14px;
   line-height: 21px;
+}
+
+.bg-empty-cart {
+  background-image: none;
+  @media (min-width: 576px) {
+    background-image: 
+      url('/assets/images/Cart_Page/cart_pattern01.svg'),
+      url('/assets/images/Cart_Page/cart_pattern02.svg'),
+      url('/assets/images/Cart_Page/cart_pattern03.svg'),
+      url('/assets/images/Cart_Page/cart_pattern04.svg');
+    background-size: 25%, 25%, 25%, 22%;
+    background-position: left bottom, 35% bottom, 71% bottom, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+}
+
+//Empty cart
+.empty-cart {
+  &-main {
+    padding-top: 68px;
+    @media (min-width: 576px) {
+      padding-top: 160px;
+      padding-bottom: 90px;
+    }
+  }
+  &-wrapper {
+    padding: 100px 12px;
+    border: 0;
+    background-color: transparent;
+    @media (min-width: 576px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+      background-color: rgba($neutral-200, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid $neutral-200;
+      border-radius: 40px;
+    }
+  }
+  &-img {
+    width: 120px;
+    @media (min-width: 576px) {
+      width: 160px;
+    }
+  }
+  &-title {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    @media (min-width: 576px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
 }
