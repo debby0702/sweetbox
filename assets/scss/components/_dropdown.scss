@@ -103,6 +103,7 @@
   }
 }
 
+// Avatar 下拉選單
 .avatar-dropdown {
   .dropdown-menu {
     width: 192px;
@@ -114,6 +115,7 @@
   }
 }
 
+// Burger 下拉選單
 .burger-dropdown {
   .dropdown-menu {
     width: 351px;
@@ -149,4 +151,34 @@
   background-color: $primary-200;
   color: $neutral-800;
   border-radius: 8px;
+}
+
+// 方案下拉選單
+.plan-dropdown {
+  .dropdown-toggle {
+    border-radius: 100px;
+    padding: 4px 8px;
+    background-color: $neutral-300;
+    color: $neutral-700;
+    font-size: 14px;
+    line-height: 21px;
+    &:active {
+      background-color: $neutral-300;
+    }
+  }
+  .dropdown-menu {
+    width: 137px;
+    min-width: 0;
+    backdrop-filter: none;
+    border: 0;
+    background-color: $neutral-300;
+    color: $neutral-700;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 12px;
+    text-align: left;
+    .dropdown-item {
+      padding: 4px 8px;
+    }
+  }
 }

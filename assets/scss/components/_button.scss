@@ -52,8 +52,10 @@
     border: none;
     padding: 16px 32px;
     color: $neutral-100;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 18px;
+    line-height: 21.6px;
+    letter-spacing: 0.1rem;
 
     &:hover {
         background-color: $CTA-100;
@@ -71,11 +73,11 @@
         background-color: $neutral-300;
         color: $neutral-500
     }
-
     // 992px 以下使用小尺寸
     @media (max-width: 992px) {
         padding: 12px 24px;
         font-size: 16px;
+        line-height: 19.2px;
     }
 
 }
@@ -276,13 +278,31 @@
         font-size: 18px;
         font-weight: bold;
         letter-spacing: .1em;
-        
+
         span{
             margin-left: 4px;
             font-weight:normal;
             font-size: 12px;
             letter-spacing: 0;
-            
+
         }
     }
+}
+.btn-plus,
+.btn-minus {
+  width: 32px;
+  height: 32px;
+  padding: 4px;
+  border-radius: 36px;
+  background-color: $neutral-300;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-shopping {
+  &:hover {
+    color: $primary-600;
+  }
 }
