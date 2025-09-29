@@ -1,17 +1,71 @@
+.faq-wave {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/assets/images/Home_Page/section\ 08_wave_mobile.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+  }
+  @media (min-width: 576px) {
+    &::before {
+      background-image: url("/assets/images/Home_Page/section08_wave.svg");
+      height: 60px;
+      top: -60px;
+    }
+  }
+}
+
+.faq-bg {
+  background-color: $neutral-300;
+  .accordion-button,
+  .accordion-body {
+    background-color: $neutral-300;
+  }
+  @media (min-width: 576px) {
+    background-color: $neutral-200;
+    .accordion-button,
+    .accordion-body {
+      background-color: $neutral-200;
+    }
+  }
+}
 .rounded-panel {
   border-radius: 80px;
 }
 
 .faq-nav {
+  flex-wrap: nowrap;
   .nav-item {
     .nav-link {
       padding: 12px 24px;
       border: 1.5px solid $neutral-400;
       border-radius: 100px;
       color: $neutral-800;
-      &:hover, &:active, &.active {
+      &:hover,
+      &:active,
+      &.active {
         background-color: $neutral-400;
         color: $neutral-900;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .nav-item {
+      .nav-link {
+        padding: 12px 24px;
+        border: 1.5px solid $neutral-400;
+        border-radius: 100px;
+        color: $neutral-800;
+        &:hover,
+        &:active,
+        &.active {
+          background-color: $neutral-400;
+          color: $neutral-900;
+        }
       }
     }
   }
