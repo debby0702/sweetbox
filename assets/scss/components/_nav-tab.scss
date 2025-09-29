@@ -70,7 +70,7 @@
     //992px 以上
     @media (min-width: 992px) {
       .nav-link {
-        padding: 16px unset 16px 12px;
+        padding: 16px 0 16px 12px;
         width: 120px;
 
         &.active::after {
