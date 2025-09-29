@@ -1,0 +1,33 @@
+.feedback-card {
+  width: 255.36px;
+  .card-body {
+    padding: 16px;
+    .content {
+      margin-bottom: 24px;
+      .star-number {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 8px;
+      }
+    }
+    .author {
+      font-size: 12px;
+    }
+  }
+  @media (min-width: 576px) {
+    width: 300px;
+    .card-body {
+      padding: 24px;
+      .content {
+        margin-bottom: 40px;
+        .star-number {
+          font-size: 24px;
+          margin-bottom: 12px;
+        }
+      }
+      .author {
+        font-size: 14px;
+      }
+    }
+  }
+}

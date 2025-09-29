@@ -35,15 +35,22 @@ const swiper = new Swiper(".feedback-swiper", {
   slidesOffsetBefore: 0, // 不要預留空白
   slidesOffsetAfter: 0,
   autoHeight: true,
-  autoplay: true,
+  autoplay: false,
+  loop: true,
+  speed: 800,
 });
 
-// 首頁//好評分享swiper
+// 首頁//合作夥伴swiper
 const swiperBrands = new Swiper(".brands-swiper", {
   slidesPerView: "auto",
-  spaceBetween: 40,
+  spaceBetween: 4, //手機版間距
+  breakpoints: {
+    576: { spaceBetween: 20 }, //桌面版間距
+  },
   slidesOffsetBefore: 0, // 不要預留空白
   slidesOffsetAfter: 0,
   autoHeight: true,
   autoplay: true,
+  loop: true, //循環
+  speed: 800,
 });
