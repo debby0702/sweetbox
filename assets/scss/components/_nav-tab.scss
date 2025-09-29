@@ -26,22 +26,22 @@
   margin-top: 68px;
   z-index: 10;
   top: 0;
+  width: 100%;
 
   //desktop:左側固定寬度
   @media (min-width: 992px) {
-      width: 120px;
-      font-size: 16px;
-      position: static;
-      margin-top: 0;
-      top: unset;
-      z-index: unset;
+    width: 120px;
+    font-size: 16px;
+    position: static;
+    margin-top: 0;
+    top: unset;
+    z-index: unset;
   }
 
   .side-menu {
     overflow-x: auto;
     scrollbar-width: none;
     font-size: 14px;
-    
 
     &.side-menu {
       flex-wrap: nowrap;
@@ -51,6 +51,7 @@
       padding: 12px 16px 4px 16px;
       color: $neutral-700;
       text-wrap: nowrap;
+      font-size: 16px;
 
       &.active,
       &:hover {
@@ -68,7 +69,6 @@
 
     //992px 以上
     @media (min-width: 992px) {
-
       .nav-link {
         padding: 16px unset 16px 12px;
         width: 120px;
@@ -89,5 +89,53 @@
         }
       }
     }
+  }
+}
+
+.side-menu-float {
+  z-index: 10;
+  padding: 0 8px;
+  background-color: rgba($neutral-200, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 rgba($black, 0.25);
+
+  //初始動畫
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s linear;
+  pointer-events: none;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  //主題選項樣式
+  .nav-link {
+    padding: 16px 20px 16px 8px;
+    color: $neutral-700;
+    text-wrap: nowrap;
+    font-size: 16px;
+
+    &.active,
+    &:hover {
+      color: $primary-600;
+    }
+
+    &::before {
+      content: "";
+      border-radius: 50px;
+      border-left: solid 2px transparent;
+      margin-right: 12px;
+    }
+    &.active::before {
+      border-left: solid 2px $primary-600;
+    }
+  }
+
+  @media (max-width: 992px) {
+    display: none;
   }
 }
