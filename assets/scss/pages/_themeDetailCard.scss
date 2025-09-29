@@ -17,14 +17,14 @@
     content: "";
     width: 100%;
     height: 20px;
-    background-image: url("/assets/images/Home_Page/wave_mobile.svg");
+    background-image: url("/assets/images/Theme_Detail/Feature/Vector.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
     top: -20px;
 
-    @media (min-width: 375px) {
+    @media (min-width: 576px) {
       height: 80px;
       top: -80px;
       background-image: url("/assets/images/Theme_Detail/Feature/Clip\ path\ group.png");
@@ -108,26 +108,56 @@
 .first-sweet-box-content:hover .overlay {
   opacity: 1;
 }
+// 收合按鈕
 .moreCards {
   border: 1.5px solid $neutral-400;
   border-radius: 100px;
   padding: 12px 145px;
   color: $neutral-700;
+  background-color: $neutral-200;
   font-weight: bold;
   font-style: 14px;
   font-size: 14px;
+  // 收合時，收合按鈕會顯現
+  &[aria-expanded="false"] .when-collapsed {
+    display: block;
+  }
+  // 收合時，收合按鈕會隱藏
+  &[aria-expanded="false"] .when-not-collapsed {
+    display: none;
+  }
+  // 展開時，展開按鈕會隱藏
+  &[aria-expanded="true"] .when-collapsed {
+    display: none;
+  }
+  // 展開時，收合按鈕會顯現
+  &[aria-expanded="true"] .when-not-collapsed {
+    display: block;
+  }
 }
-.moreCards[aria-expanded="false"] .when-collapsed {
-  display: block;
-}
-.moreCards[aria-expanded="false"] .when-not-collapsed {
-  display: none;
-}
-// 展開時，展開按鈕會隱藏
-.moreCards[aria-expanded="true"] .when-collapsed {
-  display: none;
-}
-// 展開時，收合按鈕會顯現
-.moreCards[aria-expanded="true"] .when-not-collapsed {
-  display: block;
+
+/* 手機版：收合時顯示漸層 */
+@media (max-width: 992px) {
+  .card-mask::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 141px; /* 漸層高度可調 */
+    background: linear-gradient(
+      to bottom,
+      rgba($neutral-200, 0) 0%,
+      /*漸層起點*/ rgba($neutral-200, 1) 100% /*漸層終點*/
+    );
+    border-radius: 0 0 1rem 1rem; /* 跟卡片圓角一致 */
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  /* 展開後隱藏漸層 */
+  .card-mask:has(.collapse.show)::after {
+    opacity: 0;
+    visibility: hidden;
+  }
 }

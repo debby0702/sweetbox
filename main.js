@@ -37,3 +37,13 @@ const swiper = new Swiper(".feedback-swiper", {
   autoHeight: true,
   autoplay: true,
 });
+
+// 首頁//好評分享swiper
+const swiperBrands = new Swiper(".brands-swiper", {
+  slidesPerView: "auto",
+  spaceBetween: 40,
+  slidesOffsetBefore: 0, // 不要預留空白
+  slidesOffsetAfter: 0,
+  autoHeight: true,
+  autoplay: true,
+});

@@ -120,7 +120,7 @@
             <img
               src="/assets/images/Theme_Detail/Feature/pic_cookie_desktop.jpg"
               alt="餅乾"
-              class="rounded-6 mb-4 mb-lg-0"
+              class="rounded-6 mb-4 mb-lg-0 w-100"
             />
           </picture>
           <div class="d-block d-lg-none">
@@ -134,7 +134,8 @@
               鬆脆餅乾夾入濃郁奶油餡，層次豐富。酥香與滑順並存，入口充滿溫潤奶香。
             </p>
           </div>
-          <div class="overlay">
+          <!-- 黑色屏幕 -->
+          <div class="overlay d-none d-lg-flex">
             <h3 class="fw-bold fs-2 mb-3">奶油夾心餅</h3>
             <p class="fw-bold fs-5 mb-9">Butterly Cookies</p>
             <p>
@@ -158,7 +159,7 @@
             <img
               src="/assets/images/Theme_Detail/Feature/pic_brownie_desktop.jpg"
               alt="餅乾"
-              class="rounded-6 mb-4 mb-lg-0"
+              class="rounded-6 mb-4 mb-lg-0 w-100"
             />
           </picture>
           <div class="d-block d-lg-none">
@@ -173,7 +174,8 @@
               黑巧克力與法國奶油，加入核桃與海鹽，甜中帶苦，層次迷人。
             </p>
           </div>
-          <div class="overlay">
+          <!-- 黑色屏幕 -->
+          <div class="overlay d-none d-lg-flex">
             <h3 class="fw-bold fs-2 mb-3">經典濃巧布朗尼</h3>
             <p class="fw-bold fs-5 mb-9">Choco & Mood</p>
             <p>
@@ -197,7 +199,7 @@
             <img
               src="/assets/images/Theme_Detail/Feature/pic_pretzels_desktop.jpg"
               alt="餅乾"
-              class="rounded-6 mb-4 mb-lg-0"
+              class="rounded-6 mb-4 mb-lg-0 w-100"
             />
           </picture>
           <div class="d-block d-lg-none">
@@ -211,7 +213,8 @@
               外層撒上細緻椒鹽，酥脆中帶有鹹香，簡單卻耐吃，讓人一口接一口的經典小食。
             </p>
           </div>
-          <div class="overlay">
+          <!-- 黑色屏幕 -->
+          <div class="overlay d-none d-lg-flex">
             <h3 class="fw-bold fs-2 mb-3">經典椒鹽餅乾</h3>
             <p class="fw-bold fs-5 mb-9">Salt & Crust Bakery</p>
             <p>
@@ -221,8 +224,8 @@
         </div>
       </div>
       <!-- 4 -->
-      <div class="col-12 col-lg-4">
-        <div class="first-sweet-box-content">
+      <div class="col-12 col-lg-4 position-relative">
+        <div class="first-sweet-box-content card-mask">
           <picture>
             <source
               media="(max-width: 992px)"
@@ -232,7 +235,7 @@
             <img
               src="/assets/images/Theme_Detail/Feature/pic_candy_desktop.jpg"
               alt="餅乾"
-              class="rounded-6 mb-4 mb-lg-0"
+              class="rounded-6 mb-4 mb-lg-0 w-100"
             />
           </picture>
           <div class="d-block d-lg-none">
@@ -248,7 +251,8 @@
               </p>
             </div>
           </div>
-          <div class="overlay">
+          <!-- 黑色屏幕 -->
+          <div class="overlay d-none d-lg-flex">
             <h3 class="fw-bold fs-2 mb-3">開心果牛軋糖</h3>
             <p class="fw-bold fs-5 mb-9">Pistachio Lane</p>
             <p>
@@ -258,205 +262,197 @@
         </div>
       </div>
       <!-- 5 -->
-      <div class="col-12 col-lg-4">
-        <!-- 收合格線系統內的內容，而不是收合格線系統，才不會造成桌面版卡片不再同一行 -->
-        <div class="collapse d-lg-block" id="moreCards">
-          <div class="first-sweet-box-content">
-            <picture>
-              <source
-                media="(max-width: 992px)"
-                srcset="
-                  /assets/images/Theme_Detail/Feature/pic_snowball_mobile.jpg
-                "
-                class="rounded-5"
-              />
-              <img
-                src="/assets/images/Theme_Detail/Feature/pic_snowball_desktop.jpg"
-                alt="餅乾"
-                class="rounded-6 mb-4 mb-lg-0"
-              />
-            </picture>
-            <div class="d-block d-lg-none">
-              <div
-                class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
-              >
-                <p class="fs-6">草莓雪球</p>
-                <p>Snowberry Patisserie</p>
-              </div>
-              <p>
-                滿佈糖粉的雪球外型，入口酥鬆輕盈。帶有淡雅草莓香氣，甜美而不膩。
-              </p>
-            </div>
-            <div class="overlay">
-              <h3 class="fw-bold fs-2 mb-3">草莓雪球</h3>
-              <p class="fw-bold fs-5 mb-9">Snowberry Patisserie</p>
-              <p>
-                滿佈糖粉的雪球外型，入口酥鬆輕盈。
-                帶有淡雅草莓香氣，甜美而不膩。
-              </p>
-            </div>
+      <!-- 桌面版 -->
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="first-sweet-box-content">
+          <img
+            src="/assets/images/Theme_Detail/Feature/pic_snowball_desktop.jpg"
+            alt="餅乾"
+            class="rounded-6 mb-4 mb-lg-0 w-100"
+          />
+          <!-- 黑色屏幕 -->
+          <div class="overlay">
+            <h3 class="fw-bold fs-2 mb-3">草莓雪球</h3>
+            <p class="fw-bold fs-5 mb-9">Snowberry Patisserie</p>
+            <p>
+              滿佈糖粉的雪球外型，入口酥鬆輕盈。 帶有淡雅草莓香氣，甜美而不膩。
+            </p>
           </div>
+        </div>
+      </div>
+      <!-- 手機版 -->
+      <div class="col-12 collapse d-lg-none" id="moreCards">
+        <img
+          src="/assets/images/Theme_Detail/Feature/pic_snowball_mobile.jpg"
+          alt="餅乾"
+          class="rounded-6 mb-4 mb-lg-0 w-100"
+        />
+        <div>
+          <div
+            class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
+          >
+            <p class="fs-6">草莓雪球</p>
+            <p>Snowberry Patisserie</p>
+          </div>
+          <p>
+            滿佈糖粉的雪球外型，入口酥鬆輕盈。帶有淡雅草莓香氣，甜美而不膩。
+          </p>
         </div>
       </div>
       <!-- 6 -->
-      <div class="col-12 col-lg-4">
-        <div class="collapse d-lg-block" id="moreCards">
-          <div class="first-sweet-box-content">
-            <picture>
-              <source
-                media="(max-width: 992px)"
-                srcset="/assets/images/Theme_Detail/Feature/pic_cake_mobile.jpg"
-                class="rounded-5"
-              />
-              <img
-                src="/assets/images/Theme_Detail/Feature/pic_cake_desktop.jpg"
-                alt="餅乾"
-                class="rounded-6 mb-4 mb-lg-0"
-              />
-            </picture>
-            <div class="d-block d-lg-none">
-              <div
-                class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
-              >
-                <p class="fs-6">醇厚奶香磅蛋糕</p>
-                <p>Heritage Pound Cake Co.</p>
-              </div>
-              <p>
-                傳統比例製作，口感綿密紮實。濃厚奶油香氣，經典耐吃不退流行。
-              </p>
-            </div>
-            <div class="overlay">
-              <h3 class="fw-bold fs-2 mb-3">醇厚奶香磅蛋糕</h3>
-              <p class="fw-bold fs-5 mb-9">Heritage Pound Cake Co.</p>
-              <p>
-                傳統比例製作，口感綿密紮實。 濃厚奶油香氣，經典耐吃不退流行。
-              </p>
-            </div>
+      <!-- 桌面版 -->
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="first-sweet-box-content">
+          <img
+            src="/assets/images/Theme_Detail/Feature/pic_cake_desktop.jpg"
+            alt="餅乾"
+            class="rounded-6 mb-4 mb-lg-0 w-100"
+          />
+          <!-- 黑色屏幕 -->
+          <div class="overlay">
+            <h3 class="fw-bold fs-2 mb-3">醇厚奶香磅蛋糕</h3>
+            <p class="fw-bold fs-5 mb-9">Heritage Pound Cake Co.</p>
+            <p>傳統比例製作，口感綿密紮實。濃厚奶油香氣，經典耐吃不退流行。</p>
           </div>
         </div>
       </div>
-
-      <!-- 7 -->
-      <div class="col-12 col-lg-4">
-        <div class="collapse d-lg-block" id="moreCards">
-          <div class="first-sweet-box-content">
-            <picture>
-              <source
-                media="(max-width: 992px)"
-                srcset="
-                  /assets/images/Theme_Detail/Feature/pic_eggroll_mobile.jpg
-                "
-                class="rounded-5"
-              />
-              <img
-                src="/assets/images/Theme_Detail/Feature/pic_eggroll_desktop.jpg"
-                alt="餅乾"
-                class="rounded-6 mb-4 mb-lg-0"
-              />
-            </picture>
-            <div class="d-block d-lg-none">
-              <div
-                class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
-              >
-                <p class="fs-6">經典手工蛋捲</p>
-                <p>Choco & Mood</p>
-              </div>
-              <p>
-                手工蛋捲，層層酥香，每一口都保留傳統蛋香，清雅迷人，簡單卻令人回味無窮。
-              </p>
-            </div>
-            <div class="overlay">
-              <h3 class="fw-bold fs-2 mb-3">經典手工蛋捲</h3>
-              <p class="fw-bold fs-5 mb-9">Layer Lab</p>
-              <p>Layer Lab</p>
-            </div>
+      <!-- 手機版 -->
+      <div class="col-12 collapse d-lg-none" id="moreCards">
+        <img
+          src="/assets/images/Theme_Detail/Feature/pic_cake_mobile.jpg"
+          alt="餅乾"
+          class="rounded-6 mb-4 mb-lg-0 w-100"
+        />
+        <div>
+          <div
+            class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
+          >
+            <p class="fs-6">醇厚奶香磅蛋糕</p>
+            <p>Heritage Pound Cake Co.</p>
           </div>
+          <p>傳統比例製作，口感綿密紮實。濃厚奶油香氣，經典耐吃不退流行。</p>
+        </div>
+      </div>
+      <!-- 7 -->
+      <!-- 桌面版 -->
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="first-sweet-box-content">
+          <img
+            src="/assets/images/Theme_Detail/Feature/pic_eggroll_desktop.jpg"
+            alt="餅乾"
+            class="rounded-6 mb-4 mb-lg-0 w-100"
+          />
+          <!-- 黑色屏幕 -->
+          <div class="overlay">
+            <h3 class="fw-bold fs-2 mb-3">經典手工蛋捲</h3>
+            <p class="fw-bold fs-5 mb-9">Choco & Mood</p>
+            <p>
+              手工蛋捲，層層酥香，每一口都保留傳統蛋香，清雅迷人，簡單卻令人回味無窮。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 手機版 -->
+      <div class="col-12 collapse d-lg-none" id="moreCards">
+        <img
+          src="/assets/images/Theme_Detail/Feature/pic_eggroll_mobile.jpg"
+          alt="餅乾"
+          class="rounded-6 mb-4 mb-lg-0 w-100"
+        />
+        <div>
+          <div
+            class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
+          >
+            <p class="fs-6">經典手工蛋捲</p>
+            <p>Choco & Mood</p>
+          </div>
+          <p>
+            手工蛋捲，層層酥香，每一口都保留傳統蛋香，清雅迷人，簡單卻令人回味無窮。
+          </p>
         </div>
       </div>
       <!-- 8 -->
-      <div class="col-12 col-lg-4">
-        <div class="collapse d-lg-block" id="moreCards">
-          <div class="first-sweet-box-content">
-            <picture>
-              <source
-                media="(max-width: 992px)"
-                srcset="/assets/images/Theme_Detail/Feature/pic_tart_mobile.jpg"
-                class="rounded-5"
-              />
-              <img
-                src="/assets/images/Theme_Detail/Feature/pic_tart_desktop.jpg"
-                alt="餅乾"
-                class="rounded-6 mb-4 mb-lg-0"
-              />
-            </picture>
-            <div class="d-block d-lg-none">
-              <div
-                class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
-              >
-                <p class="fs-6">焦糖綜合堅果塔</p>
-                <p>Caramel & Nut Atelier</p>
-              </div>
-              <p>
-                以焦糖拌炒多種堅果，填入香酥塔皮。層層堆疊的堅果香氣，口感豐富紮實。
-              </p>
-            </div>
-            <div class="overlay">
-              <h3 class="fw-bold fs-2 mb-3">焦糖綜合堅果塔</h3>
-              <p class="fw-bold fs-5 mb-9">Caramel & Nut Atelier</p>
-              <p>
-                以焦糖拌炒多種堅果，填入香酥塔皮。
-                層層堆疊的堅果香氣，口感豐富紮實。
-              </p>
-            </div>
+      <!-- 桌面版 -->
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="first-sweet-box-content">
+          <img
+            src="/assets/images/Theme_Detail/Feature/pic_tart_desktop.jpg"
+            alt="餅乾"
+            class="rounded-6 mb-4 mb-lg-0 w-100"
+          />
+          <!-- 黑色屏幕 -->
+          <div class="overlay">
+            <h3 class="fw-bold fs-2 mb-3">焦糖綜合堅果塔</h3>
+            <p class="fw-bold fs-5 mb-9">Caramel & Nut Atelier</p>
+            <p>
+              以焦糖拌炒多種堅果，填入香酥塔皮。層層堆疊的堅果香氣，口感豐富紮實。
+            </p>
           </div>
         </div>
       </div>
-      <!-- 9 -->
-      <div class="col-12 col-lg-4">
-        <!-- 收合格線系統內的內容，而不是收合格線系統，才不會造成桌面版卡片不再同一行 -->
-        <div class="collapse d-lg-block" id="moreCards">
-          <div class="first-sweet-box-content">
-            <picture>
-              <source
-                media="(max-width: 992px)"
-                srcset="
-                  /assets/images/Theme_Detail/Feature/pic_mochi_mobile.jpg
-                "
-                class="rounded-5"
-              />
-              <img
-                src="/assets/images/Theme_Detail/Feature/pic_mochi_desktop.jpg"
-                alt="餅乾"
-                class="rounded-6 mb-4 mb-lg-0"
-              />
-            </picture>
-            <div class="d-block d-lg-none">
-              <div
-                class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
-              >
-                <p class="fs-6">花生麻糬</p>
-                <p>Mochi & Nut House</p>
-              </div>
-              <p>
-                軟Q麻糬包裹綿密花生餡，香濃順口。經典台式甜點，軟糯與堅果香完美交織。
-              </p>
-            </div>
-            <div class="overlay">
-              <h3 class="fw-bold fs-2 mb-3">花生麻糬</h3>
-              <p class="fw-bold fs-5 mb-9">Mochi & Nut House</p>
-              <p>
-                軟Q麻糬包裹綿密花生餡，香濃順口。
-                經典台式甜點，軟糯與堅果香完美交織。
-              </p>
-            </div>
+      <!-- 手機版 -->
+      <div class="col-12 collapse d-lg-none" id="moreCards">
+        <img
+          src="/assets/images/Theme_Detail/Feature/pic_tart_mobile.jpg"
+          alt="麻糬"
+          class="rounded-6 mb-4 mb-lg-0 w-100"
+        />
+        <div>
+          <div
+            class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
+          >
+            <p class="fs-6">焦糖綜合堅果塔</p>
+            <p>Caramel & Nut Atelier</p>
           </div>
+          <p>
+            以焦糖拌炒多種堅果，填入香酥塔皮。層層堆疊的堅果香氣，口感豐富紮實。
+          </p>
+        </div>
+      </div>
+      <!-- 9 -->
+      <!-- 桌面版 -->
+      <div class="col-12 col-lg-4 d-none d-lg-block">
+        <div class="first-sweet-box-content">
+          <img
+            src="/assets/images/Theme_Detail/Feature/pic_mochi_desktop.jpg"
+            alt="餅乾"
+            class="rounded-6 mb-4 mb-lg-0"
+          />
+          <!-- 黑色屏幕 -->
+          <div class="overlay">
+            <h3 class="fw-bold fs-2 mb-3">花生麻糬</h3>
+            <p class="fw-bold fs-5 mb-9">Mochi & Nut House</p>
+            <p>
+              軟Q麻糬包裹綿密花生餡，香濃順口。
+              經典台式甜點，軟糯與堅果香完美交織。
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- 手機版 -->
+      <div class="col-12 collapse d-lg-none" id="moreCards">
+        <img
+          src="/assets/images/Theme_Detail/Feature/pic_mochi_mobile.jpg"
+          alt="麻糬"
+          class="rounded-6 mb-4 mb-lg-0 w-100"
+        />
+        <div>
+          <div
+            class="d-flex d-lg-none justify-content-between align-center mb-3 fw-bold"
+          >
+            <p class="fs-6">花生麻糬</p>
+            <p>Mochi & Nut House</p>
+          </div>
+          <p>
+            軟Q麻糬包裹綿密花生餡，香濃順口。經典台式甜點，軟糯與堅果香完美交織。
+          </p>
         </div>
       </div>
     </div>
     <!-- 收和按鈕 -->
     <div class="text-center mt-4 d-block d-lg-none">
       <button
-        class="btn btn-outline-primary moreCards"
+        class="btn-outline-primary moreCards"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#moreCards"
