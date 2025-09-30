@@ -83,6 +83,8 @@
           border-radius: 50px;
           border-left: solid 2px transparent;
           margin-right: 12px;
+          height: 1em;
+          display: block;
         }
         &.active::before {
           border-left: solid 2px $primary-600;
@@ -129,6 +131,8 @@
       border-radius: 50px;
       border-left: solid 2px transparent;
       margin-right: 12px;
+      display: block;
+      height: 1em;
     }
     &.active::before {
       border-left: solid 2px $primary-600;
