@@ -1,292 +1,290 @@
 .btn-primary-icon {
-    background-color: $CTA-200;
-    border-radius: 100px;
-    border: none;
-    padding: 16px 32px;
-    color: $neutral-100;
-    font-size: 18px;
-    font-weight: bold;
+  background-color: $CTA-200;
+  border-radius: 100px;
+  border: none;
+  padding: 16px 32px;
+  color: $neutral-100;
+  font-size: 18px;
+  font-weight: bold;
+
+  svg {
+    transition: transform 0.3s ease; // 平滑動畫
+    width: 24px;
+    height: 24px;
+  }
+
+  &:hover {
+    background-color: $CTA-100;
 
     svg {
-        transition: transform 0.3s ease; // 平滑動畫
-        width: 24px;
-        height: 24px;
+      transform: translateX(12px);
     }
+  }
 
-    &:hover {
-        background-color: $CTA-100;
+  &:active {
+    background-color: $CTA-300;
+  }
 
-        svg {
-            transform: translateX(12px);
-        }
+  &:focus {
+    background-color: $CTA-300;
+  }
+
+  &:disabled {
+    background-color: $neutral-300;
+    color: $neutral-500;
+  }
+
+  // 992px 以下使用小尺寸
+  @media (max-width: 992px) {
+    padding: 12px 28px;
+    font-size: 16px;
+
+    svg {
+      width: 20px;
+      height: 20px;
     }
-
-    &:active {
-        background-color: $CTA-300;
-    }
-
-    &:focus {
-        background-color: $CTA-300;
-    }
-
-    &:disabled {
-        background-color: $neutral-300;
-        color: $neutral-500;
-    }
-
-    // 992px 以下使用小尺寸
-    @media (max-width: 992px) {
-        padding: 12px 28px;
-        font-size: 16px;
-
-        svg{
-            width: 20px;
-            height: 20px;
-        }
-    }
+  }
 }
 
 .btn-primary-text {
-    background-color: $CTA-200;
-    border-radius: 100px;
-    border: none;
-    padding: 16px 32px;
-    color: $neutral-100;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21.6px;
-    letter-spacing: 0.1rem;
+  background-color: $CTA-200;
+  border-radius: 100px;
+  border: none;
+  padding: 16px 32px;
+  color: $neutral-100;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0.1rem;
 
-    &:hover {
-        background-color: $CTA-100;
-    }
+  &:hover {
+    background-color: $CTA-100;
+  }
 
-    &:active {
-        background-color: $CTA-300;
-    }
+  &:active {
+    background-color: $CTA-300;
+  }
 
-    &:focus {
-        background-color: $CTA-300;
-    }
+  &:focus {
+    background-color: $CTA-300;
+  }
 
-    &:disabled {
-        background-color: $neutral-300;
-        color: $neutral-500
-    }
-    // 992px 以下使用小尺寸
-    @media (max-width: 992px) {
-        padding: 12px 24px;
-        font-size: 16px;
-        line-height: 19.2px;
-    }
-
+  &:disabled {
+    background-color: $neutral-300;
+    color: $neutral-500;
+  }
+  // 992px 以下使用小尺寸
+  @media (max-width: 992px) {
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 19.2px;
+  }
 }
 
 .btn-secondary {
-    background-color: $neutral-200;
-    border-radius: 100px;
-    border: 1.5px;
-    border-color: $neutral-400;
-    padding: 12px 32px;
-    color: $neutral-800;
-    font-size: 18px;
+  background-color: $neutral-200;
+  border-radius: 100px;
+  border: 1.5px;
+  border-color: $neutral-400;
+  padding: 12px 32px;
+  color: $neutral-800;
+  font-size: 18px;
 
-    &:hover {
-        background-color: $neutral-300;
-        color: $neutral-900;
-    }
+  &:hover {
+    background-color: $neutral-300;
+    color: $neutral-900;
+  }
 
-    &:active {
-        background-color: $neutral-400;
-        color: $neutral-900;
-    }
+  &:active {
+    background-color: $neutral-400;
+    color: $neutral-900;
+  }
 
-    &:focus {
-        background-color: $neutral-400;
-        color: $neutral-900;
-    }
+  &:focus {
+    background-color: $neutral-400;
+    color: $neutral-900;
+  }
 
-    &:disabled {
-        background-color: transparent;
-        color: $neutral-500
-    }
+  &:disabled {
+    background-color: transparent;
+    color: $neutral-500;
+  }
 
-    // 992px 以下使用小尺寸
-    @media (max-width: 992px) {
-        padding: 12px 24px;
-        font-size: 16px;
-    }
+  // 992px 以下使用小尺寸
+  @media (max-width: 992px) {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
 }
 
 .btn-text {
-    background-color: transparent;
-    color: $neutral-800;
-    padding: 12px 32px;
-    border: 0;
-    font-size: 18px;
+  background-color: transparent;
+  color: $neutral-800;
+  padding: 12px 32px;
+  border: 0;
+  font-size: 18px;
 
+  &:hover {
+    color: $neutral-900;
+  }
 
-    &:hover {
-        color: $neutral-900
-    }
+  &:active {
+    color: $primary-600;
+  }
 
-    &:active {
-        color: $primary-600;
-    }
+  &:focus {
+    color: $primary-600;
+  }
 
-    &:focus {
-        color: $primary-600;
-    }
+  &:disabled {
+    color: $neutral-500;
+  }
+  &.active {
+    color: $primary-600;
+  }
+  @media (max-width: 992px) {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
 
-    &:disabled {
-        color: $neutral-500
-    }
-    &.active {
-        color: $primary-600;
-    }
-    @media (max-width: 992px) {
-        padding: 12px 16px;
-        font-size: 16px;
-    }
-
-    @media (max-width: 768px) {
-        padding: 12px 12px;
-        font-size: 14px;
-    }
+  @media (max-width: 768px) {
+    padding: 12px 12px;
+    font-size: 14px;
+  }
 }
 
-.btn-icon-leading{
-    background-color: transparent;
-    color: $neutral-800;
-    padding: 12px 12px;
-    border: 0;
-    font-size: 14px;
+.btn-icon-leading {
+  background-color: transparent;
+  color: $neutral-800;
+  padding: 12px 12px;
+  border: 0;
+  font-size: 14px;
 
-    &:hover {
-        color: $neutral-900
-    }
+  &:hover {
+    color: $neutral-900;
+  }
 
-    &:active {
-        color: $primary-600;
-    }
+  &:active {
+    color: $primary-600;
+  }
 
-    &:focus {
-        color: $primary-600;
-    }
+  &:focus {
+    color: $primary-600;
+  }
 
-    &:disabled {
-        color: $neutral-500
-    }
+  &:disabled {
+    color: $neutral-500;
+  }
 }
 
 .btn-icon-tailing {
-    background-color: transparent;
-    color: $semantic-link;
-    padding: 12px 12px;
-    border: 0;
-    font-size: 14px;
+  background-color: transparent;
+  color: $semantic-link;
+  padding: 12px 12px;
+  border: 0;
+  font-size: 14px;
 
-    &:disabled {
-        color: $neutral-500
-    }
+  &:disabled {
+    color: $neutral-500;
+  }
 }
 
 .btn-icon {
-    border: 1px;
-    border-color: $neutral-400;
-    border-radius: 100px;
-    padding: 12px;
+  border: 1px;
+  border-color: $neutral-400;
+  border-radius: 100px;
+  padding: 12px;
+  background-color: $neutral-300;
+  color: $neutral-800;
+
+  &:hover {
+    color: $primary-600;
+  }
+
+  &:active {
+    background-color: $neutral-400;
+    color: $primary-600;
+  }
+
+  &:focus {
+    background-color: $neutral-400;
+    color: $primary-600;
+  }
+
+  &:disabled {
     background-color: $neutral-300;
-    color: $neutral-800;
-
-    &:hover {
-        color: $primary-600;
-    }
-
-    &:active {
-        background-color: $neutral-400;
-        color: $primary-600;
-    }
-
-    &:focus {
-        background-color: $neutral-400;
-        color: $primary-600;
-    }
-
-    &:disabled {
-        background-color: $neutral-300;
-        color: $neutral-500
-    }
+    color: $neutral-500;
+  }
 }
 
 // 主題詳細 plan數量按鈕較大顆
 .btn-icon-lg {
-    border: 1px;
-    border-color: $neutral-400;
-    border-radius: 100px;
-    padding: 6px;
+  border: 1px;
+  border-color: $neutral-400;
+  border-radius: 100px;
+  padding: 6px;
+  background-color: $neutral-300;
+  color: $neutral-800;
+
+  &:hover {
+    color: $primary-600;
+  }
+
+  &:active {
+    background-color: $neutral-400;
+    color: $primary-600;
+  }
+
+  &:focus {
+    background-color: $neutral-400;
+    color: $primary-600;
+  }
+
+  &:disabled {
     background-color: $neutral-300;
-    color: $neutral-800;
-
-    &:hover {
-        color: $primary-600;
-    }
-
-    &:active {
-        background-color: $neutral-400;
-        color: $primary-600;
-    }
-
-    &:focus {
-        background-color: $neutral-400;
-        color: $primary-600;
-    }
-
-    &:disabled {
-        background-color: $neutral-300;
-        color: $neutral-500
-    }
+    color: $neutral-500;
+  }
 }
 
 // 主題詳細 plan選項
 .card-plan {
-    width: 100%;
-    color: $neutral-800;
-    padding: 16px 20px;
-    border-radius: 24px;
-    border: 1px solid $neutral-400;
+  width: 100%;
+  color: $neutral-800;
+  padding: 16px 20px;
+  border-radius: 24px;
+  border: 1px solid $neutral-400;
+  background: transparent;
+
+  &:hover {
+    background-color: $neutral-300;
+  }
+
+  &:focus,
+  &.active {
     background: transparent;
+    border: 2px solid $CTA-200;
+  }
+  .subtitle,
+  .title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
 
-    &:hover {
-        background-color: $neutral-300;
+    span {
+      margin-left: 4px;
+      font-weight: normal;
+      font-size: 12px;
+      letter-spacing: 0;
     }
-
-    &:focus,
-    &.active {
-        background: transparent;
-        border: 2px solid $CTA-200;
-    }
-    .subtitle, .title{
-        display: flex;
-        justify-content: space-between;
-    }
-    .subtitle{
-        font-size: 12px;
-        margin-bottom: 4px;
-    }
-    .title{
-        font-size: 18px;
-        font-weight: bold;
-        letter-spacing: .1em;
-
-        span{
-            margin-left: 4px;
-            font-weight:normal;
-            font-size: 12px;
-            letter-spacing: 0;
-
-        }
-    }
+  }
 }
 .btn-plus,
 .btn-minus {
