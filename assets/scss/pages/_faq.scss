@@ -39,8 +39,13 @@
 
 .faq-nav {
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto;
+  scrollbar-width: none;
+  margin-bottom: 16px;
   .nav-item {
     .nav-link {
+      text-wrap: nowrap;
       padding: 12px 24px;
       border: 1.5px solid $neutral-400;
       border-radius: 100px;
@@ -54,6 +59,8 @@
     }
   }
   @media (min-width: 576px) {
+    justify-content: center;
+    margin-bottom: 0;
     .nav-item {
       .nav-link {
         padding: 12px 24px;
@@ -71,25 +78,61 @@
   }
 }
 
-.accordion-button::after {
-  display: none;
-  /* 隱藏預設箭頭 */
-}
+.accordion-item {
+  .accordion-button {
+    padding: 12px 0px;
+    &::after {
+      display: none;
+      /* 隱藏預設箭頭 */
+    }
+    &:focus {
+      box-shadow: none;
+    }
+    /* 收合顯示家浩 */
+    &[aria-expanded="false"] {
+      .add {
+        display: inline-block;
+      }
+      .sub {
+        display: none;
+      }
+    }
+    /* 展開時顯示減號 */
+    &[aria-expanded="true"] {
+      .add {
+        display: none;
+      }
+      .sub {
+        display: inline-block;
+      }
+    }
+    &:hover,
+    &:active {
+      border: none;
+      $accordion-button-focus-box-shadow: $neutral-300;
+      background-color: $neutral-300;
+    }
+  }
+  .accordion-collapse {
+    border: none;
 
-/* 預設顯示向下箭頭 */
-.accordion-button[aria-expanded="false"] .add {
-  display: inline-block;
-}
-
-.accordion-button[aria-expanded="false"] .sub {
-  display: none;
-}
-
-/* 展開時顯示向上箭頭 */
-.accordion-button[aria-expanded="true"] .add {
-  display: none;
-}
-
-.accordion-button[aria-expanded="true"] .sub {
-  display: inline-block;
+    .accordion-body {
+      padding: 0 0 16px 0;
+      &:active,
+      &:focus {
+        border: none;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .accordion-button {
+      padding: 16px 24px;
+    }
+    .accordion-collapse {
+      .accordion-body {
+        padding: 0px 24px 24px 24px;
+        border: none;
+      }
+    }
+  }
 }

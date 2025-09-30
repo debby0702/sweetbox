@@ -3,7 +3,9 @@
     <div class="faq-bg rounded-panel">
       <div class="px-lg-9 py-10">
         <div class="text-center mb-9">
-          <p class="fs-7 fs-lg-5 fw-bold ls-1 mb-3 mb-lg-6 text-primary-600">
+          <p
+            class="en-font fs-7 fs-lg-5 fw-bold ls-1 mb-3 mb-lg-6 text-primary-600"
+          >
             FAQ
           </p>
           <picture>
@@ -11,11 +13,11 @@
               media="(min-width: 576px)"
               srcset="/assets/images/Home_Page/title_section08.svg"
             />
+            <img
+              src="/assets/images/Home_Page/title_section08_mobile.png"
+              alt="FAQ-img"
+            />
           </picture>
-          <img
-            src="/assets/images/Home_Page/title_section08_mobile.png"
-            alt="FAQ-img"
-          />
         </div>
         <!-- Tab -->
         <!-- <div class="collapse" id="collapseExample">
@@ -25,11 +27,7 @@
             trigger.
           </div>
         </div> -->
-        <ul
-          class="nav nav-pills justify-content-center faq-nav"
-          id="pills-tab"
-          role="tablist"
-        >
+        <ul class="nav nav-pills faq-nav" id="pills-tab" role="tablist">
           <!-- tab-熱門 -->
           <li class="nav-item me-2 me-lg-3" role="presentation">
             <button
@@ -112,12 +110,38 @@
                     aria-controls="hot1"
                   >
                     我要訂購甜點盒, 需要加入會員嗎？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
+                    <!-- <span class="material-symbols-outlined add"> add </span> -->
+                    <!-- <span class="material-symbols-outlined sub"> remove </span> -->
                   </button>
                 </h2>
                 <div id="hot1" class="accordion-collapse collapse">
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。
                     </p>
@@ -136,8 +160,32 @@
                     aria-controls="hot2"
                   >
                     有哪些付款方式呢？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -145,7 +193,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
                   </div>
                 </div>
@@ -162,8 +210,32 @@
                     aria-controls="hot3"
                   >
                     我的甜點盒什麼時候能到？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -171,7 +243,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
                       ※ 若遇旺季或天候影響，配送時間可能略有延遲。
@@ -191,8 +263,32 @@
                     aria-controls="hot4"
                   >
                     一盒甜提供哪些類型的盒子？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -200,7 +296,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一
                       位甜點愛好者的味蕾
@@ -230,12 +326,36 @@
                     aria-controls="account1"
                   >
                     我要訂購甜點盒, 需要加入會員嗎？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div id="account1" class="accordion-collapse collapse">
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。
                     </p>
@@ -254,8 +374,32 @@
                     aria-controls="account2"
                   >
                     如何加入會員？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -263,7 +407,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
                   </div>
                 </div>
@@ -280,8 +424,32 @@
                     aria-controls="account3"
                   >
                     成為會員有哪些好處？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -289,7 +457,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
                       ※ 若遇旺季或天候影響，配送時間可能略有延遲。
@@ -309,8 +477,32 @@
                     aria-controls="account4"
                   >
                     我要怎麼查看我的訂單或訂閱狀態？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -318,7 +510,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一
                       位甜點愛好者的味蕾
@@ -348,12 +540,36 @@
                     aria-controls="money1"
                   >
                     一盒甜提供哪些類型的盒子？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div id="money1" class="accordion-collapse collapse">
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。
                     </p>
@@ -372,8 +588,32 @@
                     aria-controls="money2"
                   >
                     我是否需要支付運費呢？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -381,7 +621,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
                   </div>
                 </div>
@@ -398,8 +638,32 @@
                     aria-controls="money3"
                   >
                     我可以取消或暫停我的訂閱嗎？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -407,7 +671,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
                       ※ 若遇旺季或天候影響，配送時間可能略有延遲。
@@ -427,8 +691,32 @@
                     aria-controls="money4"
                   >
                     有哪些付款方式呢？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -436,7 +724,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       我們提供精選、在地、異國、季節四種主題的甜點盒，來滿足每一
                       位甜點愛好者的味蕾
@@ -466,12 +754,36 @@
                     aria-controls="other1"
                   >
                     我的甜點盒什麼時候能到？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div id="other1" class="accordion-collapse collapse">
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       是的，目前我們僅開放會員訂購服務，以方便你管理訂閱狀態、配送地址與付款資訊。
                     </p>
@@ -490,8 +802,32 @@
                     aria-controls="other2"
                   >
                     我拿到破損的產品, 怎麼辦？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -499,7 +835,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>可以選用現金、信用卡、轉帳三種付款方式。</p>
                   </div>
                 </div>
@@ -516,8 +852,32 @@
                     aria-controls="other3"
                   >
                     我可以客製化甜點盒中的內容嗎？
-                    <span class="material-symbols-outlined add"> add </span>
-                    <span class="material-symbols-outlined sub"> remove </span>
+                    <!-- 加號 -->
+                    <div class="p-3 add">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        class="add"
+                      >
+                        <path
+                          fill="currentColor"
+                          d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"
+                        />
+                      </svg>
+                    </div>
+                    <!-- 減號 -->
+                    <div class="p-3 sub">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                      >
+                        <path fill="currentColor" d="M5 13v-2h14v2z" />
+                      </svg>
+                    </div>
                   </button>
                 </h2>
                 <div
@@ -525,7 +885,7 @@
                   class="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body px-6 fs-7 fs-lg-6">
+                  <div class="accordion-body fs-7 fs-lg-6">
                     <p>
                       下單後約需5–7 個工作天安排配送，我們會盡快把甜點送到你手上
                       ※ 若遇旺季或天候影響，配送時間可能略有延遲。
