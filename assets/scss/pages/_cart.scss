@@ -1,5 +1,5 @@
 @mixin stepper-bar {
-  content: '';
+  content: "";
   position: absolute;
   top: 16px;
   height: 2px;
@@ -31,10 +31,11 @@
   border: 2px solid $neutral-400;
   border-radius: 100px;
   font-size: 14px;
-  line-height: 17px;    
+  line-height: 17px;
   display: flex;
   justify-content: center;
   align-items: center;
+  letter-spacing: 0;
 
   &-intro {
     line-height: 19px;
@@ -117,7 +118,7 @@
     @media (min-width: 992px) {
       height: 1050px;
       overflow-y: auto;
-      scrollbar-width: none; 
+      scrollbar-width: none;
     }
   }
   &-item {
@@ -164,6 +165,7 @@
 // Theme list
 .theme-img {
   width: 60px;
+  align-self: flex-start;
   @media (min-width: 576px) {
     width: 80px;
   }
@@ -219,7 +221,7 @@
     margin-bottom: 8px;
     border: 1px solid $semantic-error;
     background-color: $neutral-100;
-    &+ .error-message {
+    & + .error-message {
       display: flex;
       align-items: center;
     }
@@ -266,7 +268,7 @@
   }
 }
 
-// Subscription 
+// Subscription
 .subscription-list {
   font-size: 14px;
   line-height: 21px;
@@ -297,11 +299,10 @@
 .bg-empty-cart {
   background-image: none;
   @media (min-width: 576px) {
-    background-image: 
-      url('/assets/images/Cart_Page/cart_pattern01.svg'),
-      url('/assets/images/Cart_Page/cart_pattern02.svg'),
-      url('/assets/images/Cart_Page/cart_pattern03.svg'),
-      url('/assets/images/Cart_Page/cart_pattern04.svg');
+    background-image: url("/assets/images/Cart_Page/cart_pattern01.svg"),
+      url("/assets/images/Cart_Page/cart_pattern02.svg"),
+      url("/assets/images/Cart_Page/cart_pattern03.svg"),
+      url("/assets/images/Cart_Page/cart_pattern04.svg");
     background-size: 25%, 25%, 25%, 22%;
     background-position: left bottom, 35% bottom, 71% bottom, right bottom;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
