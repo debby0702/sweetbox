@@ -1,46 +1,68 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>購物車清單｜購物車｜一盒甜</title>
     <link rel="shortcut icon" href="/sweetbox/assets/favicon-BTuORJnk.ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
-        rel="stylesheet">
-  <script type="module" crossorigin src="/sweetbox/assets/main-D3M0GTm7.js"></script>
-  <link rel="stylesheet" crossorigin href="/sweetbox/assets/main-CLi0qMw1.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/sweetbox/assets/main-CDoQSEUh.js"></script>
+    <link rel="stylesheet" crossorigin href="/sweetbox/assets/main-CtXOXoKr.css">
+  </head>
 
-<body>
+  <body class="bg-neutral-300 cart-body">
     <nav class="navbar pt-3 px-3 pt-lg-5 px-lg-0">
   <div class="container header py-1 px-4 py-lg-2 px-lg-9">
-    <a href="#">
+    <a href="index.html">
       <picture>
-        <source srcset="/sweetbox/assets/sweetBox_logo-Dxj2nTGb.svg" media="(min-width: 992px)">
-        <img class="logo-icon" src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.2623%2016.8018C14.2322%2016.8018%2019.4451%2019.9555%2019.4451%2023.3665C19.4451%2031.5292%2019.2872%2031.5292%2012.9507%2031.5292C5.26578%2031.5292%205.00012%2031.1508%205.00012%2023.4609C5.00012%2020.8243%209.77028%2016.8018%2012.2623%2016.8018Z'%20fill='url(%23paint0_linear_64_1397)'/%3e%3cpath%20d='M34.1774%2020.8243C34.1774%2019.0123%2034.2668%2017.4368%2034.2668%2013.9398C34.2668%2010.9682%2032.2534%209.33835%2029.6528%209.33835C28.4323%209.33835%2028.094%209.87301%2027.2744%209.87301C26.5526%209.87301%2026.1608%209.33835%2024.6997%209.33835C23.0247%209.33835%2020.709%2011.0593%2020.709%2013.3241C20.709%2017.0199%2020.9362%2018.4935%2020.9362%2019.8461V27.546C20.9362%2029.104%2021.8727%2031.3688%2024.4148%2031.3688C25.4516%2031.3688%2026.4415%2031.3145%2027.3187%2031.3145C28.1424%2031.3145%2030.0004%2031.4415%2030.9711%2031.4415C35.4965%2031.4415%2034.1782%2023.6388%2034.1782%2020.8252L34.1774%2020.8243ZM27.4758%2024.0749C26.0263%2024.0749%2025.2076%2023.4216%2025.2076%2022.4433C25.2076%2021.4166%2027.2728%2021.775%2027.2728%2020.217C27.2728%2018.659%2024.9746%2019.0574%2024.9746%2017.4409C24.9746%2016.3541%2025.8709%2015.1828%2027.2936%2015.1828C29.7222%2015.1828%2030.3738%2016.4794%2030.3738%2017.258C30.3738%2019.3841%2027.8283%2017.7901%2027.8283%2019.3841C27.8283%2020.6405%2030.3922%2020.6297%2030.3922%2021.9379C30.3922%2022.7558%2029.9285%2024.0757%2027.4766%2024.0757L27.4758%2024.0749Z'%20fill='url(%23paint1_linear_64_1397)'/%3e%3cpath%20d='M5.43445%2012.0192C5.43445%209.65162%209.39594%209%2012.6816%209C15.9672%209%2019.445%2010.5221%2019.445%2012.4786C19.445%2014.4351%2018.1886%2015.6072%2015.2663%2015.6072C12.3441%2015.6072%205.43445%2015.8127%205.43445%2012.02V12.0192Z'%20fill='url(%23paint2_linear_64_1397)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_64_1397'%20x1='6.90194'%20y1='17.0302'%20x2='17.4089'%20y2='15.955'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_64_1397'%20x1='22.5059'%20y1='9.68111'%20x2='32.4955'%20y2='9.03756'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_64_1397'%20x1='7.27908'%20y1='9.10249'%20x2='17.0965'%20y2='6.93117'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="一盒甜logo">
+        <source
+          srcset="/sweetbox/assets/sweetBox_logo-Dxj2nTGb.svg"
+          media="(min-width: 992px)"
+        />
+        <img
+          class="logo-icon"
+          src="data:image/svg+xml,%3csvg%20width='40'%20height='40'%20viewBox='0%200%2040%2040'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M12.2623%2016.8018C14.2322%2016.8018%2019.4451%2019.9555%2019.4451%2023.3665C19.4451%2031.5292%2019.2872%2031.5292%2012.9507%2031.5292C5.26578%2031.5292%205.00012%2031.1508%205.00012%2023.4609C5.00012%2020.8243%209.77028%2016.8018%2012.2623%2016.8018Z'%20fill='url(%23paint0_linear_64_1397)'/%3e%3cpath%20d='M34.1774%2020.8243C34.1774%2019.0123%2034.2668%2017.4368%2034.2668%2013.9398C34.2668%2010.9682%2032.2534%209.33835%2029.6528%209.33835C28.4323%209.33835%2028.094%209.87301%2027.2744%209.87301C26.5526%209.87301%2026.1608%209.33835%2024.6997%209.33835C23.0247%209.33835%2020.709%2011.0593%2020.709%2013.3241C20.709%2017.0199%2020.9362%2018.4935%2020.9362%2019.8461V27.546C20.9362%2029.104%2021.8727%2031.3688%2024.4148%2031.3688C25.4516%2031.3688%2026.4415%2031.3145%2027.3187%2031.3145C28.1424%2031.3145%2030.0004%2031.4415%2030.9711%2031.4415C35.4965%2031.4415%2034.1782%2023.6388%2034.1782%2020.8252L34.1774%2020.8243ZM27.4758%2024.0749C26.0263%2024.0749%2025.2076%2023.4216%2025.2076%2022.4433C25.2076%2021.4166%2027.2728%2021.775%2027.2728%2020.217C27.2728%2018.659%2024.9746%2019.0574%2024.9746%2017.4409C24.9746%2016.3541%2025.8709%2015.1828%2027.2936%2015.1828C29.7222%2015.1828%2030.3738%2016.4794%2030.3738%2017.258C30.3738%2019.3841%2027.8283%2017.7901%2027.8283%2019.3841C27.8283%2020.6405%2030.3922%2020.6297%2030.3922%2021.9379C30.3922%2022.7558%2029.9285%2024.0757%2027.4766%2024.0757L27.4758%2024.0749Z'%20fill='url(%23paint1_linear_64_1397)'/%3e%3cpath%20d='M5.43445%2012.0192C5.43445%209.65162%209.39594%209%2012.6816%209C15.9672%209%2019.445%2010.5221%2019.445%2012.4786C19.445%2014.4351%2018.1886%2015.6072%2015.2663%2015.6072C12.3441%2015.6072%205.43445%2015.8127%205.43445%2012.02V12.0192Z'%20fill='url(%23paint2_linear_64_1397)'/%3e%3cdefs%3e%3clinearGradient%20id='paint0_linear_64_1397'%20x1='6.90194'%20y1='17.0302'%20x2='17.4089'%20y2='15.955'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint1_linear_64_1397'%20x1='22.5059'%20y1='9.68111'%20x2='32.4955'%20y2='9.03756'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3clinearGradient%20id='paint2_linear_64_1397'%20x1='7.27908'%20y1='9.10249'%20x2='17.0965'%20y2='6.93117'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20stop-color='%23FF5F1F'/%3e%3cstop%20offset='1'%20stop-color='%23FF8C5E'/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e"
+          alt="一盒甜logo"
+        />
       </picture>
     </a>
-    <ul class="d-none d-lg-flex flex-grow-1">
+    <ul class="d-none d-lg-flex align-items-center flex-grow-1">
       <li class="nav-item mx-auto">
-        <a class="nav-link" href="#"><span class="underline">主題一覽</span></a>
+        <a class="nav-link" href="theme.html"
+          ><span class="underline">主題一覽</span>
+        </a>
       </li>
       <li class="nav-item">
         <a href="#" class="nav-icon service-icon" aria-label="客服圖示"></a>
       </li>
       <li class="nav-item">
-        <a href="#" class="nav-icon cart-icon" aria-label="購物車圖示"></a>
+        <a
+          href="cart.html"
+          class="nav-icon cart-icon"
+          aria-label="購物車圖示"
+        ></a>
       </li>
       <li class="nav-item">
         <div class="dropdown">
-          <button type="button" class="btn dropdown-toggle dropdown-toggle-login d-flex align-items-center py-3 px-6 border-0" data-bs-toggle="dropdown" aria-expanded="false">
+          <button
+            type="button"
+            class="btn dropdown-toggle dropdown-toggle-login d-flex align-items-center py-3 px-6 border-0"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
             <div class="avatar me-2">
-              <img src="/sweetbox/assets/avatar-C8YyWkcG.jpg" alt="使用者頭像">
+              <img
+                class="d-block"
+                src="/sweetbox/assets/avatar-C8YyWkcG.jpg"
+                alt="使用者頭像"
+              />
             </div>
             <span class="user-name">歐拉</span>
           </button>
@@ -51,53 +73,832 @@
         </div>
       </li>
     </ul>
-    
+
     <div class="dropdown position-static">
-      <button type="button" class="btn dropdown-toggle p-3 border-0 d-inline-block d-lg-none" data-bs-toggle="dropdown" aria-expanded="false">
-        <svg class="dropdown-toggle-burger" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3.97461 5.97461H19.9746M3.97461 11.9746H19.9746M3.97461 17.9746H19.9746" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <button
+        type="button"
+        class="btn dropdown-toggle p-3 border-0 d-inline-block d-lg-none"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <svg
+          class="dropdown-toggle-burger"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M3.97461 5.97461H19.9746M3.97461 11.9746H19.9746M3.97461 17.9746H19.9746"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </svg>
       </button>
       <ul class="dropdown-menu fs-6 dropdown-menu-burger d-lg-none">
-        <li class="dropdown-item-wrapper"><a class="dropdown-item active" href="#">首頁</a></li>
-        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">主題一覽</a></li>
-        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">客服諮詢</a></li>
-        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">購物車</a></li>
-        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">會員中心</a></li>
-        <li class="dropdown-item-wrapper"><a class="dropdown-item" href="#">登出</a></li>
         <li class="dropdown-item-wrapper">
-          <button type="button" class="btn border-0 dropdown-item" data-bs-toggle="dropdown" aria-expanded="true">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"/></svg>
+          <a class="dropdown-item active" href="index.html">首頁</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <a class="dropdown-item" href="theme.html">主題一覽</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <a class="dropdown-item" href="#">客服諮詢</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <a class="dropdown-item" href="cart.html">購物車</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <a class="dropdown-item" href="#">會員中心</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <a class="dropdown-item" href="#">登出</a>
+        </li>
+        <li class="dropdown-item-wrapper">
+          <button
+            type="button"
+            class="btn border-0 dropdown-item"
+            aria-expanded="true"
+            onClick="this.closest('.dropdown-menu').classList.remove('show')"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="m12 13.4l-4.9 4.9q-.275.275-.7.275t-.7-.275t-.275-.7t.275-.7l4.9-4.9l-4.9-4.9q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275l4.9 4.9l4.9-4.9q.275-.275.7-.275t.7.275t.275.7t-.275.7L13.4 12l4.9 4.9q.275.275.275.7t-.275.7t-.7.275t-.7-.275z"
+              />
+            </svg>
           </button>
         </li>
       </ul>
     </div>
   </div>
-</nav>    <footer class="footer bg-neutral-250 position-relative">
+</nav>
+    <main class="cart-main">
+      <ol
+        class="stepper mx-auto d-flex justify-content-center align-items-center"
+      >
+        <li class="step-item d-flex flex-column align-items-center active">
+          <div class="step mb-2">1</div>
+          <span class="step-intro">購物車</span>
+        </li>
+        <li class="step-item d-flex flex-column align-items-center">
+          <div class="step mb-2">2</div>
+          <span class="step-intro">填寫資料</span>
+        </li>
+        <li class="step-item d-flex flex-column align-items-center">
+          <div class="step mb-2">3</div>
+          <span class="step-intro">訂單確認</span>
+        </li>
+      </ol>
+      <form class="container px-3 p-lg-0">
+        <!-- 購物車標題 -->
+        <div
+          class="d-flex justify-content-between align-items-center mb-2 mb-lg-6"
+        >
+          <h1 class="cart-title p-3 py-lg-2 px-lg-4">購物車</h1>
+          <a href="#" class="btn py-3 px-4 px-lg-8 border-0 btn-shopping"
+            >繼續購物</a
+          >
+        </div>
+        <div class="row mx-0 mx-sm-n3">
+          <div class="col-lg-8 px-0 px-lg-4 mb-2 mb-lg-0">
+            <!-- 購物車清單 -->
+            <ul class="cart-list cart-panel p-lg-4 px-0 py-4">
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_season-C2ym3g5x.jpg"
+                  alt="季節限定甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">季節限定甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">12個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$675 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$2,025</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">3</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="2" />
+                <input type="hidden" name="duration_months" value="12" />
+                <input type="hidden" name="price" value="675" />
+                <input type="hidden" name="quantity" value="3" />
+                <input type="hidden" name="theme_total_price" value="2025" />
+              </li>
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_feature-CGRW9Qsw.jpg"
+                  alt="精選甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">精選甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">12個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$675 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$1,350</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">2</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="2" />
+                <input type="hidden" name="duration_months" value="12" />
+                <input type="hidden" name="price" value="675" />
+                <input type="hidden" name="quantity" value="2" />
+                <input type="hidden" name="theme_total_price" value="1350" />
+              </li>
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_health-Cxfu8wsB.jpg"
+                  alt="無負擔甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">無負擔甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">3個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$720 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$720</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">1</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="5" />
+                <input type="hidden" name="duration_months" value="3" />
+                <input type="hidden" name="price" value="720" />
+                <input type="hidden" name="quantity" value="1" />
+                <input type="hidden" name="theme_total_price" value="720" />
+              </li>
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_world-DpRTtVCR.jpg"
+                  alt="異國風味甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">異國風味甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">6個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$700 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$700</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">1</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="4" />
+                <input type="hidden" name="duration_months" value="6" />
+                <input type="hidden" name="price" value="700" />
+                <input type="hidden" name="quantity" value="1" />
+                <input type="hidden" name="theme_total_price" value="700" />
+              </li>
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_veg-CpXtjxou.jpg"
+                  alt="素食甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">素食甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">12個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$675 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$675</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">1</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="6" />
+                <input type="hidden" name="duration_months" value="12" />
+                <input type="hidden" name="price" value="675" />
+                <input type="hidden" name="quantity" value="1" />
+                <input type="hidden" name="theme_total_price" value="675" />
+              </li>
+              <li class="d-flex align-items-center cart-item">
+                <img
+                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
+                  src="/sweetbox/assets/pic_local-0twtza9h.jpg"
+                  alt="在地甜點盒圖片"
+                />
+                <div class="cart-intro">
+                  <div
+                    class="d-flex justify-content-between align-items-center px-2 mb-2"
+                  >
+                    <h2 class="fs-7 lh-sm fw-bold ls-1">在地甜點盒</h2>
+                    <button type="button" class="btn p-0 btn-remove">
+                      移除
+                    </button>
+                  </div>
+                  <div class="dropdown plan-dropdown mb-2">
+                    <button
+                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <span class="me-1">3個月訂閱方案</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          fill="currentColor"
+                          fill-rule="evenodd"
+                          d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">3個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">6個月訂閱方案</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">12個月訂閱方案</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <p class="px-2 theme-price mb-2 mb-sm-4">單價：NT$720 / 盒</p>
+                  <div class="d-flex justify-content-between">
+                    <span class="theme-total-price">NT$720</span>
+                    <!-- 主題數量 -->
+                    <div class="px-2 d-flex align-items-center">
+                      <button type="button" class="btn-minus">
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
+                            fill="#C1B9AC"
+                          />
+                        </svg>
+                      </button>
+                      <span class="py-2 px-4 mx-1">1</span>
+                      <button type="button" class="btn-plus">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <input type="hidden" name="theme_id" value="3" />
+                <input type="hidden" name="duration_months" value="3" />
+                <input type="hidden" name="price" value="720" />
+                <input type="hidden" name="quantity" value="1" />
+                <input type="hidden" name="theme_total_price" value="720" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 px-0 px-lg-3">
+            <!-- 優惠代碼 -->
+            <section class="cart-panel py-4 px-3 p-lg-8 mb-2 mb-lg-6">
+              <h2 class="cart-right-title mb-3 mb-lg-6">優惠代碼</h2>
+              <div class="input-group input-discount">
+                <span class="input-group-text ps-2 my-2 ms-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M11.172 2a3 3 0 0 1 2.121.879l7.71 7.71a3.41 3.41 0 0 1 0 4.822l-5.592 5.592a3.41 3.41 0 0 1-4.822 0l-7.71-7.71A3 3 0 0 1 2 11.172V6a4 4 0 0 1 4-4zM7.5 5.5a2 2 0 0 0-1.995 1.85L5.5 7.5a2 2 0 1 0 2-2"
+                    />
+                  </svg>
+                </span>
+                <input
+                  type="text"
+                  class="form-control ps-2 py-0 pe-0"
+                  placeholder="請輸入優惠代碼"
+                  aria-label="優惠代碼"
+                  aria-describedby="button-addon2"
+                  name="discount_number"
+                />
+                <button
+                  class="btn d-block border-0"
+                  type="button"
+                  id="button-addon2"
+                >
+                  套用
+                </button>
+              </div>
+              <div class="px-2 error-message text-semantic-error">
+                <svg
+                  class="me-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10M12 7a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m-1 9a1 1 0 0 1 1-1h.008a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                此優惠代碼無效。
+              </div>
+            </section>
+            <!-- 訂單資料 -->
+            <section class="cart-panel py-4 px-3 p-lg-8 mb-2 mb-lg-6">
+              <h2 class="cart-right-title mb-3 mb-lg-6">訂單資料</h2>
+              <div class="px-2 px-lg-0 mb-0 mb-sm-6">
+                <p class="lh-base mb-2">共 9 件商品</p>
+                <ul class="ps-4 subscription-list mb-6">
+                  <li>
+                    <span class="me-4"
+                      >季節限定甜點盒<span class="mx-1">-</span
+                      >12個月訂閱方案</span
+                    ><span>x 3</span>
+                  </li>
+                  <li>
+                    <span class="me-4"
+                      >精選甜點盒<span class="mx-1">-</span>12個月訂閱方案</span
+                    ><span>x 2</span>
+                  </li>
+                  <li>
+                    <span class="me-4"
+                      >無負擔甜點盒<span class="mx-1">-</span
+                      >3個月訂閱方案</span
+                    ><span>x 1</span>
+                  </li>
+                  <li>
+                    <span class="me-4"
+                      >異國風味甜點盒<span class="mx-1">-</span
+                      >6個月訂閱方案</span
+                    ><span>x 1</span>
+                  </li>
+                  <li>
+                    <span class="me-4"
+                      >素食甜點盒<span class="mx-1">-</span>12個月訂閱方案</span
+                    ><span>x 1</span>
+                  </li>
+                  <li>
+                    <span class="me-4"
+                      >在地甜點盒<span class="mx-1">-</span>3個月訂閱方案</span
+                    ><span>x 1</span>
+                  </li>
+                </ul>
+                <div class="lh-base pb-6 mb-6 border-bottom border-neutral-400">
+                  <p
+                    class="d-flex justify-content-between align-items-center mb-2"
+                  >
+                    <span>小計</span><span>NT$6,190</span>
+                  </p>
+                  <p class="d-flex justify-content-between align-items-center">
+                    <span>折扣</span><span class="text-cta-200">- NT$175</span>
+                  </p>
+                </div>
+                <p
+                  class="d-flex justify-content-between align-items-center lh-sm ls-1 fw-bold"
+                >
+                  <span>合計</span
+                  ><span class="fs-5 lh-base ls-1">NT$6,015</span>
+                </p>
+              </div>
+              <button
+                type="button"
+                class="btn-primary-text w-100 d-none d-sm-block"
+              >
+                前往結帳
+              </button>
+            </section>
+            <!-- 購物須知 -->
+            <section class="py-4 px-3 p-lg-8 cart-notice">
+              <h3 class="mb-3 mb-lg-4">購物須知</h3>
+              <ol>
+                <li class="mb-2">
+                  註冊會員即可獲得 NT$100
+                  入會購物金，立即加入會員，享受專屬優惠！
+                </li>
+                <li class="mb-2">
+                  台灣地區訂單將於 7–10 個工作日
+                  出貨（週末及國定假日順延）。如商品頁面標示為「預購商品」，則依照該頁公告日期出貨。
+                </li>
+                <li>
+                  若選擇超商取貨，單筆訂單商品總重量若超過 5
+                  公斤（超過超商收貨限制），系統將自動為您拆單寄出，敬請留意。
+                </li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </form>
+      <div class="checkout-btn d-block d-sm-none">
+        <button type="button" class="btn-primary-text w-100">前往結帳</button>
+      </div>
+    </main>
+    <footer class="footer bg-neutral-250 position-relative">
   <nav class="container d-flex flex-column flex-lg-row justify-content-between align-items-center mb-3 px-0">
-    <img class="footer-logo mb-3 mb-lg-0" src="/sweetbox/assets/sweetBox_logo-Dxj2nTGb.svg" alt="一盒甜logo">
+    <a href="index.html"><img class="footer-logo mb-3 mb-lg-0" src="/sweetbox/assets/sweetBox_logo-Dxj2nTGb.svg"
+        alt="一盒甜logo"></a>
     <ul class="d-flex gap-1 gap-lg-6 mb-3 mb-lg-0">
-      <li class="footer-nav-item"><a href="#">主題一覽</a></li>
+      <li class="footer-nav-item"><a href="theme.html">主題一覽</a></li>
       <li class="footer-nav-item"><a href="#">會員中心</a></li>
     </ul>
     <ul class="d-flex gap-6">
       <li>
         <a class="social-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M1.503 6.977A3.375 3.375 0 0 1 4.875 3.75h14.25a3.375 3.375 0 0 1 3.372 3.227l-1.107.615L12 12.648 2.61 7.592l-1.107-.615ZM1.5 8.691v8.184a3.375 3.375 0 0 0 3.375 3.375h14.25a3.375 3.375 0 0 0 3.375-3.375V8.691l-.395.22-9.75 5.25a.75.75 0 0 1-.71 0l-9.76-5.255L1.5 8.69Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M1.503 6.977A3.375 3.375 0 0 1 4.875 3.75h14.25a3.375 3.375 0 0 1 3.372 3.227l-1.107.615L12 12.648 2.61 7.592l-1.107-.615ZM1.5 8.691v8.184a3.375 3.375 0 0 0 3.375 3.375h14.25a3.375 3.375 0 0 0 3.375-3.375V8.691l-.395.22-9.75 5.25a.75.75 0 0 1-.71 0l-9.76-5.255L1.5 8.69Z" />
+          </svg>
         </a>
       </li>
       <li>
         <a class="social-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M12 2.04c-5.5 0-10 4.49-10 10.02c0 5 3.66 9.15 8.44 9.9v-7H7.9v-2.9h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89c1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.45 2.9h-2.33v7a10 10 0 0 0 8.44-9.9c0-5.53-4.5-10.02-10-10.02" />
+          </svg>
         </a>
       </li>
       <li>
         <a class="social-link" href="#">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M12 8.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5"/><path fill="currentColor" fill-rule="evenodd" d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M17 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-9.75 6a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0" clip-rule="evenodd"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12 8.75a3.25 3.25 0 1 0 0 6.5a3.25 3.25 0 0 0 0-6.5" />
+            <path fill="currentColor" fill-rule="evenodd"
+              d="M6.77 3.082a47.5 47.5 0 0 1 10.46 0c1.899.212 3.43 1.707 3.653 3.613a45.7 45.7 0 0 1 0 10.61c-.223 1.906-1.754 3.401-3.652 3.614a47.5 47.5 0 0 1-10.461 0c-1.899-.213-3.43-1.708-3.653-3.613a45.7 45.7 0 0 1 0-10.611C3.34 4.789 4.871 3.294 6.77 3.082M17 6a1 1 0 1 0 0 2a1 1 0 0 0 0-2m-9.75 6a4.75 4.75 0 1 1 9.5 0a4.75 4.75 0 0 1-9.5 0"
+              clip-rule="evenodd" />
+          </svg>
         </a>
       </li>
     </ul>
   </nav>
   <p class="text-center copyright">Copyright © 2025 Sweet in a box</p>
-</footer>    
-</body>
+</footer>
+  </body>
+</html>
