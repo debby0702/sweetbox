@@ -32,16 +32,17 @@ const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
 const swiper = new Swiper(".feedback-swiper", {
   slidesPerView: "auto",
   spaceBetween: 24,
-  breakpoints: {
-    576: {
-      spaceBetween: 40,
-      slidesPerView: "auto",
-    }, //桌面版間距
-  },
+  //桌面版間距
+  // breakpoints: {
+  //   576: {
+  //     spaceBetween: 40,
+  //     slidesPerView: "auto",
+  //   },
+  // },
   slidesOffsetBefore: 0, // 不要預留空白
   slidesOffsetAfter: 0,
   autoHeight: true,
-  autoplay: false,
+  autoplay: true,
   loop: true,
   speed: 800,
 });
