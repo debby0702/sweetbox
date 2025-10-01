@@ -1,13 +1,14 @@
-// SECTION-1: theme-menu
+// SECTION-1 ---------------------------------------
+// theme-menu
 .pie-img {
   width: 576px;
   height: auto;
   position: absolute;
   left: 0;
-  bottom: -80px;
+  bottom: 0px;
 }
 
-//  SECTION-1: plan-opts
+//  plan-opts
 .plan-opts {
   // 992px 以上 //桌機
   @media (min-width: 992px) {
@@ -26,10 +27,12 @@
   }
 }
 
-//swiper：desktop
+// swiper：desktop
 .theme-detail-pics.d-lg-block {
+  //lg以上
   width: calc(66.666% - 120px - 24px);
 
+  //lg以下
   @media (max-width: 992px) {
     width: calc(58.333% - 120px - 24px);
   }
@@ -51,8 +54,8 @@
 
   // 大圖尺寸
   .swiperThemeDetail {
-    width: 100%; //100%;
-    height: 480px; //80%;
+    width: 100%;
+    height: 480px;
 
     img {
       border-radius: 40px;
@@ -61,7 +64,7 @@
 
   .swiperThemeDetail2 {
     //height: 20%;
-    padding: 12px 0; //10px 0;
+    padding: 12px 0;
 
     .swiper-slide {
       width: 100%;
@@ -76,8 +79,8 @@
 
   // 小圖尺寸
   .swiperThemeDetail2 {
-    width: 100%; //100%;
-    height: 116px; //300px;
+    width: 100%;
+    height: 116px;
     margin-left: auto;
     margin-right: auto;
 
@@ -90,7 +93,7 @@
   }
 }
 
-//mobile 滿版swiper
+// SECTION-1:mobile 滿版swiper
 .theme-detail-pics-sm {
   width: 100%;
   height: 55vh;
@@ -109,7 +112,7 @@
   }
 }
 
-//訂閱按鈕 //fixed
+// SECTION-1:訂閱按鈕 //fixed
 .subscribe-fixed-bar {
   //992px 以下 //手機
   @media (max-width: 992px) {
@@ -143,7 +146,8 @@
   }
 }
 
-// 波浪1
+// SECTION-2 ---------------------------------------
+//波浪1
 .theme-feature {
   &::before {
     content: "";
@@ -163,7 +167,7 @@
     }
   }
 }
-// 波浪2
+// SECTION-2:波浪2
 .theme-feature {
   &::after {
     content: "";
@@ -183,7 +187,7 @@
     }
   }
 }
-// 波浪3
+// SECTION-3:波浪3
 .theme-content {
   &::after {
     content: "";
@@ -376,30 +380,30 @@
   padding: 12px 16px;
   color: $neutral-800;
   font-size: 14px;
-  border-color: #E3DDD7;
+  border-color: #e3ddd7;
   border-radius: 100px;
   background-color: transparent;
 
   &:hover {
-      background-color: $neutral-300;
+    background-color: $neutral-300;
   }
 
   &:focus {
-      color: $neutral-100;
-      background-color: $neutral-800;
-      border-color: $neutral-800;
+    color: $neutral-100;
+    background-color: $neutral-800;
+    border-color: $neutral-800;
   }
 
   &:active {
-      color: $neutral-100;
-      background-color: $neutral-800;
-      border-color: $neutral-800;
+    color: $neutral-100;
+    background-color: $neutral-800;
+    border-color: $neutral-800;
   }
 
   &.active {
-      color: $neutral-100;
-      background-color: $neutral-800;
-      border-color: $neutral-800;
+    color: $neutral-100;
+    background-color: $neutral-800;
+    border-color: $neutral-800;
   }
 }
 
@@ -432,22 +436,22 @@
   color: $neutral-900;
 
   &.active {
-      background-color: $neutral-800;
+    background-color: $neutral-800;
   }
 
   &:hover {
-      // hover 時套用跟 active 一樣
-      background-color: $neutral-800;
+    // hover 時套用跟 active 一樣
+    background-color: $neutral-800;
 
-      .custom-page-link {
-          color: $neutral-100; // 文字也變白
-      }
+    .custom-page-link {
+      color: $neutral-100; // 文字也變白
+    }
   }
 
   &.disabled {
-      cursor: default;
-      pointer-events: none;
-      background-color: transparent !important;
+    cursor: default;
+    pointer-events: none;
+    background-color: transparent !important;
   }
 }
 
@@ -479,11 +483,11 @@
   color: $neutral-900;
 
   &:hover {
-      background-color: $neutral-800;
+    background-color: $neutral-800;
   }
 
   &:hover .custom-page-dropmenu-btn {
-      color: $neutral-100;
+    color: $neutral-100;
   }
 }
 
@@ -512,36 +516,36 @@
   margin: 0;
 
   li {
-      margin: 0;
+    margin: 0;
 
+    .dropdown-item {
+      font-size: 16px;
+      color: $neutral-800;
+      padding: 12px;
+      border-radius: 6px;
+      line-height: 1.5;
+      border-bottom: 1px solid $neutral-400;
+
+      &:hover {
+        color: $primary-600;
+      }
+    }
+
+    &:first-child {
       .dropdown-item {
-          font-size: 16px;
-          color: $neutral-800;
-          padding: 12px;
-          border-radius: 6px;
-          line-height: 1.5;
-          border-bottom: 1px solid $neutral-400;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        border: 1px solid $neutral-400;
+        border-radius: 8px;
+        pointer-events: none;
 
-          &:hover {
-              color: $primary-600;
-          }
+        &:hover {
+          background-color: transparent !important;
+          color: inherit !important;
+          cursor: default;
+        }
       }
-
-      &:first-child {
-          .dropdown-item {
-              padding-top: 24px;
-              padding-bottom: 16px;
-              border: 1px solid $neutral-400;
-              border-radius: 8px;
-              pointer-events: none;
-
-              &:hover {
-                  background-color: transparent !important;
-                  color: inherit !important;
-                  cursor: default;
-              }
-          }
-      }
+    }
   }
 }
 
@@ -567,18 +571,18 @@
 
 @media (max-width: 992px) {
   .rate svg {
-      width: 20px;
-      height: 20px;
+    width: 20px;
+    height: 20px;
   }
 
   .progress {
-      width: 182px;
-      height: 6px;
+    width: 182px;
+    height: 6px;
   }
 
   .star {
-      width: 12px;
-      height: 12px;
+    width: 12px;
+    height: 12px;
   }
 }
 
