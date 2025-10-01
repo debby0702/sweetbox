@@ -129,3 +129,806 @@
     }
   }
 }
+
+.container-1076 {
+  max-width: 351px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+  @media (min-width: 992px) {
+    max-width: 1076px;
+  }
+}
+
+// 波浪1
+.theme-feature {
+  &::before {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/assets/images/Theme_Detail/Feature/Vector.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+
+    @media (min-width: 576px) {
+      height: 80px;
+      top: -80px;
+      background-image: url("/assets/images/Theme_Detail/Feature/Clip\ path\ group.png");
+    }
+  }
+}
+// 波浪2
+.theme-feature {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/assets/images/Theme_Detail/Feature/Wave_2_mobile.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 1256px;
+
+    @media (min-width: 576px) {
+      height: 80px;
+      top: 707px;
+      background-image: url("/assets/images/Theme_Detail/Feature//Wave_2.png");
+    }
+  }
+}
+// 波浪3
+.theme-content {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/assets/images/Theme_Detail/Feature/WaveBackground_up.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+
+    @media (min-width: 576px) {
+      height: 80px;
+      bottom: 0px;
+      // background-image: url("/assets/images/Theme_Detail/Feature/WaveBackground_up_desktop.png");
+    }
+  }
+}
+
+.theme-content {
+  .container {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    @media (min-width: 576px) {
+      padding-top: 160px;
+      padding-bottom: 160px;
+    }
+  }
+}
+
+.detail-feature-card {
+  // padding: 44px 49px;
+  height: 312px;
+  text-align: center;
+  background-image: url("/assets/images/Theme_Detail/Feature/FeatureCard_Background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%; /* 背景圖完全撐滿容器，不管比例 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* 垂直置中 */
+}
+.detail-feature-card-padding {
+  height: 100%; /* 高度撐滿容器 */
+  padding: 44px 43px 45px 44px;
+  @media (min-width: 576px) {
+    padding: 44px 49px;
+  }
+}
+// 背景網格
+.backgroundPattern {
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  &.collapse,
+  &.expanded {
+    display: none;
+  }
+  @media (min-width: 576px) {
+    top: 0px;
+    height: auto;
+  }
+}
+
+/* 先把兩張圖預設都隱藏 */
+// .backgroundPattern.collapse,
+// .backgroundPattern.expanded {
+//   display: none;
+// }
+@media (max-width: 576px) {
+  /* 收合狀態：aria-expanded="false" → 顯示 collapse 圖片 */
+  .moreCards[aria-expanded="false"] ~ .collapse.backgroundPattern {
+    display: block;
+    height: auto;
+  }
+
+  /* 展開狀態：aria-expanded="true" → 顯示 expanded 圖片 */
+  .moreCards[aria-expanded="true"] ~ .backgroundPattern.expanded {
+    display: block;
+    height: 3297px;
+  }
+}
+
+.first-sweet-box-title {
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 36px;
+  @media (min-width: 576px) {
+    padding-left: 357px;
+    padding-right: 357px;
+    margin-bottom: 100px;
+  }
+}
+.first-sweet-box-content {
+  position: relative; /* 讓 overlay 可以對齊 */
+  overflow: hidden; /* 把超出容器邊界的部分裁掉 */
+  .overlay {
+    position: absolute; /* 讓 overlay 能脫離排版 */
+    inset: 0; /* 縮寫，等於 top:0; right:0; bottom:0; left:0; → 讓 overlay 蓋滿整個容器 */
+    background: rgba(0, 0, 0, 0.6); /* 半透明黑色背景 */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 60px;
+    border-radius: 24px;
+    opacity: 0; /* 預設透明（隱藏） */
+    transition: opacity 0.5s ease; /* overlay 從透明到完全顯現的總時間 */
+  }
+}
+.first-sweet-box-content:hover .overlay {
+  opacity: 1;
+}
+// 收合按鈕
+.moreCards {
+  border: 1.5px solid $neutral-400;
+  border-radius: 100px;
+  padding: 12px 145px;
+  color: $neutral-700;
+  background-color: $neutral-200;
+  font-weight: bold;
+  font-style: 14px;
+  font-size: 14px;
+  // 收合時，收合按鈕會顯現
+  &[aria-expanded="false"] .when-collapsed {
+    display: block;
+  }
+  // 收合時，收合按鈕會隱藏
+  &[aria-expanded="false"] .when-not-collapsed {
+    display: none;
+  }
+  // 展開時，展開按鈕會隱藏
+  &[aria-expanded="true"] .when-collapsed {
+    display: none;
+  }
+  // 展開時，收合按鈕會顯現
+  &[aria-expanded="true"] .when-not-collapsed {
+    display: block;
+  }
+}
+
+/* 手機版：收合時顯示漸層 */
+@media (max-width: 992px) {
+  .card-mask::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 141px; /* 漸層高度可調 */
+    background: linear-gradient(
+      to bottom,
+      rgba($neutral-200, 0) 0%,
+      /*漸層起點*/ rgba($neutral-200, 1) 100% /*漸層終點*/
+    );
+    border-radius: 0 0 1rem 1rem; /* 跟卡片圓角一致 */
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  /* 展開後隱藏漸層 */
+  .card-mask:has(.collapse.show)::after {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.rate-left {
+  width: 354px;
+}
+
+.progress {
+  width: 455px;
+  height: 12px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-tag {
+  padding: 12px 16px;
+  color: $neutral-800;
+  font-size: 14px;
+  border-color: #E3DDD7;
+  border-radius: 100px;
+  background-color: transparent;
+
+  &:hover {
+      background-color: $neutral-300;
+  }
+
+  &:focus {
+      color: $neutral-100;
+      background-color: $neutral-800;
+      border-color: $neutral-800;
+  }
+
+  &:active {
+      color: $neutral-100;
+      background-color: $neutral-800;
+      border-color: $neutral-800;
+  }
+
+  &.active {
+      color: $neutral-100;
+      background-color: $neutral-800;
+      border-color: $neutral-800;
+  }
+}
+
+.text-truncate-box {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  /* 限制顯示行數 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: 0.3s ease;
+}
+
+.text-expanded {
+  -webkit-line-clamp: unset;
+  /* 取消行數限制 */
+  max-height: none;
+  /* 高度不限 */
+}
+
+.custom-page-item {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  color: $neutral-900;
+
+  &.active {
+      background-color: $neutral-800;
+  }
+
+  &:hover {
+      // hover 時套用跟 active 一樣
+      background-color: $neutral-800;
+
+      .custom-page-link {
+          color: $neutral-100; // 文字也變白
+      }
+  }
+
+  &.disabled {
+      cursor: default;
+      pointer-events: none;
+      background-color: transparent !important;
+  }
+}
+
+.custom-page-item.active .custom-page-link {
+  color: $neutral-100; // active 狀態文字顏色
+}
+
+.custom-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $neutral-900;
+  font-size: 14px;
+  line-height: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.custom-page-dropmenu {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6px;
+  border-radius: 10px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid $neutral-400;
+  color: $neutral-900;
+
+  &:hover {
+      background-color: $neutral-800;
+  }
+
+  &:hover .custom-page-dropmenu-btn {
+      color: $neutral-100;
+  }
+}
+
+.custom-page-dropmenu-btn {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $neutral-900;
+  font-size: 14px;
+  line-height: 1;
+  border: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 下拉面板 */
+.custom-page-dropmenu-panel {
+  width: 320px;
+  border-radius: 24px;
+  background-color: $neutral-100;
+  opacity: 0.7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  border: none;
+  padding: 0; // 移除多餘 padding
+  margin: 0;
+
+  li {
+      margin: 0;
+
+      .dropdown-item {
+          font-size: 16px;
+          color: $neutral-800;
+          padding: 12px;
+          border-radius: 6px;
+          line-height: 1.5;
+          border-bottom: 1px solid $neutral-400;
+
+          &:hover {
+              color: $primary-600;
+          }
+      }
+
+      &:first-child {
+          .dropdown-item {
+              padding-top: 24px;
+              padding-bottom: 16px;
+              border: 1px solid $neutral-400;
+              border-radius: 8px;
+              pointer-events: none;
+
+              &:hover {
+                  background-color: transparent !important;
+                  color: inherit !important;
+                  cursor: default;
+              }
+          }
+      }
+  }
+}
+
+.brand {
+  top: 1240px;
+}
+
+.cake {
+  top: 768px;
+}
+
+.vote-box {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.2s ease;
+}
+
+.vote-box.active {
+  color: $primary-600;
+  /* 點擊後顏色 */
+}
+
+@media (max-width: 992px) {
+  .rate svg {
+      width: 20px;
+      height: 20px;
+  }
+
+  .progress {
+      width: 182px;
+      height: 6px;
+  }
+
+  .star {
+      width: 12px;
+      height: 12px;
+  }
+}
+
+@mixin stepper-bar {
+  content: "";
+  position: absolute;
+  top: 16px;
+  height: 2px;
+  background-color: $neutral-400;
+  z-index: -1;
+}
+
+// Cart body
+.cart-body footer {
+  padding-bottom: 75px;
+  @media (min-width: 576px) {
+    padding-bottom: 40px;
+  }
+}
+
+// Stepper
+.stepper {
+  max-width: 816px;
+  margin-bottom: 36px;
+  list-style: none;
+  @media (min-width: 992px) {
+    margin-bottom: 60px;
+  }
+}
+
+.step {
+  width: 32px;
+  height: 32px;
+  border: 2px solid $neutral-400;
+  border-radius: 100px;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0;
+
+  &-intro {
+    line-height: 19px;
+  }
+}
+
+.step-item {
+  position: relative;
+  flex: 1;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  color: $neutral-600;
+
+  &:not(:first-child)::before {
+    @include stepper-bar;
+    left: 0;
+    right: calc(50% + 16px);
+  }
+
+  &:not(:last-child)::after {
+    @include stepper-bar;
+    left: calc(50% + 16px);
+    right: 0;
+  }
+
+  &.active {
+    &:not(:first-child)::before {
+      background-color: $neutral-800;
+    }
+    .step {
+      border-width: 0;
+      background-color: $neutral-800;
+      color: $neutral-200;
+    }
+    .step-intro {
+      color: $neutral-800;
+    }
+  }
+  &.done {
+    &:not(:last-child)::after {
+      background-color: $neutral-800;
+    }
+  }
+}
+
+// Cart content
+.cart {
+  &-main {
+    padding-top: 108px;
+    padding-bottom: 36px;
+    @media (min-width: 992px) {
+      padding-top: 160px;
+      padding-bottom: 90px;
+    }
+  }
+  &-title {
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 20px;
+    line-height: 24px;
+    @media (min-width: 992px) {
+      font-size: 32px;
+      line-height: 38px;
+    }
+  }
+  &-panel {
+    border-radius: 12px;
+    background-color: $neutral-200;
+    @media (min-width: 992px) {
+      border-radius: 24px;
+    }
+  }
+  &-intro {
+    flex-grow: 1;
+    min-width: 0;
+  }
+  &-list {
+    height: auto;
+    overflow-y: hidden;
+    @media (min-width: 992px) {
+      height: 1050px;
+      overflow-y: auto;
+      scrollbar-width: none;
+    }
+  }
+  &-item {
+    padding: 12px 12px 24px;
+    @media (min-width: 992px) {
+      padding: 16px 16px 32px;
+    }
+  }
+  &-item:not(:last-child) {
+    position: relative;
+    border-bottom: 1px solid $neutral-400;
+    margin-bottom: 16px;
+  }
+  &-notice {
+    color: $neutral-700;
+    h3 {
+      font-size: 14px;
+      line-height: 16.8px;
+      font-weight: bold;
+      letter-spacing: 0.1rem;
+    }
+    ol {
+      padding-left: 1rem;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  &-empty {
+    display: none;
+    @media (min-width: 576px) {
+      display: block;
+      margin-bottom: 28px;
+    }
+  }
+}
+
+// Remove button
+.btn.btn-remove {
+  font-size: 14px;
+  line-height: 21px;
+  color: $semantic-link;
+}
+
+// Theme list
+.theme-img {
+  width: 60px;
+  align-self: flex-start;
+  @media (min-width: 576px) {
+    width: 80px;
+  }
+  @media (min-width: 768px) {
+    width: 120px;
+  }
+  @media (min-width: 992px) {
+    width: 156px;
+  }
+}
+
+.theme-price {
+  font-size: 14px;
+  line-height: 21px;
+  color: $neutral-600;
+}
+
+.theme-total-price {
+  padding: 4px 8px;
+  font-weight: bold;
+  line-height: 19.2px;
+  letter-spacing: 0.1rem;
+  align-self: center;
+  @media (min-width: 576px) {
+    align-self: flex-end;
+  }
+}
+
+// Cart right section
+.cart-right-title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21.6px;
+  letter-spacing: 0.1rem;
+  @media (min-width: 992px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.input-discount {
+  border-radius: 100px;
+  border: 1px solid $neutral-400;
+  &.active {
+    background-color: $neutral-100;
+  }
+  &.success {
+    .form-control {
+      color: $CTA-200;
+    }
+  }
+  &.error {
+    margin-bottom: 8px;
+    border: 1px solid $semantic-error;
+    background-color: $neutral-100;
+    & + .error-message {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &.disabled {
+    border: 1px solid $neutral-400;
+    color: $neutral-500;
+    .input-group-text {
+      color: $neutral-500;
+    }
+    .form-control {
+      &::placeholder {
+        color: $neutral-500;
+      }
+    }
+    .btn {
+      background-color: $neutral-300;
+      color: $neutral-500;
+    }
+  }
+  .input-group-text {
+    padding: 2px 8px;
+    border: 0;
+    background-color: transparent;
+  }
+  .form-control {
+    margin-right: 8px;
+    border: 0;
+    background-color: transparent;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 21px;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .btn {
+    padding: 12px 24px;
+    background-color: $neutral-400;
+    border-radius: 0 100px 100px 0;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+// Subscription
+.subscription-list {
+  font-size: 14px;
+  line-height: 21px;
+  color: $neutral-600;
+}
+
+.checkout-btn {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 16px 12px;
+  background-color: $neutral-200;
+  box-shadow: 0 -2px 4px 0 rgba(#000, 0.06);
+  z-index: 2;
+  display: block;
+  @media (min-width: 376px) {
+    display: none;
+  }
+}
+
+// Others
+.error-message {
+  display: none;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.bg-empty-cart {
+  background-image: none;
+  @media (min-width: 576px) {
+    background-image: url("/assets/images/Cart_Page/cart_pattern01.svg"),
+      url("/assets/images/Cart_Page/cart_pattern02.svg"),
+      url("/assets/images/Cart_Page/cart_pattern03.svg"),
+      url("/assets/images/Cart_Page/cart_pattern04.svg");
+    background-size: 25%, 25%, 25%, 22%;
+    background-position: left bottom, 35% bottom, 71% bottom, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  }
+}
+
+//Empty cart
+.empty-cart {
+  &-main {
+    padding-top: 68px;
+    @media (min-width: 576px) {
+      padding-top: 160px;
+      padding-bottom: 90px;
+    }
+  }
+  &-wrapper {
+    padding: 100px 12px;
+    border: 0;
+    background-color: transparent;
+    @media (min-width: 576px) {
+      padding-top: 90px;
+      padding-bottom: 90px;
+      background-color: rgba($neutral-200, 0.7);
+      backdrop-filter: blur(12px);
+      border: 1px solid $neutral-200;
+      border-radius: 40px;
+    }
+  }
+  &-img {
+    width: 120px;
+    @media (min-width: 576px) {
+      width: 160px;
+    }
+  }
+  &-title {
+    font-size: 16px;
+    line-height: 19.2px;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    @media (min-width: 576px) {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
