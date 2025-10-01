@@ -37,10 +37,16 @@
   border-radius: 80px;
 }
 
+// 常見問題的分類標籤 tab
 .faq-nav {
   flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: auto; //手機版透過滾輪移動tab標籤
+  scrollbar-width: none; //不顯示X軸
+  margin-bottom: 16px;
   .nav-item {
     .nav-link {
+      text-wrap: nowrap; //文字不會向下排列
       padding: 12px 24px;
       border: 1.5px solid $neutral-400;
       border-radius: 100px;
@@ -54,6 +60,8 @@
     }
   }
   @media (min-width: 576px) {
+    justify-content: center;
+    margin-bottom: 0;
     .nav-item {
       .nav-link {
         padding: 12px 24px;
@@ -71,25 +79,63 @@
   }
 }
 
-.accordion-button::after {
-  display: none;
-  /* 隱藏預設箭頭 */
-}
+// 常見問題的題目及答案 accordion
+.accordion-item {
+  .accordion-button {
+    padding: 12px 0px;
+    &::after {
+      display: none;
+      /* 隱藏預設箭頭 */
+    }
+    &:focus {
+      box-shadow: none; //隱藏預設的粉色外框
+    }
+    /* 收合顯示加號 */
+    &[aria-expanded="false"] {
+      .add {
+        display: inline-block;
+      }
+      .sub {
+        display: none;
+      }
+    }
+    /* 展開時顯示減號 */
+    &[aria-expanded="true"] {
+      .add {
+        display: none;
+      }
+      .sub {
+        display: inline-block;
+      }
+    }
+    &:hover,
+    &:active {
+      border: none;
+      $accordion-button-focus-box-shadow: $neutral-300;
+      background-color: $neutral-300;
+    }
+  }
+  .accordion-collapse {
+    border: none;
 
-/* 預設顯示向下箭頭 */
-.accordion-button[aria-expanded="false"] .add {
-  display: inline-block;
-}
-
-.accordion-button[aria-expanded="false"] .sub {
-  display: none;
-}
-
-/* 展開時顯示向上箭頭 */
-.accordion-button[aria-expanded="true"] .add {
-  display: none;
-}
-
-.accordion-button[aria-expanded="true"] .sub {
-  display: inline-block;
+    .accordion-body {
+      padding: 0 0 16px 0;
+      &:active,
+      &:focus {
+        border: none;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .accordion-button {
+      padding: 16px 24px;
+      box-shadow: none;
+    }
+    .accordion-collapse {
+      .accordion-body {
+        padding: 0px 24px 24px 24px;
+        border: none;
+      }
+    }
+  }
 }

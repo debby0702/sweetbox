@@ -31,11 +31,18 @@ const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
 // 首頁//好評分享swiper
 const swiper = new Swiper(".feedback-swiper", {
   slidesPerView: "auto",
-  spaceBetween: 40,
+  spaceBetween: 24,
+  //桌面版間距
+  // breakpoints: {
+  //   576: {
+  //     spaceBetween: 40,
+  //     slidesPerView: "auto",
+  //   },
+  // },
   slidesOffsetBefore: 0, // 不要預留空白
   slidesOffsetAfter: 0,
   autoHeight: true,
-  autoplay: false,
+  autoplay: true,
   loop: true,
   speed: 800,
 });
