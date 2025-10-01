@@ -37,15 +37,16 @@
   border-radius: 80px;
 }
 
+// 常見問題的分類標籤 tab
 .faq-nav {
   flex-wrap: nowrap;
   justify-content: flex-start;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow-x: auto; //手機版透過滾輪移動tab標籤
+  scrollbar-width: none; //不顯示X軸
   margin-bottom: 16px;
   .nav-item {
     .nav-link {
-      text-wrap: nowrap;
+      text-wrap: nowrap; //文字不會向下排列
       padding: 12px 24px;
       border: 1.5px solid $neutral-400;
       border-radius: 100px;
@@ -78,6 +79,7 @@
   }
 }
 
+// 常見問題的題目及答案 accordion
 .accordion-item {
   .accordion-button {
     padding: 12px 0px;
@@ -86,9 +88,9 @@
       /* 隱藏預設箭頭 */
     }
     &:focus {
-      box-shadow: none;
+      box-shadow: none; //隱藏預設的粉色外框
     }
-    /* 收合顯示家浩 */
+    /* 收合顯示加號 */
     &[aria-expanded="false"] {
       .add {
         display: inline-block;
@@ -127,6 +129,7 @@
   @media (min-width: 576px) {
     .accordion-button {
       padding: 16px 24px;
+      box-shadow: none;
     }
     .accordion-collapse {
       .accordion-body {
