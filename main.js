@@ -30,7 +30,7 @@ const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
 
 // 首頁//好評分享swiper
 const swiper = new Swiper(".feedback-swiper", {
-  slidesPerView: 1.35,
+  slidesPerView: "auto",
   spaceBetween: 24,
   breakpoints: {
     576: {

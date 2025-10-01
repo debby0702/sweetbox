@@ -32,8 +32,8 @@
   }
 }
 // 波浪2
-.theme-content {
-  &::before {
+.theme-feature {
+  &::after {
     content: "";
     width: 100%;
     height: 20px;
@@ -42,21 +42,43 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: -2px;
+    top: 1256px;
 
     @media (min-width: 576px) {
       height: 80px;
-      top: 0px;
+      top: 707px;
       background-image: url("/assets/images/Theme_Detail/Feature//Wave_2.png");
-      top: -20px;
     }
   }
-  .container {
-    padding-top: 160px;
-    padding-bottom: 80px;
+}
+// 波浪3
+.theme-content {
+  &::after {
+    content: "";
+    width: 100%;
+    height: 20px;
+    background-image: url("/assets/images/Theme_Detail/Feature/WaveBackground_up.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0px;
+
     @media (min-width: 576px) {
-      padding-top: 48px;
-      padding-bottom: 48px;
+      height: 80px;
+      bottom: 0px;
+      background-image: url("/assets/images/Theme_Detail/Feature/WaveBackground_up_desktop.png");
+    }
+  }
+}
+
+.theme-content {
+  .container {
+    padding-top: 68px;
+    padding-bottom: 68px;
+    @media (min-width: 576px) {
+      padding-top: 160px;
+      padding-bottom: 160px;
     }
   }
 }
@@ -82,9 +104,51 @@
     padding: 44px 49px;
   }
 }
+// 背景網格
+.backgroundPattern {
+  position: absolute;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  &.collapse,
+  &.expanded {
+    display: none;
+  }
+  @media (min-width: 576px) {
+    top: 0px;
+    height: auto;
+  }
+}
+
+/* 先把兩張圖預設都隱藏 */
+// .backgroundPattern.collapse,
+// .backgroundPattern.expanded {
+//   display: none;
+// }
+@media (max-width: 576px) {
+  /* 收合狀態：aria-expanded="false" → 顯示 collapse 圖片 */
+  .moreCards[aria-expanded="false"] ~ .collapse.backgroundPattern {
+    display: block;
+    height: auto;
+  }
+
+  /* 展開狀態：aria-expanded="true" → 顯示 expanded 圖片 */
+  .moreCards[aria-expanded="true"] ~ .backgroundPattern.expanded {
+    display: block;
+    height: 3297px;
+  }
+}
 
 .first-sweet-box-title {
-  margin-bottom: 100px;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 36px;
+  @media (min-width: 576px) {
+    padding-left: 357px;
+    padding-right: 357px;
+    margin-bottom: 100px;
+  }
 }
 .first-sweet-box-content {
   position: relative; /* 讓 overlay 可以對齊 */
