@@ -30,8 +30,14 @@ const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
 
 // 首頁//好評分享swiper
 const swiper = new Swiper(".feedback-swiper", {
-  slidesPerView: "auto",
-  spaceBetween: 40,
+  slidesPerView: 1.35,
+  spaceBetween: 24,
+  breakpoints: {
+    576: {
+      spaceBetween: 40,
+      slidesPerView: "auto",
+    }, //桌面版間距
+  },
   slidesOffsetBefore: 0, // 不要預留空白
   slidesOffsetAfter: 0,
   autoHeight: true,

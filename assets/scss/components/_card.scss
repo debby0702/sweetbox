@@ -5,9 +5,13 @@
     .content {
       margin-bottom: 24px;
       .star-number {
+        display: flex;
         font-weight: 700;
         font-size: 18px;
         margin-bottom: 8px;
+      }
+      .card-text {
+        font-size: 16px;
       }
     }
     .author {
@@ -23,6 +27,9 @@
         .star-number {
           font-size: 24px;
           margin-bottom: 12px;
+        }
+        .card-text {
+          font-size: 18px;
         }
       }
       .author {
