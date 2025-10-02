@@ -2,40 +2,34 @@
 <html lang="zh-Hant-TW">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車清單｜購物車｜一盒甜</title>
-    <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Noto+Sans+TC:wght@100..900&display=swap"
-        rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>購物車清單｜購物車｜一盒甜</title>
+  <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-neutral-300">
   <%- include('./layout/header'); -%>
-  <main class="empty-cart-main bg-empty-cart">
-    <div class="container px-0">
-      <h1 class="cart-title p-3 py-lg-2 px-lg-4 cart-empty">購物車</h1>
-      <div class="empty-cart-wrapper text-center">
-        <div class="empty-cart-img mx-auto mb-6 mb-sm-8">
-          <img src="/assets/images/Cart_Page/pic_empty.svg" alt="空的購物車圖片">
+    <main class="empty-cart-main bg-empty-cart">
+      <div class="container px-0">
+        <h1 class="cart-title p-3 py-lg-2 px-lg-4 cart-empty">購物車</h1>
+        <div class="empty-cart-wrapper text-center">
+          <div class="empty-cart-img mx-auto mb-6 mb-sm-8">
+            <img src="/assets/images/Cart_Page/pic_empty.svg" alt="空的購物車圖片">
+          </div>
+          <h1 class="empty-cart-title mb-2">購物車裡還沒有甜點呢</h1>
+          <p class="lh-base mb-6 mb-sm-8">快來挑選一盒，讓生活多一點甜</p>
+          <button class="btn-primary-icon fw-bold px-lg-8">
+            帶我去挑甜點
+            <svg class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path fill="currentColor" d="M15 7.586L22.414 15H2v-2h15.586l-4-4z" />
+            </svg>
+          </button>
         </div>
-        <h1 class="empty-cart-title mb-2">購物車裡還沒有甜點呢</h1>
-        <p class="lh-base mb-6 mb-sm-8">快來挑選一盒，讓生活多一點甜</p>
-        <button class="btn-primary-icon fw-bold px-lg-8">
-          帶我去挑甜點
-          <svg
-            class="ms-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-            <path fill="currentColor" d="M15 7.586L22.414 15H2v-2h15.586l-4-4z" />
-          </svg>
-        </button>
       </div>
-    </div>
-  </main>
-  <%- include('./layout/footer'); -%>
-  <script type="module" src="../main.js"></script>
+    </main>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
 </body>
