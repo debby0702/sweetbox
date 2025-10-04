@@ -1,8 +1,25 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import './utils/variables';
-@import "../../node_modules/bootstrap";
+@import "bootstrap/scss/functions";
+@import "./utils/variables";
+@import "bootstrap/scss/bootstrap";
+@import "./utils/utilities";
+@import "bootstrap/scss/utilities/api";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+// Base
+@import "./base/base";
 
-@import './pages/index.scss';
+// Components
+@import "./components/button";
+@import "./components/dropdown";
+@import "./components/font";
+@import "./components/nav-tab";
+@import "./components/card";
+
+// Layout
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+
+// Page
+@import "./pages/index";
+@import "./pages/theme";
+@import "./pages/theme_detail";
+@import "./pages/cart";

@@ -1,0 +1,39 @@
+{
+  // === 編輯器行為 ===
+  "editor.insertSpaces": true, // 使用空白縮排
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false, // 避免 VS Code 自動偵測覆蓋自己定義的設定
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "file",
+
+  // === 格式化工具 ===
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // === 檔案處理習慣 ===
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.eol": "\n", // 強制 LF 換行
+
+  // === Prettier 設定 ===
+  "prettier.semi": true, // 結尾加分號
+  "prettier.singleQuote": false, // 使用雙引號
+  "prettier.tabWidth": 2, // 縮排寬度 2
+  "prettier.useTabs": false, // 不用 tab
+  "prettier.trailingComma": "es5", // ES5 可用的地方加逗號
+
+  // === 語言專屬設定 ===
+  "[json]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ejs]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}

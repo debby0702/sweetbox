@@ -1,0 +1,53 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size":
+      map-merge(
+        map-get($utilities, "font-size"),
+        (
+          responsive: true,
+        )
+      ),
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: var(--#{$prefix}border-radius),
+        0: 0,
+        1: var(--#{$prefix}border-radius-sm),
+        // 4px
+        2: var(--#{$prefix}border-radius),
+        // 6px
+        3: var(--#{$prefix}border-radius-lg),
+        // 8px
+        4: 12px,
+        //custom
+        5: var(--#{$prefix}border-radius-xl),
+        // 16px
+        6: 24px,
+        7: var(--#{$prefix}border-radius-xxl),
+        // 32px
+        8: 40px,
+        //custom
+        circle: 50%,
+        pill: var(--#{$prefix}border-radius-pill),
+      ),
+    ),
+    "opacity": (
+      property: opacity,
+      values: (
+        0: 0,
+        25: 0.25,
+        50: 0.5,
+        70: 0.7,
+        //custom
+        75: 0.75,
+        100: 1,
+      ),
+    ),
+  )
+);
+
+.ls-1 {
+  letter-spacing: 0.1em;
+}

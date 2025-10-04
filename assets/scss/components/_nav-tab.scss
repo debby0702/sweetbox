@@ -1,0 +1,145 @@
+.nav-link {
+  padding: 16px 20px;
+  &:hover {
+    color: $primary-600;
+  }
+  &:active,
+  &.active {
+    color: $primary-600;
+    .underline {
+      padding-bottom: 8px;
+      border-bottom: 2px solid $primary-600;
+      border-radius: 1px;
+    }
+    .side-bar {
+      padding-left: 12px;
+      border-left: 2px solid $primary-600;
+      border-radius: 1px;
+    }
+  }
+}
+
+// 主題清單
+.side-menu-area {
+  //mibile:menu固定上方
+  position: fixed;
+  margin-top: 68px;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+
+  //desktop:左側固定寬度
+  @media (min-width: 992px) {
+    width: 120px;
+    font-size: 16px;
+    position: static;
+    margin-top: 0;
+    top: unset;
+    z-index: unset;
+  }
+
+  .side-menu {
+    overflow-x: auto;
+    scrollbar-width: none;
+    font-size: 14px;
+
+    &.side-menu {
+      flex-wrap: nowrap;
+    }
+
+    .nav-link {
+      padding: 12px 16px 4px 16px;
+      color: $neutral-700;
+      text-wrap: nowrap;
+      font-size: 16px;
+
+      &.active,
+      &:hover {
+        color: $primary-600;
+      }
+
+      &.active::after {
+        content: "";
+        border-radius: 50px;
+        border-bottom: solid 2px $primary-600;
+        margin-top: 8px;
+        display: block;
+      }
+    }
+
+    //992px 以上
+    @media (min-width: 992px) {
+      .nav-link {
+        padding: 16px 0 16px 12px;
+        width: 120px;
+
+        &.active::after {
+          border-bottom: unset;
+          margin-top: unset;
+        }
+
+        &::before {
+          content: "";
+          border-radius: 50px;
+          border-left: solid 2px transparent;
+          margin-right: 12px;
+          height: 1em;
+          display: block;
+        }
+        &.active::before {
+          border-left: solid 2px $primary-600;
+        }
+      }
+    }
+  }
+}
+
+.side-menu-float {
+  z-index: 10;
+  padding: 0 8px;
+  background-color: rgba($neutral-200, 0.7);
+  backdrop-filter: blur(16px);
+  border-radius: 20px;
+  box-shadow: 0 0 4px 0 rgba($black, 0.25);
+
+  //初始動畫
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s linear;
+  pointer-events: none;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  //主題選項樣式
+  .nav-link {
+    padding: 16px 20px 16px 8px;
+    color: $neutral-700;
+    text-wrap: nowrap;
+    font-size: 16px;
+
+    &.active,
+    &:hover {
+      color: $primary-600;
+    }
+
+    &::before {
+      content: "";
+      border-radius: 50px;
+      border-left: solid 2px transparent;
+      margin-right: 12px;
+      display: block;
+      height: 1em;
+    }
+    &.active::before {
+      border-left: solid 2px $primary-600;
+    }
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}

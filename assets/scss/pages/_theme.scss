@@ -1,0 +1,111 @@
+// .theme-banner {
+//   display: flex;
+//   height: 322px;
+//   background-image: url("/assets/images/Theme_Page/Banner_mobile.svg");
+//   background-position: top;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+
+//   @media (min-width: 992px) {
+//     display: block;
+//     height: 588px;
+//     background-image: url("/assets/images/Theme_Page/Banner.svg");
+//     background-position: center;
+//   }
+// }
+.theme-banner {
+  position: relative;
+
+  .theme-banner-img {
+    display: block;
+    width: 100vw;
+    height: 332px; // 手機版 banner 圖片高度
+    object-fit: cover; //等比例縮放，不顯示超出容器的圖
+    @media (min-width: 375px) {
+      height: auto; //讓手機版圖片放大
+    }
+    @media (min-width: 1200px) {
+      height: calc(100vw / 1920 * 588); //桌面版 banner 圖片高度
+    }
+  }
+}
+.title-mobile {
+  padding-top: 104px;
+  position: absolute;
+  top: 0px;
+  margin: 0 auto;
+  left: 50%; // 讓元素左邊對齊容器中線
+  transform: translateX(
+    -50%
+  ); // 再往左移自身寬度的一半，結合上面的left 就會是水平置中
+  img {
+    width: 50vw;
+  }
+  @media (min-width: 767px) {
+    display: none; //桌面版的圖就有文字，所以就不顯示
+  }
+}
+.theme-background {
+  top: 0px;
+  width: 100%;
+  height: 3542px;
+  @media (min-width: 576px) {
+    top: 0px;
+    height: 100%;
+  }
+}
+
+.theme-card {
+  position: relative;
+  background-color: transparent;
+  .theme-title {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .card-body {
+    padding-left: 0px;
+    padding-right: 0px;
+    .card-title {
+      font-size: 16px;
+    }
+    .btn-theme-card {
+      background-color: $neutral-200;
+      border-radius: 100px;
+      border: 1.5px;
+      border-color: $neutral-400;
+      padding: 12px 24px;
+      color: $neutral-800;
+
+      &:hover {
+        background-color: $neutral-300;
+        color: $neutral-900;
+      }
+
+      &:active {
+        background-color: $neutral-400;
+        color: $neutral-900;
+      }
+
+      &:focus {
+        background-color: $neutral-400;
+        color: $neutral-900;
+      }
+
+      &:disabled {
+        background-color: transparent;
+        color: $neutral-500;
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .card-body {
+      padding-left: 28px;
+      padding-right: 28px;
+    }
+  }
+}
+
+.theme-title::after,
+.theme-title::before {
+  content: "．";
+}

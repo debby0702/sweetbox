@@ -1,4 +1,118 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+@mixin icon-underline {
+  content: "";
+  width: 16px;
+  height: 2px;
+  position: absolute;
+  bottom: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 100px;
+  background-color: $neutral-800;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  &-toggler-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.nav {
+  &-icon {
+    width: 48px;
+    height: 48px;
+    display: block;
+    position: relative;
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.service-icon {
+  background-image: url("/assets/images/icon/customer_service_outline.svg");
+
+  &:hover {
+    background-image: url("/assets/images/icon/customer_service_hover.svg");
+  }
+  &:active,
+  &.active {
+    background-image: url("/assets/images/icon/customer_service_selected.svg");
+    &::after {
+      @include icon-underline;
+    }
+  }
+}
+
+.cart-icon {
+  background-image: url("/assets/images/icon/cart_outline.svg");
+
+  &:hover {
+    background-image: url("/assets/images/icon/cart_hover.svg");
+  }
+  &:active,
+  &.active {
+    background-image: url("/assets/images/icon/cart_selected.svg");
+    &::after {
+      @include icon-underline;
+    }
+  }
+  &.has-items {
+    &.active {
+      background-image: url("/assets/images/icon/cart_hover.svg");
+      &::after {
+        content: none;
+      }
+    }
+    &::before {
+      content: "";
+      width: 20px;
+      height: 20px;
+      background-image: url("/assets/images/icon/cart_badge.svg");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: absolute;
+      left: 16px;
+      bottom: 16px;
+    }
+  }
+}
+
+.header {
+  border: 1px solid $neutral-100;
+  border-radius: 100px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($neutral-100, 0.4);
+    backdrop-filter: blur(16px);
+    border-radius: 100px;
+    z-index: -1;
+  }
+}
+
+.avatar {
+  width: 24px;
+  border-radius: 50%;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.logo-icon {
+  width: 44px;
+  @media (min-width: 992px) {
+    width: 120px;
+  }
 }
