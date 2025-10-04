@@ -1,20 +1,19 @@
 <!DOCTYPE html>
 <html lang="zh-Hant-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>購物車清單｜購物車｜一盒甜</title>
-    <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  </head>
 
-  <body class="bg-neutral-300 cart-body">
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>購物車清單｜購物車｜一盒甜</title>
+  <link rel="shortcut icon" href="/assets/images/Home_Page/favicon.ico" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="bg-neutral-300 cart-body">
+  <%- include('./layout/header'); -%>
     <main class="cart-main">
-      <ol
-        class="stepper mx-auto d-flex justify-content-center align-items-center"
-      >
+      <ol class="stepper mx-auto d-flex justify-content-center align-items-center">
         <li class="step-item d-flex flex-column align-items-center active">
           <div class="step mb-2">1</div>
           <span class="step-intro">購物車</span>
@@ -30,53 +29,32 @@
       </ol>
       <form class="container px-3 p-lg-0">
         <!-- 購物車標題 -->
-        <div
-          class="d-flex justify-content-between align-items-center mb-2 mb-lg-6"
-        >
+        <div class="d-flex justify-content-between align-items-center mb-2 mb-lg-6">
           <h1 class="cart-title p-3 py-lg-2 px-lg-4">購物車</h1>
-          <a href="#" class="btn py-3 px-4 px-lg-8 border-0 btn-shopping"
-            >繼續購物</a
-          >
+          <a href="theme.html" class="btn py-3 px-4 px-lg-8 border-0 btn-shopping">繼續購物</a>
         </div>
         <div class="row mx-0 mx-sm-n3">
           <div class="col-lg-8 px-0 px-lg-4 mb-2 mb-lg-0">
             <!-- 購物車清單 -->
             <ul class="cart-list cart-panel p-lg-4 px-0 py-4">
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_season.jpg"
-                  alt="季節限定甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_season.jpg"
+                  alt="季節限定甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">季節限定甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">12個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -97,31 +75,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">3</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -134,40 +98,23 @@
                 <input type="hidden" name="theme_total_price" value="2025" />
               </li>
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_feature.jpg"
-                  alt="精選甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_feature.jpg"
+                  alt="精選甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">精選甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">12個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -188,31 +135,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">2</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -225,40 +158,23 @@
                 <input type="hidden" name="theme_total_price" value="1350" />
               </li>
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_health.jpg"
-                  alt="無負擔甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_health.jpg"
+                  alt="無負擔甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">無負擔甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">3個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -279,31 +195,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">1</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -316,40 +218,23 @@
                 <input type="hidden" name="theme_total_price" value="720" />
               </li>
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_world.jpg"
-                  alt="異國風味甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_world.jpg"
+                  alt="異國風味甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">異國風味甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">6個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -370,31 +255,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">1</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -407,40 +278,23 @@
                 <input type="hidden" name="theme_total_price" value="700" />
               </li>
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_veg.jpg"
-                  alt="素食甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_veg.jpg"
+                  alt="素食甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">素食甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">12個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -461,31 +315,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">1</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -498,40 +338,23 @@
                 <input type="hidden" name="theme_total_price" value="675" />
               </li>
               <li class="d-flex align-items-center cart-item">
-                <img
-                  class="rounded-4 me-3 me-lg-6 d-block theme-img"
-                  src="/assets/images/Cart_Page/pic_local.jpg"
-                  alt="在地甜點盒圖片"
-                />
+                <img class="rounded-4 me-3 me-lg-6 d-block theme-img" src="/assets/images/Cart_Page/pic_local.jpg"
+                  alt="在地甜點盒圖片" />
                 <div class="cart-intro">
-                  <div
-                    class="d-flex justify-content-between align-items-center px-2 mb-2"
-                  >
+                  <div class="d-flex justify-content-between align-items-center px-2 mb-2">
                     <h2 class="fs-7 lh-sm fw-bold ls-1">在地甜點盒</h2>
                     <button type="button" class="btn p-0 btn-remove">
                       移除
                     </button>
                   </div>
                   <div class="dropdown plan-dropdown mb-2">
-                    <button
-                      class="btn dropdown-toggle border-0 d-flex align-items-center me-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
+                    <button class="btn dropdown-toggle border-0 d-flex align-items-center me-1" type="button"
+                      data-bs-toggle="dropdown" aria-expanded="false">
                       <span class="me-1">3個月訂閱方案</span>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          fill="currentColor"
-                          fill-rule="evenodd"
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                        <path fill="currentColor" fill-rule="evenodd"
                           d="M7.293 9.293a1 1 0 0 1 1.414 0L12 12.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4a1 1 0 0 1-1.414 0l-4-4a1 1 0 0 1 0-1.414"
-                          clip-rule="evenodd"
-                        />
+                          clip-rule="evenodd" />
                       </svg>
                     </button>
                     <ul class="dropdown-menu">
@@ -552,31 +375,17 @@
                     <!-- 主題數量 -->
                     <div class="px-2 d-flex align-items-center">
                       <button type="button" class="btn-minus">
-                        <svg
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path
                             d="M5 12C5 11.7348 5.10536 11.4804 5.29289 11.2929C5.48043 11.1054 5.73478 11 6 11H18C18.2652 11 18.5196 11.1054 18.7071 11.2929C18.8946 11.4804 19 11.7348 19 12C19 12.2652 18.8946 12.5196 18.7071 12.7071C18.5196 12.8946 18.2652 13 18 13H6C5.73478 13 5.48043 12.8946 5.29289 12.7071C5.10536 12.5196 5 12.2652 5 12Z"
-                            fill="#C1B9AC"
-                          />
+                            fill="#C1B9AC" />
                         </svg>
                       </button>
                       <span class="py-2 px-4 mx-1">1</span>
                       <button type="button" class="btn-plus">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            fill="currentColor"
-                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z"
-                          />
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="currentColor"
+                            d="M13 6a1 1 0 1 0-2 0v5H6a1 1 0 1 0 0 2h5v5a1 1 0 1 0 2 0v-5h5a1 1 0 1 0 0-2h-5z" />
                         </svg>
                       </button>
                     </div>
@@ -596,48 +405,22 @@
               <h2 class="cart-right-title mb-3 mb-lg-6">優惠代碼</h2>
               <div class="input-group input-discount">
                 <span class="input-group-text ps-2 my-2 ms-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      fill="currentColor"
-                      d="M11.172 2a3 3 0 0 1 2.121.879l7.71 7.71a3.41 3.41 0 0 1 0 4.822l-5.592 5.592a3.41 3.41 0 0 1-4.822 0l-7.71-7.71A3 3 0 0 1 2 11.172V6a4 4 0 0 1 4-4zM7.5 5.5a2 2 0 0 0-1.995 1.85L5.5 7.5a2 2 0 1 0 2-2"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                      d="M11.172 2a3 3 0 0 1 2.121.879l7.71 7.71a3.41 3.41 0 0 1 0 4.822l-5.592 5.592a3.41 3.41 0 0 1-4.822 0l-7.71-7.71A3 3 0 0 1 2 11.172V6a4 4 0 0 1 4-4zM7.5 5.5a2 2 0 0 0-1.995 1.85L5.5 7.5a2 2 0 1 0 2-2" />
                   </svg>
                 </span>
-                <input
-                  type="text"
-                  class="form-control ps-2 py-0 pe-0"
-                  placeholder="請輸入優惠代碼"
-                  aria-label="優惠代碼"
-                  aria-describedby="button-addon2"
-                  name="discount_number"
-                />
-                <button
-                  class="btn d-block border-0"
-                  type="button"
-                  id="button-addon2"
-                >
+                <input type="text" class="form-control ps-2 py-0 pe-0" placeholder="請輸入優惠代碼" aria-label="優惠代碼"
+                  aria-describedby="button-addon2" name="discount_number" />
+                <button class="btn d-block border-0" type="button" id="button-addon2">
                   套用
                 </button>
               </div>
               <div class="px-2 error-message text-semantic-error">
-                <svg
-                  class="me-2"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    fill="currentColor"
-                    fill-rule="evenodd"
+                <svg class="me-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                  <path fill="currentColor" fill-rule="evenodd"
                     d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10s10-4.477 10-10M12 7a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V8a1 1 0 0 1 1-1m-1 9a1 1 0 0 1 1-1h.008a1 1 0 1 1 0 2H12a1 1 0 0 1-1-1"
-                    clip-rule="evenodd"
-                  />
+                    clip-rule="evenodd" />
                 </svg>
                 此優惠代碼無效。
               </div>
@@ -649,60 +432,37 @@
                 <p class="lh-base mb-2">共 9 件商品</p>
                 <ul class="ps-4 subscription-list mb-6">
                   <li>
-                    <span class="me-4"
-                      >季節限定甜點盒<span class="mx-1">-</span
-                      >12個月訂閱方案</span
-                    ><span>x 3</span>
+                    <span class="me-4">季節限定甜點盒<span class="mx-1">-</span>12個月訂閱方案</span><span>x 3</span>
                   </li>
                   <li>
-                    <span class="me-4"
-                      >精選甜點盒<span class="mx-1">-</span>12個月訂閱方案</span
-                    ><span>x 2</span>
+                    <span class="me-4">精選甜點盒<span class="mx-1">-</span>12個月訂閱方案</span><span>x 2</span>
                   </li>
                   <li>
-                    <span class="me-4"
-                      >無負擔甜點盒<span class="mx-1">-</span
-                      >3個月訂閱方案</span
-                    ><span>x 1</span>
+                    <span class="me-4">無負擔甜點盒<span class="mx-1">-</span>3個月訂閱方案</span><span>x 1</span>
                   </li>
                   <li>
-                    <span class="me-4"
-                      >異國風味甜點盒<span class="mx-1">-</span
-                      >6個月訂閱方案</span
-                    ><span>x 1</span>
+                    <span class="me-4">異國風味甜點盒<span class="mx-1">-</span>6個月訂閱方案</span><span>x 1</span>
                   </li>
                   <li>
-                    <span class="me-4"
-                      >素食甜點盒<span class="mx-1">-</span>12個月訂閱方案</span
-                    ><span>x 1</span>
+                    <span class="me-4">素食甜點盒<span class="mx-1">-</span>12個月訂閱方案</span><span>x 1</span>
                   </li>
                   <li>
-                    <span class="me-4"
-                      >在地甜點盒<span class="mx-1">-</span>3個月訂閱方案</span
-                    ><span>x 1</span>
+                    <span class="me-4">在地甜點盒<span class="mx-1">-</span>3個月訂閱方案</span><span>x 1</span>
                   </li>
                 </ul>
                 <div class="lh-base pb-6 mb-6 border-bottom border-neutral-400">
-                  <p
-                    class="d-flex justify-content-between align-items-center mb-2"
-                  >
+                  <p class="d-flex justify-content-between align-items-center mb-2">
                     <span>小計</span><span>NT$6,190</span>
                   </p>
                   <p class="d-flex justify-content-between align-items-center">
                     <span>折扣</span><span class="text-cta-200">- NT$175</span>
                   </p>
                 </div>
-                <p
-                  class="d-flex justify-content-between align-items-center lh-sm ls-1 fw-bold"
-                >
-                  <span>合計</span
-                  ><span class="fs-5 lh-base ls-1">NT$6,015</span>
+                <p class="d-flex justify-content-between align-items-center lh-sm ls-1 fw-bold">
+                  <span>合計</span><span class="fs-5 lh-base ls-1">NT$6,015</span>
                 </p>
               </div>
-              <button
-                type="button"
-                class="btn-primary-text w-100 d-none d-sm-block"
-              >
+              <button type="button" class="btn-primary-text w-100 d-none d-sm-block">
                 前往結帳
               </button>
             </section>
@@ -732,6 +492,7 @@
       </div>
     </main>
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>
