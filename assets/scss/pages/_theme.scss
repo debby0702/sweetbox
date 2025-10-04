@@ -18,14 +18,14 @@
 
   .theme-banner-img {
     display: block;
-    width: 100%;
+    width: 100vw;
     height: 332px; // 手機版 banner 圖片高度
     object-fit: cover; //等比例縮放，不顯示超出容器的圖
     @media (min-width: 375px) {
       height: auto; //讓手機版圖片放大
     }
     @media (min-width: 1200px) {
-      height: 588px; //桌面版 banner 圖片高度
+      height: calc(100vw / 1920 * 588); //桌面版 banner 圖片高度
     }
   }
 }
