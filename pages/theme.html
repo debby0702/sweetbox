@@ -14,6 +14,11 @@
   <%- include('./layout/header'); -%>
     <main class="main overflow-hidden">
       <section class="theme-banner bg-neutral-200">
+        <picture>
+          <source media="(min-width: 767px)" srcset="/assets/images/Theme_Page/Banner.svg">
+          <img src="/assets/images/Theme_Page/Banner_mobile.svg" alt="theme-banner-img" class="theme-banner-img">
+        </picture>
+
         <div class="d-lg-none container text-center title-mobile">
           <img src="/assets/images/Theme_Page/Title_display_mobile.svg" alt="總有一盒剛好是你想吃的甜" />
         </div>
@@ -149,10 +154,11 @@
           </section>
         </div>
         <picture>
-          <source media="(min-width: 576px)" srcset="/assets/images/Theme_Page/bg-cake-desktop.png" />
+          <source media="(min-width: 992px)" srcset="/assets/images/Theme_Page/bg-cake-desktop.png" />
+          <img class="position-absolute theme-background z-n1" src="/assets/images/Theme_Page/bg-cake-mobile.png"
+            alt="蛋糕背景圖" />
         </picture>
-        <img class="position-absolute theme-background z-n1" src="/assets/images/Theme_Page/bg-cake-mobile.png"
-          alt="" />
+
       </section>
     </main>
 
