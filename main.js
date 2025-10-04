@@ -1,6 +1,11 @@
 import "./assets/scss/all.scss";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+//首頁 //AOS
+AOS.init({
+  once: true,
+});
+
 // 首頁//主題介紹swiper
 const swiperThemeOpts = new Swiper(".swiper-themeOpts", {
   // Optional parameters
